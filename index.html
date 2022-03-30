@@ -477,29 +477,33 @@
           <div class="main-form__container">
             <div class="main-form__form-wrp">
               <p class="main-form__form-title">Форма заявки</p>
-              <form action="#" class="main-form__form-list">
+              <form
+                class="main-form__form-list"
+                onsubmit="return false;"
+                name="form"
+              >
                 <div class="main-form__form-list-wrp">
                   <input
                     type="text"
-                    name="Name"
+                    name="name"
                     placeholder="Имя"
                     class="main-form__form-item"
                   />
                   <input
                     type="text"
-                    name="Company"
+                    name="company"
                     placeholder="Компания"
                     class="main-form__form-item"
                   />
                   <input
-                    type="tel"
-                    name="Tel"
+                    type="number"
+                    name="phone"
                     placeholder="Телефон"
                     class="main-form__form-item"
                   />
                   <input
                     type="email"
-                    name="Email"
+                    name="email"
                     placeholder="E-mail"
                     class="main-form__form-item"
                   />
@@ -522,52 +526,6 @@
           </div>
         </div>
       </section>
-      <!-- <div id="pop-active" class="popup-form__container">
-        <div class="popup-form__form-wrp">
-          <p class="popup-form__form-title">Форма заявки</p>
-          <form action="#" class="popup-form__form-list">
-            <div class="popup-form__form-list-wrp">
-              <input
-                type="text"
-                name="Name"
-                placeholder="Имя"
-                class="popup-form__form-item"
-              />
-              <input
-                type="text"
-                name="Company"
-                placeholder="Компания"
-                class="popup-form__form-item"
-              />
-              <input
-                type="tel"
-                name="Tel"
-                placeholder="Телефон"
-                class="popup-form__form-item"
-              />
-              <input
-                type="email"
-                name="Email"
-                placeholder="E-mail"
-                class="popup-form__form-item"
-              />
-            </div>
-            <div class="popup-form__form-list-text-wrp">
-              <img
-                src="icons/FormCheck_icon.svg"
-                alt="Check"
-                class="popup-form__form-list-text-img"
-              />
-              <p class="popup-form__form-list-text">
-                Ваши данные не будут переданы третьим лицам
-              </p>
-            </div>
-            <button class="popup-form__form-button btn-form">
-              Оставить заявку
-            </button>
-          </form>
-        </div>
-      </div> -->
     </main>
     <footer class="footer">
       <div class="footer__wrp">
@@ -588,7 +546,6 @@
         <div class="footer__copyright">&#169; 2022 Star Up Group</div>
       </div>
     </footer>
-
     <div id="accept" class="popup-accept__container">
       <div class="popup-accept__wrp">
         <img

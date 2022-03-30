@@ -9,11 +9,10 @@ window.onload = function () {
     const main = document.querySelector('main');
 
     const buttonIndex = main.querySelectorAll('.btn-pop-up');
-    const btnPopUpSend = main.querySelectorAll('.btn-form');
-
+    const btnPopUpSend = main.querySelector('.btn-form');
     const modalWrp = mainCont.querySelector('.main-form__container');
-    const popup = mainCont.querySelector('.popup-form__container');
     const acept = mainCont.querySelector('.popup-accept__container');
+    const formDoc = document.forms.form;
 
     const clickClose = mainCont.querySelector('.main-form__form-wrp');
 
@@ -25,15 +24,17 @@ window.onload = function () {
 
     buttonIndex.forEach((el) => {
         el.addEventListener("click", () => {
-            console.log('g');
-            modalWrp.classList.remove('main-form__container');
+            // modalWrp.classList.remove('main-form__container');
             modalWrp.classList.add('popup-form__container');
             modalWrp.classList.add('popup-form__active');
         })
     });
 
     modalWrp.addEventListener("click", () => {
-        modalWrp.classList.remove('popup-form__active');
+        // modalWrp.classList.remove('popup-form__active');
+        formDoc.elements.name.classList.remove('errorInput');
+        formDoc.elements.phone.classList.remove('errorInput');
+        formDoc.elements.email.classList.remove('errorInput');
         setTimeout(() => {
             modalWrp.classList.remove('popup-form__container');
             modalWrp.classList.add('main-form__container');
@@ -44,18 +45,28 @@ window.onload = function () {
         event.stopPropagation();
     });
 
-    btnPopUpSend.forEach((elem) => {
-        elem.addEventListener("click", function (e) {
-            console.log(popup)
-            let name = document.getElementById("name");
-            let phone = document.getElementById("name");
-            let email = document.getElementById("name");
-            console.log(name);
+    btnPopUpSend.addEventListener("click", function (e) {
+        let name = formDoc.elements.name.value;
+        let email = formDoc.elements.email.value;
+        let phone = formDoc.elements.phone.value;
+        if (name === '') {
+            formDoc.elements.name.classList.add('errorInput');
+        } if (name !== '') {
+            formDoc.elements.name.classList.remove('errorInput');
+        } if (email === '') {
+            formDoc.elements.email.classList.add('errorInput');
+        } if (email !== '') {
+            formDoc.elements.email.classList.remove('errorInput');
+        } if (phone === '') {
+            formDoc.elements.phone.classList.add('errorInput');
+        } if (phone !== '') {
+            formDoc.elements.phone.classList.remove('errorInput');
+        } if (name !== '' && phone !== '' && email !== '') {
+            modalWrp.classList.remove('popup-form__active');
             acept.classList.add('popup-accept__container-active');
-            modalWrp.classList.toggle('popup-form__active');
             setTimeout(() => {
                 acept.classList.remove('popup-accept__container-active');
-            }, 2000);
-        })
+            }, 2000)
+        }
     });
 }

@@ -2990,6 +2990,7 @@ body {
   line-height: 21px;
   letter-spacing: 0.01em;
   background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
   border-radius: 4px;
   margin-bottom: 32px;
 }
@@ -3370,4 +3371,8 @@ body {
 .nav-list-active,
 .lang-item-active {
   color: #5D5FEF;
+}
+
+.errorInput {
+  border: 1px solid red;
 }

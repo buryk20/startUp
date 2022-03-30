@@ -1,0 +1,291 @@
+@mixin text($fontSize, $fontWeight, $color) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+    letter-spacing: 0.005em;
+}
+
+@mixin button($color, $bgColor) {
+    max-width: 276px;
+    width: 100%;
+    height: 69px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    color: $color;
+    background-color: $bgColor;
+}
+
+@mixin buttonMob {
+    max-width: 146px;
+    height: 41px;
+    font-size: 10px;
+    border-radius: 4px;
+}
+
+@mixin burgerLine {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: $colorBlack;
+    border-radius: 1px;
+}
+
+@mixin burgerLineX {
+    width: 24px;
+    top: 50%;
+    transition: all .3s ease;
+}
+
+@mixin buttonMobMar {
+    @include _425 {
+        max-width: 200px;
+        height: 40px;
+        font-size: 12px;
+    }
+    @include _375 {
+        font-size: 10px;
+    }
+}
+
+@mixin sizeTriangle {
+    height: 134px;
+    width: 134px;
+    justify-self: center;
+    position: relative;
+}
+
+@mixin sizeTriangleMob {
+    height: 65px;
+    width: 65px;
+    justify-self: center;
+    position: relative;
+    background-size: 100%;
+    margin-bottom: 12px;
+}
+
+@mixin sizeList {
+    width: 100%;
+    max-width: 1200px;
+}
+  
+@mixin sizePage {
+    max-width: 1364px;
+    width: 100%;
+    position: relative;
+}
+  
+@mixin marCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+@mixin flexCenterSb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexColumnFS {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+  
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+@mixin flexCenterColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flexStartCenter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+@mixin sizeItem {
+    max-width: 276px;
+    width: 100%;
+    height: 276px;
+    padding-top: 48px;
+    background: $colorWhite;
+    border-radius: 8px;
+    justify-content: flex-start;
+    box-shadow: $shadow;
+}
+
+@mixin sizeItemMob {
+    max-width: 146px;
+    width: 100%;
+    height: 146px;
+    justify-content: center;
+    padding-top: 0;
+}
+  
+@mixin developmentArrowLeft {
+    content: "";
+    background-color: $colorDark;
+    position: absolute;
+    left: -3px;
+    bottom: -2px;
+    border-radius: 1px;
+    width: 2px;
+    height: 11px;
+}
+
+@mixin developmentArrowRight {
+    content: '';
+    background-color: $colorDark;
+    position: absolute;
+    right: -3px;
+    bottom: -2px;
+    border-radius: 1px;
+    width: 2px;
+    height: 11px;
+}
+
+@mixin developmentArrow {
+    align-self: center;
+    justify-self: center; 
+    background-color: $colorDark;
+    border-radius: 1px;
+    width: 2px;
+    height: 88px;
+    position: relative;
+}
+  
+@mixin sizeImgItem {
+    align-self: center;
+    margin-bottom: 48px;
+    width: 64px;
+}
+
+@mixin sizeImgItemMob {
+    align-self: center;
+    margin-bottom: 24px;
+    width: 48px;
+}
+
+@mixin sizeImgMob {
+    max-width: 208px;
+    width: 100%;
+}
+  
+@mixin grid {
+  grid-column-start: 2;
+  align-self: center;
+  justify-self: center;
+  background-color: $colorDark;
+  border-radius: 1px;
+  width: 2px;
+  height: 88px;
+  position: relative;
+}
+  
+@mixin circlePos {
+  position: absolute;
+  right: -115px;
+  bottom: 190px;
+}
+  
+@mixin developmentTr {
+    background-repeat: no-repeat;
+    height: 134px;
+    width: 134px;
+    position: relative;
+}
+
+@mixin sectionMob {
+  background: none;
+  height: auto;
+  margin-bottom: 48px;
+}
+  
+@mixin paddStart {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+@mixin _323 {
+    @media (max-width: 323px) {
+        @content;
+    }
+}
+
+@mixin _375 {
+    @media (max-width: 375px) {
+        @content;
+  }
+}
+
+@mixin _425 {
+    @media (max-width: 425px) {
+        @content;
+    }
+}
+
+@mixin _583 {
+  @media (max-width: 583px) {
+      @content;
+  }
+}
+
+@mixin _680 {
+    @media (max-width: 680px) {
+        @content;
+    }
+}
+
+@mixin _768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin _820 {
+    @media (max-width: 820px) {
+        @content;
+    }
+}
+
+@mixin _960 {
+    @media (max-width: 960px) {
+        @content;
+    }
+}
+
+@mixin _1024 {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin _1135 {
+    @media (max-width: 1135px) {
+        @content;
+    }    
+}
+
+@mixin _1146 {
+    @media (max-width: 1146px) {
+        @content;
+    }    
+}
+@mixin _1204 {
+    @media (max-width: 1204px) {
+        @content;
+    }
+}
+
+@mixin _1472 {
+    @media (max-width: 1472px) {
+        @content;
+    }
+}

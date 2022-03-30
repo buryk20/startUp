@@ -1,0 +1,1935 @@
+body {
+  background-color: $colorGrey;
+  font-family: $font;
+}
+
+.body-lock {
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+  background-color: $colorWhite;
+  box-shadow: $shadow;
+  @include _768 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  &__wrp {
+    padding: 3px 16px;
+    @include flexCenterSb;
+    @include text(18px, 500, $colorDark);
+    @include _1472 {
+      justify-content: space-around;
+    }
+    @include _1135 {
+      font-size: 14px;
+    }
+    @include _820 {
+      font-size: 12px;
+    }
+    @include _680 {
+      justify-content: space-between;
+      font-size: 18px;
+    }
+  }
+  &__logo-img {
+    @include _820 {
+      width: 48px;
+    }
+    @include _680 {
+      display: none;
+    }
+  }
+  &__logo-img-mob {
+    display: none;
+    @include _680 {
+      display: block;
+    }
+  }
+  &__burger {
+    display: none;
+    @include _680 {
+      display: block;
+      position: relative;
+      width: 24px;
+      height: 16px;
+    }
+    &::before,
+    &::after {
+      content: "";
+      @include burgerLine;
+      right: 0;
+      transition: all 0.3s ease;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      top: 100%;
+    }
+  }
+  &__burger-midl {
+    @include burgerLine;
+    right: 0;
+    top: 50%;
+    transition: all 0.3s ease;
+  }
+  &__burger-active {
+    &::after {
+      @include burgerLineX;
+      transform: rotate(-45deg);
+    }
+    &::before {
+      @include burgerLineX;
+      transform: rotate(45deg);
+    }
+    & > .header__burger-midl {
+      transform: scale(0);
+      transition: all 0.3s ease;
+    }
+  }
+  &__nav-wrp {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    @include _680 {
+      height: 0;
+      width: 100%;
+      background-color: $colorWhite;
+      @include flexColumnFS;
+      position: fixed;
+      top: 39px;
+      right: 0;
+      padding-top: 0;
+      padding-left: 24px;
+      padding-right: 24px;
+      overflow-y: hidden;
+      transition: all 0.3s ease-out;
+    }
+  }
+  &__nav-wrp-active {
+    height: 530px;
+    overflow-y: auto;
+    padding-top: 30px;
+    transition: all 0.3s ease-out;
+  }
+  &__nav {
+    max-width: 900px;
+    width: 100%;
+    @include flexCenterSb;
+    @include _1146 {
+      max-width: 800px;
+    }
+    @include _1024 {
+      max-width: 700px;
+    }
+    @include _960 {
+      max-width: 626px;
+    }
+    @include _820 {
+      max-width: 540px;
+    }
+    @include _680 {
+      max-width: 100%;
+      @include flexColumnFS;
+      margin-bottom: 27px;
+    }
+  }
+  &__nav-item {
+    @include _680 {
+      margin-bottom: 27px;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+    &:hover {
+      color: $colorMain;
+      cursor: pointer;
+    }
+  }
+  &__nav-line-mob {
+    display: none;
+    @include _680 {
+      display: block;
+      background-color: $colorDark;
+      width: 100%;
+      height: 1px;
+      margin-bottom: 27px;
+    }
+  }
+  &__lang-wrp {
+    max-width: 176px;
+    width: 100%;
+    @include flexCenterSb;
+    @include _1204 {
+      max-width: 134px;
+    }
+    @include _1024 {
+      max-width: 116px;
+    }
+    @include _820 {
+      max-width: 86px;
+    }
+    @include _680 {
+      max-width: 100%;
+      @include flexColumnFS;
+    }
+  }
+  &__lang-item {
+    &:hover {
+      color: $colorMain;
+      cursor: pointer;
+    }
+    @include _680 {
+      margin-bottom: 27px;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.main {
+  margin-bottom: 101px;
+  @include _680 {
+    padding-top: 40px;
+  }
+  @include _425 {
+    margin-bottom: 52px;
+  }
+}
+
+.main-idea {
+  margin-bottom: 24px;
+  background-image: url(../img/idea_bg.png);
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: top;
+  background-size: contain;
+  @include _425 {
+    background-image: url(../img/idea_bg_mob.png);
+    margin-bottom: 32px;
+  }
+  &__wrp {
+    height: 760px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include _1472 {
+      @include paddStart;
+    }
+    @include _1146 {
+      height: 660px;
+    }
+    @include _1024 {
+      height: 560px;
+    }
+    @include _820 {
+      height: 460px;
+    }
+    @include _680 {
+      height: 290px;
+    }
+    @include _425 {
+      padding-top: 62px;
+      height: auto;
+      display: block;
+    }
+    @include _323 {
+      padding-top: 31px;
+    }
+  }
+  &__text {
+    max-width: 640px;
+    width: 100%;
+    @include _425 {
+      @include flexCenterColumn;
+    }
+  }
+  &__title {
+    @include text(38px, 700, $colorWhite);
+    line-height: 49px;
+    text-transform: uppercase;
+    margin-bottom: 56px;
+    @include _820 {
+      font-size: 28px;
+      line-height: 39px;
+    }
+    @include _680 {
+      font-size: 19px;
+      line-height: 29px;
+      margin-bottom: 36px;
+    }
+    @include _425 {
+      max-width: 312px;
+      width: 100%;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    @include _375 {
+      max-width: 260px;
+    }
+    @include _323 {
+      max-width: 235px;
+      margin-bottom: 12px;
+    }
+  }
+  &__img-mob {
+    max-width: 208px;
+    display: none;
+    @include _425 {
+      align-self: flex-end;
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
+  &__description {
+    @include text(24px, 400, $colorWhite);
+    @include _820 {
+      font-size: 20px;
+    }
+    @include _680 {
+      font-size: 14px;
+    }
+    @include _425 {
+      text-align: center;
+      color: $colorDark;
+      text-align: center;
+    }
+  }
+  &__img-wrp {
+    padding-top: 65px;
+    @include _820 {
+      padding-top: 0;
+    }
+    @include _425 {
+      display: none;
+    }
+  }
+}
+
+.main-request {
+  height: 573px;
+  background-image: url(../img/Polygon_13.png);
+  background-repeat: no-repeat;
+  background-position: right 0% top 42%;
+  @include _1024 {
+    height: auto;
+    background: none;
+    margin-bottom: 62px;
+  }
+  @include _425 {
+    @include sectionMob;
+  }
+  &__wrp {
+    @include flexCenter;
+    @include _1472 {
+      @include paddStart;
+    }
+    @include _425 {
+      flex-direction: column;
+    }
+  }
+  &__img-wrp {
+    margin-right: 32px;
+    @include _960 {
+      margin-right: 12px;
+    }
+    @include _425 {
+      margin-right: 0;
+      margin-bottom: 32px;
+    }
+  }
+  &__img {
+    @include _425 {
+      @include sizeImgMob;
+    }
+  }
+  &__text {
+    max-width: 687px;
+    width: 100%;
+    @include _425 {
+      max-width: 312px;
+    }
+  }
+  &__title {
+    @include text(28px, 600, #383737);
+    margin-bottom: 38px;
+    @include _680 {
+      font-size: 24px;
+      margin-bottom: 28px;
+    }
+    @include _425 {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+  &__description {
+    @include text(24px, 400, $colorBlack);
+    margin-bottom: 72px;
+    @include _1024 {
+      margin-bottom: 52px;
+    }
+    @include _680 {
+      font-size: 20px;
+      margin-bottom: 32px;
+    }
+    @include _425 {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  }
+  &__button-wrp {
+    @include flexStartCenter;
+    @include _425 {
+      justify-content: center;
+    }
+  }
+  &__button-request {
+    @include button($colorWhite, $colorMain);
+    margin-right: 32px;
+    text-transform: uppercase;
+    transition: all 0.3s, ease;
+    @include _680 {
+      font-size: 14px;
+      height: 54px;
+      margin-right: 16px;
+    }
+    @include _425 {
+      @include buttonMob;
+      margin-right: 20px;
+    }
+    &:hover {
+      background-color: $colorHoverButton;
+      box-shadow: $shadowButt;
+      transition: all 0.3s, ease-in;
+    }
+    &:active {
+      background-color: $colorActiveButton;
+    }
+  }
+  &__button-contacts {
+    @include button($colorMain, transparent);
+    border: 3px solid $colorMain;
+    text-transform: uppercase;
+    transition: all 0.3s, ease;
+    @include _680 {
+      font-size: 14px;
+      height: 54px;
+    }
+    @include _425 {
+      @include buttonMob;
+    }
+    &:hover {
+      background-color: $colorHoverButton;
+      color: $colorWhite;
+      border-color: $colorHoverButton;
+      box-shadow: $shadowButt;
+      transition: all 0.3s, ease-in;
+    }
+    &:active {
+      background-color: $colorActiveButton;
+      border-color: $colorActiveButton;
+    }
+  }
+}
+
+.main-offer {
+  @include _1024 {
+    margin-bottom: 62px;
+  }
+  @include _425 {
+    margin-bottom: 40px;
+  }
+  &__wrp {
+    @include flexCenterColumn;
+    justify-content: space-around;
+    @include _1472 {
+      @include paddStart;
+    }
+  }
+  &__title {
+    @include text(32px, 600, $colorBlack);
+    text-align: center;
+    margin-bottom: 28px;
+    @include _425 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    @include text(24px, 400, $colorBlack);
+    text-align: center;
+    margin-bottom: 54px;
+    @include _1024 {
+      margin-bottom: 24px;
+    }
+    @include _425 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    @include sizeList;
+    @include flexCenterSb;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+    @include _1135 {
+      height: 584px;
+      justify-content: space-evenly;
+    }
+    @include _583 {
+      height: 1134px;
+      margin-bottom: 20px;
+    }
+    @include _425 {
+      height: auto;
+    }
+    @include _375 {
+      justify-content: space-evenly;
+    }
+  }
+  &__item {
+    @include sizeItem;
+    @include flexCenterColumn;
+    @include _425 {
+      @include sizeItemMob;
+      margin-bottom: 20px;
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+    @include _323 {
+      &:nth-last-child(2) {
+        margin-bottom: 20px;
+      }
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__item-img {
+    @include sizeImgItem;
+    @include _425 {
+      @include sizeImgItemMob;
+    }
+  }
+  &__item-text {
+    max-width: 205px;
+    width: 100%;
+    @include text(18px, 500, $colorBlack);
+    text-transform: uppercase;
+    text-align: center;
+    @include _425 {
+      font-size: 13px;
+      max-width: 122px;
+    }
+    @include _375 {
+      font-size: 10px;
+    }
+  }
+  &__description {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 102px;
+    border-radius: 8px;
+    background-color: $colorWhite;
+    box-shadow: $shadow;
+    @include _1135 {
+      padding: 20px 51px;
+    }
+    @include _425 {
+      padding: 14px 18px;
+    }
+  }
+  &__description-text {
+    @include text(24px, 400, $colorBlack);
+    max-width: 994px;
+    width: 100%;
+    @include _425 {
+      font-size: 14px;
+      display: inline;
+    }
+  }
+}
+
+.main-purpose {
+  height: 573px;
+  margin-bottom: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../img/Polygon_14.png);
+  background-repeat: no-repeat;
+  background-position: left 0% bottom 42%;
+  @include _1024 {
+    height: auto;
+    background: none;
+    margin-bottom: 62px;
+  }
+  @include _425 {
+    @include sectionMob;
+  }
+  &__wrp {
+    width: 100%;
+    @include flexCenter;
+    flex-direction: row-reverse;
+    @include _1472 {
+      @include paddStart;
+    }
+    @include _425 {
+      flex-direction: column;
+    }
+  }
+  &__img-wrp {
+    @include _425 {
+      margin-bottom: 32px;
+    }
+  }
+  &__img {
+    @include _425 {
+      @include sizeImgMob;
+    }
+  }
+  &__text {
+    max-width: 657px;
+    width: 100%;
+  }
+  &__title {
+    @include text(24px, 400, $colorBlack);
+    margin-bottom: 38px;
+    @include _425 {
+      font-size: 20px;
+    }
+    @include _375 {
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+  }
+  &__button-wrp {
+    display: flex;
+    justify-content: flex-start;
+    @include _425 {
+      justify-content: center;
+    }
+  }
+  &__button-order {
+    @include button($colorWhite, $colorMain);
+    margin-right: 32px;
+    text-transform: uppercase;
+    transition: all 0.3s, ease;
+    @include _680 {
+      font-size: 14px;
+      height: 54px;
+      margin-right: 12px;
+    }
+    @include _425 {
+      @include buttonMob;
+      margin-right: 20px;
+    }
+    &:hover {
+      background-color: $colorHoverButton;
+      box-shadow: $shadowButt;
+      transition: all 0.3s, ease-in;
+    }
+    &:active {
+      background-color: $colorActiveButton;
+    }
+  }
+  &__button-about {
+    @include button($colorMain, transparent);
+    border: 3px solid $colorMain;
+    text-transform: uppercase;
+    transition: all 0.3s, ease;
+    @include _680 {
+      font-size: 14px;
+      height: 54px;
+    }
+    @include _425 {
+      @include buttonMob;
+    }
+    &:hover {
+      background-color: $colorHoverButton;
+      color: $colorWhite;
+      border-color: $colorHoverButton;
+      box-shadow: $shadowButt;
+      transition: all 0.3s, ease-in;
+    }
+    &:active {
+      background-color: $colorActiveButton;
+      border-color: $colorActiveButton;
+    }
+  }
+}
+
+.main-realization {
+  background-image: url(../img/Polygon_15.png);
+  background-repeat: no-repeat;
+  background-position: right 0% top 73%;
+  margin-bottom: 76px;
+  @include _1024 {
+    background: none;
+  }
+  &__wrp {
+    @include _1472 {
+      @include paddStart;
+    }
+  }
+  &__title {
+    @include text(32px, 600, $colorDark);
+    text-align: center;
+    margin-bottom: 59px;
+    @include _425 {
+      font-size: 24px;
+      margin-bottom: 49px;
+    }
+    @include _375 {
+      font-size: 20px;
+      margin-bottom: 34px;
+    }
+  }
+  &__wrp-grid {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 3fr 1fr 3fr;
+    align-items: center;
+    @include _1024 {
+      grid-template-columns: 1fr 0.5fr 1fr;
+    }
+    @include _425 {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr 1fr 1fr;
+      position: relative;
+    }
+  }
+  &__development-mob {
+    display: none;
+    @include _425 {
+      @include flexCenterColumn;
+    }
+  }
+  &__development-triangle-mob {
+    background-image: url(../img/lightBlue_triangle.svg);
+    background-repeat: no-repeat;
+    @include sizeTriangleMob;
+    align-self: center;
+    &::after {
+      content: "<div>";
+      position: absolute;
+      @include text(12px, 700, $colorWhite);
+      letter-spacing: 0.07em;
+      font-family: "IBM Plex Mono", monospace, sans-serif, Arial;
+      right: 18px;
+      top: 23px;
+    }
+  }
+  &__development-text-mob {
+    @include text(14px, 600, $colorDark);
+  }
+  &__development-numer {
+    @include text(48px, 700, $colorDark);
+    justify-self: right;
+    margin-right: 48px;
+    @include _680 {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    @include _425 {
+      display: none;
+    }
+  }
+  &__development-triangle {
+    background-image: url(../img/lightBlue_triangle.svg);
+    background-repeat: no-repeat;
+    @include sizeTriangle;
+    @include _680 {
+      background-size: 100%;
+      height: 90px;
+      width: 90px;
+    }
+    @include _425 {
+      display: none;
+    }
+    &::after {
+      content: "<div>";
+      position: absolute;
+      @include text(24px, 700, $colorWhite);
+      letter-spacing: 0.07em;
+      font-family: "IBM Plex Mono", monospace, sans-serif, Arial;
+      right: 40px;
+      top: 45px;
+      @include _680 {
+        font-size: 19px;
+        right: 20px;
+        top: 30px;
+      }
+    }
+  }
+  &__development-text {
+    @include text(28px, 600, $colorDark);
+    justify-self: left;
+    margin-left: 48px;
+    @include _680 {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    @include _425 {
+      display: none;
+    }
+  }
+  &__development-arrow {
+    grid-column-start: 2;
+    @include developmentArrow;
+    @include _425 {
+      position: absolute;
+      width: 1px;
+      transform: rotate(296deg);
+      top: 30px;
+      left: 60px;
+    }
+    &::before {
+      @include developmentArrowLeft;
+      transform: rotate(143deg);
+      @include _425 {
+        width: 1px;
+      }
+    }
+    &::after {
+      @include developmentArrowRight;
+      transform: rotate(36deg);
+      @include _425 {
+        width: 1px;
+      }
+    }
+  }
+  &__content-mob {
+    display: none;
+    @include _425 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      grid-row-start: 2;
+      grid-column-start: 3;
+    }
+  }
+  &__content-triangle-mob {
+    background-image: url(../img/green_triangle.svg);
+    background-repeat: no-repeat;
+    @include sizeTriangleMob;
+    align-self: center;
+    &::before {
+      content: "Aa";
+      @include text(16px, 400, $colorWhite);
+      position: absolute;
+      right: 10px;
+      bottom: 8px;
+    }
+    &::after {
+      content: url(../icons/Content_icon_mob.svg);
+      position: absolute;
+      left: 22px;
+      top: 22px;
+    }
+  }
+  &__content-text-mob {
+    @include text(14px, 600, $colorDark);
+  }
+  &__content-numer {
+    @include text(48px, 700, $colorDark);
+    grid-row-start: 3;
+    grid-column-start: 3;
+    justify-self: left;
+    margin-left: 48px;
+    @include _680 {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    @include _425 {
+      display: none;
+    }
+  }
+  &__content-triangle {
+    background-image: url(../img/green_triangle.svg);
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    @include sizeTriangle;
+    @include _680 {
+      background-size: 100%;
+      height: 90px;
+      width: 90px;
+    }
+    @include _425 {
+      display: none;
+    }
+    &::before {
+      content: "Aa";
+      @include text(36px, 400, $colorWhite);
+      position: absolute;
+      right: 23px;
+      bottom: 18px;
+      @include _680 {
+        font-size: 24px;
+        right: 11px;
+        bottom: 9px;
+      }
+    }
+    &::after {
+      content: url(../icons/Content_icon.svg);
+      position: absolute;
+      left: 50px;
+      top: 43px;
+      @include _680 {
+        left: 30px;
+        top: 25px;
+      }
+    }
+  }
+  &__content-text {
+    @include text(28px, 600, $colorDark);
+    grid-row-start: 3;
+    text-align: right;
+    margin-right: 48px;
+    @include _680 {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    @include _425 {
+      display: none;
+    }
+  }
+  &__content-arrow {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    @include developmentArrow;
+    @include _425 {
+      grid-row-start: 3;
+      width: 1px;
+      position: absolute;
+      transform: rotate(70deg);
+      bottom: 92px;
+      left: 43px;
+    }
+    &::before {
+      @include developmentArrowLeft;
+      transform: rotate(143deg);
+      @include _425 {
+        width: 1px;
+      }
+    }
+    &::after {
+      @include developmentArrowRight;
+      transform: rotate(36deg);
+      @include _425 {
+        width: 1px;
+      }
+    }
+  }
+  &__promotion-mob {
+    display: none;
+    @include _425 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      grid-row-start: 3;
+      grid-column-start: 1;
+    }
+  }
+  &__promotion-triangle-mob {
+    background-image: url(../img/blue_triangle.svg);
+    background-repeat: no-repeat;
+    @include sizeTriangleMob;
+    align-self: center;
+    &::after {
+      content: url(../icons/TrandPromotion_icon_mob.svg);
+      position: absolute;
+      top: 20px;
+      left: 10px;
+    }
+  }
+  &__promotion-text-mob {
+    @include text(14px, 600, $colorDark);
+  }
+  &__promotion-numer {
+    @include text(48px, 700, $colorDark);
+    grid-row-start: 5;
+    justify-self: right;
+    margin-right: 48px;
+    @include _680 {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    @include _425 {
+      display: none;
+    }
+  }
+  &__promotion-triangle {
+    background-image: url(../img/blue_triangle.svg);
+    background-repeat: no-repeat;
+    grid-row-start: 5;
+    @include sizeTriangle;
+    @include _680 {
+      background-size: 100%;
+      height: 90px;
+      width: 90px;
+    }
+    @include _425 {
+      display: none;
+    }
+    &::after {
+      content: url(../icons/TrandPromotion_icon.svg);
+      position: absolute;
+      top: 36px;
+      left: 17px;
+      @include _680 {
+        top: 18px;
+        left: 7px;
+      }
+    }
+  }
+  &__promotion-text {
+    @include text(28px, 600, $colorDark);
+    grid-row-start: 5;
+    justify-self: left;
+    margin-left: 48px;
+    @include _680 {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    @include _425 {
+      display: none;
+    }
+  }
+}
+
+.main-advantage {
+  background-image: url(../img/Polygon_16.png);
+  background-repeat: no-repeat;
+  background-position: left 0% top -79%;
+  margin-bottom: 224px;
+  @include _1135 {
+    background: none;
+  }
+  @include _425 {
+    margin-bottom: 100px;
+  }
+  &__wrp-bg {
+    background-image: url(../img/Polygon_17.png);
+    background-repeat: no-repeat;
+    background-position: right 0% top 155%;
+    @include _1135 {
+      background: none;
+    }
+  }
+  &__wrp {
+    @include flexCenterColumn;
+    @include _1472 {
+      @include paddStart;
+    }
+  }
+  &__workwith-wrp {
+    @include sizeList;
+    margin-bottom: 92px;
+    @include _1024 {
+      margin-bottom: 62px;
+    }
+    @include _425 {
+      margin-bottom: 48px;
+    }
+  }
+  &__workwith-title {
+    @include text(24px, 400, $colorBlack);
+    text-align: center;
+    margin-bottom: 54px;
+    @include _425 {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+  &__workwith-list {
+    @include flexCenterSb;
+    flex-wrap: wrap;
+    @include _1135 {
+      height: 584px;
+      justify-content: space-evenly;
+    }
+    @include _583 {
+      height: 1134px;
+    }
+    @include _425 {
+      height: auto;
+    }
+  }
+  &__workwith-item {
+    @include sizeItem;
+    @include flexCenterColumn;
+    @include _425 {
+      @include sizeItemMob;
+      margin-bottom: 20px;
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+    @include _323 {
+      &:nth-last-child(2) {
+        margin-bottom: 20px;
+      }
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__workwith-item-img {
+    @include sizeImgItem;
+    @include _425 {
+      @include sizeImgItemMob;
+    }
+  }
+  &__workwith-item-text {
+    max-width: 205px;
+    width: 100%;
+    @include text(18px, 500, $colorBlack);
+    text-transform: uppercase;
+    text-align: center;
+    @include _425 {
+      font-size: 13px;
+      max-width: 122px;
+    }
+    @include _375 {
+      font-size: 10px;
+    }
+  }
+  &__advantage-wrp {
+    @include flexCenterColumn;
+  }
+  &__advantage-title {
+    @include text(32px, 600, $colorDark);
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  &__advantage-list {
+    display: flex;
+    @include _960 {
+      display: block;
+    }
+  }
+  &__advantage-list-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include _960 {
+      width: auto;
+      display: block;
+    }
+  }
+  &__advantage-list-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 269px;
+    @include _960 {
+      width: auto;
+      display: block;
+      padding-top: 0;
+    }
+  }
+  &__advantage-list-item-wrp {
+    width: 481px;
+    height: 481px;
+    @include flexCenterColumn;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    &.first-circle {
+      background: linear-gradient(215.97deg, #ef5da8 11.42%, #5d5fef 87.83%);
+      margin-bottom: 148px;
+      position: relative;
+      &::after {
+        content: url(../icons/ArrowRight_icon.svg);
+        @include circlePos;
+        @include _960 {
+          right: -15px;
+          bottom: -75px;
+          transform: rotate(45deg);
+        }
+        @include _425 {
+          content: url(../icons/ArrowRightMob_icon.svg);
+          right: 5px;
+          bottom: -50px;
+          transform: rotate(0);
+        }
+      }
+      @include _960 {
+        margin-bottom: 48px;
+      }
+      @include _425 {
+        margin-bottom: 24px;
+      }
+    }
+    &.second-circle {
+      background: linear-gradient(218.42deg, #ffb07d 16.12%, #ff7087 86.01%);
+      position: relative;
+      &::after {
+        content: url(../icons/ArrowRight_icon.svg);
+        @include circlePos;
+      }
+      @include _960 {
+        display: none;
+      }
+    }
+    &.second-circle-mob {
+      background: linear-gradient(218.42deg, #ffb07d 16.12%, #ff7087 86.01%);
+      position: relative;
+      display: none;
+      &::after {
+        content: url(../icons/ArrowRight_icon.svg);
+        position: absolute;
+        right: -15px;
+        bottom: -75px;
+        transform: rotate(45deg);
+        @include _425 {
+          content: url(../icons/ArrowRightMob_icon.svg);
+          right: 5px;
+          bottom: -50px;
+          transform: rotate(0);
+        }
+      }
+      @include _960 {
+        display: flex;
+        margin-bottom: 48px;
+      }
+      @include _425 {
+        margin-bottom: 24px;
+      }
+    }
+    &.third-circle {
+      background: linear-gradient(216.12deg, #1dcdfe 14.56%, #5d5fef 84.1%);
+      margin-bottom: 148px;
+      position: relative;
+      &::before {
+        content: url(../icons/ArrowLeft_icon.svg);
+        position: absolute;
+        left: -115px;
+        bottom: 90px;
+        @include _960 {
+          left: -15px;
+          bottom: -75px;
+          transform: rotate(315deg);
+        }
+        @include _425 {
+          content: url(../icons/ArrowLeftMob_icon.svg);
+          left: 5px;
+          bottom: -50px;
+          transform: rotate(0);
+        }
+      }
+      @include _960 {
+        margin-bottom: 48px;
+      }
+      @include _425 {
+        margin-bottom: 24px;
+      }
+    }
+    &.fourth-circle {
+      background: linear-gradient(212.55deg, #e78dd2 17.05%, #3b2d60 85.94%);
+    }
+    @include _960 {
+      width: 401px;
+      height: 401px;
+    }
+    @include _680 {
+      width: 380px;
+      height: 380px;
+    }
+    @include _425 {
+      width: 286px;
+      height: 286px;
+    }
+  }
+  &__advantage-list-item {
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+  }
+  &__advantage-list-img {
+    margin-bottom: 24px;
+    @include _425 {
+      max-width: 104px;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  &__advantage-list-title {
+    @include text(20px, 500, $colorWhite);
+    text-align: center;
+    margin-bottom: 24px;
+    @include _425 {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+    @include _375 {
+      font-size: 13px;
+    }
+  }
+  &__advantage-list-text {
+    max-width: 350px;
+    width: 100%;
+    @include text(16px, 400, $colorWhite);
+    line-height: 20px;
+    text-align: center;
+    @include _425 {
+      max-width: 230px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+.main-branding {
+  background: linear-gradient(266.62deg, #e55dad 0%, #745ee3 100%);
+  &__wrp {
+    height: 600px;
+    @include flexCenter;
+    flex-direction: column;
+    position: relative;
+    @include _1472 {
+      @include paddStart;
+    }
+    @include _425 {
+      height: 300px;
+    }
+  }
+  &__brand-circle {
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+    background-color: $colorDark;
+    box-shadow: $shadow;
+    @include flexCenter;
+    position: absolute;
+    top: -125px;
+    @include _425 {
+      width: 140px;
+      height: 140px;
+      top: -66px;
+    }
+  }
+  &__brand-title {
+    @include text(36px, 500, $colorWhite);
+    text-transform: uppercase;
+    @include _425 {
+      font-size: 18px;
+    }
+  }
+  &__brand-text-wrp {
+    max-width: 610px;
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+  }
+  &__brand-text-title {
+    @include text(32px, 600, $colorWhite);
+    line-height: 42px;
+    margin-bottom: 16px;
+    text-align: center;
+    @include _425 {
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 12px;
+    }
+    @include _375 {
+      font-size: 20px;
+    }
+  }
+  &__brand-text-line {
+    background-color: $colorWhite;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 16px;
+    @include _425 {
+      height: 1px;
+      margin-bottom: 12px;
+    }
+  }
+  &__brand-text-main {
+    @include text(24px, 600, $colorWhite);
+    line-height: 31px;
+    text-align: center;
+    @include _425 {
+      font-size: 16px;
+      line-height: 18px;
+    }
+    @include _375 {
+      font-size: 14px;
+    }
+  }
+}
+
+.main-marketing {
+  background-color: $colorDark;
+  padding-bottom: 86px;
+  &__wrp {
+    height: 1168px;
+    @include flexCenterColumn;
+    justify-content: flex-end;
+    position: relative;
+    @include _1472 {
+      @include paddStart;
+    }
+    @include _960 {
+      height: 1020px;
+    }
+    @include _768 {
+      height: auto;
+    }
+  }
+  &__blocks-list {
+    @include sizeList;
+    @include flexCenterSb;
+    position: absolute;
+    top: -106px;
+    @include _960 {
+      justify-content: space-evenly;
+    }
+    @include _820 {
+      justify-content: space-between;
+    }
+    @include _768 {
+      position: static;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      height: 395px;
+    }
+    @include _425 {
+      height: auto;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
+  &__blocks-item {
+    @include sizeItem;
+    @include flexCenterColumn;
+    @include _1024 {
+      max-width: 230px;
+      height: 230px;
+    }
+    @include _960 {
+      max-width: 183px;
+      height: 183px;
+      padding-top: 30px;
+    }
+    @include _425 {
+      @include sizeItemMob;
+      margin-bottom: 20px;
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+    @include _323 {
+      &:nth-last-child(2) {
+        margin-bottom: 20px;
+      }
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__blocks-img {
+    @include sizeImgItem;
+    @include _960 {
+      margin-bottom: 32px;
+    }
+    @include _425 {
+      @include sizeImgItemMob;
+    }
+  }
+  &__blocks-text {
+    max-width: 205px;
+    width: 100%;
+    @include text(18px, 500, $colorBlack);
+    text-transform: uppercase;
+    text-align: center;
+    @include _1024 {
+      font-size: 16px;
+    }
+    @include _960 {
+      max-width: 176px;
+      font-size: 14px;
+    }
+    @include _425 {
+      max-width: 138px;
+      font-size: 10px;
+    }
+  }
+  &__body-wrp {
+    margin-bottom: 124px;
+    @include flexCenterColumn;
+    @include _960 {
+      margin-bottom: 94px;
+    }
+    @include _425 {
+      margin-bottom: 36px;
+    }
+  }
+  &__body-title {
+    max-width: 755px;
+    width: 100%;
+    @include text(28px, 500, $colorWhite);
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 101px;
+    @include _960 {
+      margin-bottom: 80px;
+    }
+    @include _425 {
+      max-width: 312px;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: start;
+      margin-bottom: 24px;
+    }
+  }
+  &__body-list {
+    max-width: 1206px;
+    width: 100%;
+    border-bottom: 2px solid $colorWhite;
+    @include _425 {
+      border-bottom: 1px solid $colorWhite;
+      border-top: 1px solid $colorWhite;
+    }
+  }
+  &__body-list-item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid $colorWhite;
+    margin-bottom: 36px;
+    padding-top: 36px;
+    @include _425 {
+      height: auto;
+      flex-direction: column;
+      justify-content: center;
+      border-top: none;
+      padding-top: 24px;
+      margin-bottom: 0;
+    }
+  }
+  &__body-list-title {
+    max-width: 173px;
+    width: 100%;
+    @include text(24px, 500, $colorWhite);
+    text-align: right;
+    margin-right: 32px;
+    @include _768 {
+      font-size: 20px;
+    }
+    @include _583 {
+      text-align: center;
+    }
+    @include _425 {
+      font-size: 14px;
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+  &__body-list-img {
+    margin-right: 32px;
+    @include _583 {
+      display: none;
+    }
+  }
+  &__body-list-text {
+    max-width: 789px;
+    width: 100%;
+    @include text(24px, 500, $colorWhite);
+    text-align: left;
+    @include _960 {
+      max-width: 500px;
+    }
+    @include _768 {
+      font-size: 20px;
+    }
+    @include _425 {
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      max-width: 312px;
+      margin-bottom: 24px;
+    }
+  }
+  &__request-wrp {
+    max-width: 790px;
+    width: 100%;
+    @include flexCenterColumn;
+  }
+  &__request-title {
+    @include text(28px, 500, $colorWhite);
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 48px;
+    @include _425 {
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 36px;
+    }
+  }
+  &__request-button {
+    @include button($colorDark, $colorWhite);
+    max-width: 378px;
+    text-transform: uppercase;
+    transition: all 0.3 ease;
+    @include buttonMobMar;
+    &:hover {
+      background: linear-gradient(268.2deg, #1dcdfe 1.1%, #5d5fef 100%);
+      transition: all 0.3 ease-in;
+    }
+    &:active {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(268.2deg, #1dcdfe 1.1%, #5d5fef 100%);
+    }
+  }
+}
+
+.main-form,
+.popup-form {
+  &__wrp {
+    padding-top: 36px;
+    @include flexCenterColumn;
+    @include _425 {
+      padding-top: 0;
+    }
+  }
+  &__title-wrp {
+    width: 100%;
+    height: 225px;
+    margin-bottom: 60px;
+    @include flexCenter;
+    background: linear-gradient(266.62deg, #e55dad 0%, #745ee3 100%);
+    @include _1472 {
+      @include paddStart;
+    }
+    @include _425 {
+      height: 200px;
+      margin-bottom: 36px;
+    }
+    @include _375 {
+      height: 150px;
+    }
+  }
+  &__title {
+    max-width: 790px;
+    width: 100%;
+    @include text(36px, 600, $colorWhite);
+    line-height: 47px;
+    text-align: center;
+    @include _425 {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    @include _375 {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+  &__container {
+    width: 100%;
+    @include flexCenter;
+    @include paddStart;
+    // transition: 1s ease-in;
+  }
+  &__form-wrp {
+    max-width: 604px;
+    width: 100%;
+    padding: 36px 16px 0;
+    background-color: $colorWhite;
+    @include flexCenterColumn;
+  }
+  &__form-title {
+    @include text(24px, 400, $colorDark);
+    letter-spacing: 0.01em;
+    margin-bottom: 52px;
+    @include _425 {
+      font-size: 16px;
+      margin-bottom: 36px;
+    }
+  }
+  &__form-list {
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    margin-bottom: 36px;
+    @include _425 {
+      margin-bottom: 20px;
+    }
+  }
+  &__form-list-wrp {
+    width: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    margin-bottom: 52px;
+    @include _425 {
+      margin-bottom: 36px;
+    }
+  }
+  &__form-item {
+    width: 100%;
+    max-width: 378px;
+    padding: 12px;
+    @include text(16px, 400, $colorDark);
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    background-color: $colorGrey;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include _425 {
+      font-size: 14px;
+      line-height: 18px;
+      padding: 9px 12px;
+      margin-bottom: 18px;
+    }
+  }
+  &__form-list-text-wrp {
+    @include flexCenter;
+    margin-bottom: 52px;
+    @include _425 {
+      margin-bottom: 36px;
+    }
+  }
+  &__form-list-text-img {
+    margin-right: 16px;
+    @include _425 {
+      margin-right: 12px;
+    }
+  }
+  &__form-list-text {
+    @include text(14px, 400, $colorBlack);
+    letter-spacing: 0.01em;
+    @include _425 {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+  &__form-button {
+    max-width: 276px;
+    width: 100%;
+    height: 51px;
+    @include button($colorWhite, $colorMain);
+    text-transform: uppercase;
+    transition: all 0.3s, ease;
+    @include buttonMobMar;
+    &:hover {
+      background-color: $colorHoverButton;
+      transition: all 0.3s, ease-in;
+    }
+    &:active {
+      background-color: $colorActiveButton;
+    }
+  }
+}
+
+.footer {
+  background-color: $colorLightGrey;
+  margin-bottom: 32px;
+  &__wrp {
+    padding: 60px 16px 0;
+    @include flexCenter;
+    flex-direction: column;
+    @include _680 {
+      padding: 36px 16px 0;
+    }
+  }
+  &__nav-wrp {
+    max-width: 994px;
+    width: 100%;
+    @include flexCenterSb;
+    margin-bottom: 91px;
+    @include _960 {
+      max-width: 860px;
+    }
+    @include _680 {
+      flex-direction: column;
+      margin-bottom: 24px;
+    }
+  }
+  &__nav-item {
+    @include text(18px, 500, $colorDark);
+    text-align: center;
+    @include _680 {
+      margin-bottom: 24px;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+    @include _425 {
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+    &:hover {
+      color: $colorMain;
+      cursor: pointer;
+    }
+  }
+  &__nav-mob-line {
+    max-width: 312px;
+    width: 100%;
+    height: 1px;
+    background-color: $colorDark;
+    display: none;
+    @include _680 {
+      display: block;
+      margin-bottom: 24px;
+    }
+  }
+  &__agreement-wrp {
+    max-width: 584px;
+    width: 100%;
+    @include flexCenterSb;
+    margin-bottom: 48px;
+    @include _680 {
+      flex-direction: column;
+      margin-bottom: 36px;
+    }
+  }
+  &__agreement-item {
+    @include text(18px, 500, $colorDark);
+    text-align: center;
+    @include _680 {
+      margin-bottom: 18px;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+    @include _425 {
+      font-size: 12px;
+    }
+    &:hover {
+      color: $colorMain;
+      cursor: pointer;
+    }
+  }
+  &__agreement-dot {
+    width: 8px;
+    height: 8px;
+    background-color: $colorDark;
+    border-radius: 50%;
+    @include _680 {
+      display: none;
+    }
+  }
+  &__copyright {
+    @include text(18px, 500, $colorDark);
+    text-align: center;
+    @include _425 {
+      font-size: 12px;
+    }
+  }
+}
+
+.popup-form {
+  &__container {
+    @include flexCenter;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 500;
+    opacity: 0;
+    transition: 0.3s ease-in;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #0a0a1177;
+      z-index: -1;
+      backdrop-filter: blur(24px) opacity(1);
+    }
+  }
+  &__active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-out;
+  }
+}
+
+.popup-accept {
+  &__container {
+    @include flexCenter;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    @include paddStart;
+    z-index: 600;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #0a0a1177;
+      z-index: -1;
+      backdrop-filter: blur(24px) opacity(1);
+    }
+  }
+  &__wrp {
+    max-width: 604px;
+    width: 100%;
+    height: 617px;
+    @include flexCenter;
+    flex-direction: column;
+    background-color: $colorWhite;
+    @include _425 {
+      height: 389px;
+    }
+  }
+  &__img {
+    margin-bottom: 52px;
+    @include _425 {
+      width: 86px;
+      margin-bottom: 69px;
+    }
+  }
+  &__text {
+    max-width: 370px;
+    width: 100%;
+    @include text(18px, 500, $colorDark);
+    text-align: center;
+    @include _425 {
+      max-width: 250px;
+      font-size: 14px;
+    }
+  }
+  &__container-active {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+  }
+}
+
+.nav-list-active,
+.lang-item-active {
+  color: $colorMain;
+}

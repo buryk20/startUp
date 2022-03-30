@@ -1850,7 +1850,7 @@ body {
     transition: all 0.3s ease;
     z-index: 500;
     opacity: 0;
-    transition: 0.3s ease-in;
+    transition: opacity, 0.3s ease-in;
     &::before {
       content: "";
       position: absolute;
@@ -1866,7 +1866,7 @@ body {
   &__active {
     visibility: visible;
     opacity: 1;
-    transition: 0.3s ease-out;
+    transition: opacity, 0.3s ease-out;
   }
 }
 
@@ -1882,7 +1882,7 @@ body {
     z-index: 600;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.3s ease;
+    // transition: opacity 0.3s ease;
     &::before {
       content: "";
       position: absolute;
@@ -1926,7 +1926,7 @@ body {
   &__container-active {
     opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease;
+    // transition: opacity 0.3s ease;
   }
 }
 

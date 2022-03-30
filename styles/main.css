@@ -3267,7 +3267,7 @@ body {
   transition: all 0.3s ease;
   z-index: 500;
   opacity: 0;
-  transition: 0.3s ease-in;
+  transition: opacity, 0.3s ease-in;
 }
 
 .popup-form__container::before {
@@ -3285,7 +3285,7 @@ body {
 .popup-form__active {
   visibility: visible;
   opacity: 1;
-  transition: 0.3s ease-out;
+  transition: opacity, 0.3s ease-out;
 }
 
 .popup-accept__container {
@@ -3302,7 +3302,6 @@ body {
   z-index: 600;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.3s ease;
 }
 
 .popup-accept__container::before {
@@ -3365,7 +3364,6 @@ body {
 .popup-accept__container-active {
   opacity: 1;
   visibility: visible;
-  transition: all 0.3s ease;
 }
 
 .nav-list-active,

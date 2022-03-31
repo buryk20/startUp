@@ -121,16 +121,7 @@ body {
     width: 100%;
     @include flexCenterSb;
     @include _1146 {
-      max-width: 800px;
-    }
-    @include _1024 {
-      max-width: 700px;
-    }
-    @include _960 {
-      max-width: 626px;
-    }
-    @include _820 {
-      max-width: 540px;
+      justify-content: space-around;
     }
     @include _680 {
       max-width: 100%;
@@ -165,13 +156,7 @@ body {
     width: 100%;
     @include flexCenterSb;
     @include _1204 {
-      max-width: 134px;
-    }
-    @include _1024 {
-      max-width: 116px;
-    }
-    @include _820 {
-      max-width: 86px;
+      justify-content: space-around;
     }
     @include _680 {
       max-width: 100%;
@@ -397,8 +382,12 @@ body {
     margin-right: 32px;
     text-transform: uppercase;
     transition: all 0.3s, ease;
-    @include _680 {
+    @include _820 {
       font-size: 14px;
+      height: 54px;
+      margin-right: 16px;
+    }
+    @include _680 {
       height: 54px;
       margin-right: 16px;
     }
@@ -420,7 +409,7 @@ body {
     border: 3px solid $colorMain;
     text-transform: uppercase;
     transition: all 0.3s, ease;
-    @include _680 {
+    @include _820 {
       font-size: 14px;
       height: 54px;
     }
@@ -625,9 +614,11 @@ body {
     margin-right: 32px;
     text-transform: uppercase;
     transition: all 0.3s, ease;
-    @include _680 {
+    @include _820 {
       font-size: 14px;
       height: 54px;
+    }
+    @include _680 {
       margin-right: 12px;
     }
     @include _425 {
@@ -648,7 +639,8 @@ body {
     border: 3px solid $colorMain;
     text-transform: uppercase;
     transition: all 0.3s, ease;
-    @include _680 {
+    
+    @include _820 {
       font-size: 14px;
       height: 54px;
     }
@@ -1378,7 +1370,7 @@ body {
   background-color: $colorDark;
   padding-bottom: 86px;
   &__wrp {
-    height: 1168px;
+    height: 1120px;
     @include flexCenterColumn;
     justify-content: flex-end;
     position: relative;
@@ -1400,12 +1392,8 @@ body {
     @include _960 {
       justify-content: space-evenly;
     }
-    @include _820 {
-      justify-content: space-between;
-    }
     @include _768 {
       position: static;
-      justify-content: space-evenly;
       flex-wrap: wrap;
       height: 395px;
     }
@@ -1490,6 +1478,11 @@ body {
     @include _960 {
       margin-bottom: 80px;
     }
+
+    @include _820 {
+      margin-bottom: 40px;
+    }
+
     @include _425 {
       max-width: 312px;
       font-size: 14px;
@@ -1595,6 +1588,11 @@ body {
     &:active {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         linear-gradient(268.2deg, #1dcdfe 1.1%, #5d5fef 100%);
+    }
+
+    @include _820 {
+      height: 53px;
+      font-size: 14px;
     }
   }
 }

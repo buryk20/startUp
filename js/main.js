@@ -56,6 +56,11 @@ window.onload = function () {
         return reC.test(String(country).toLowerCase());
     }
 
+    function validatePhone(phone) {
+        let rePh = /^[0-9]*$/;
+        return rePh.test(String(phone));
+    }
+
 
     form.onsubmit = function () {
         let emailVal = inputEmail.value,
@@ -83,9 +88,16 @@ window.onload = function () {
         }
 
         if (validateCountry(emailVal)) {
+            inputEmail.classList.add('errorInput');
+            alert('Русский военный корабль пошел нахуй')
+            return false;
+        } else {
+            inputEmail.classList.remove('errorInput')
+        }
+
+        if (!validatePhone(phoneVal)) {
             console.log("email error");
             inputEmail.classList.add('errorInput');
-            alert('Руский военный корабль пошел нахуй')
             return false;
         } else {
             inputEmail.classList.remove('errorInput')

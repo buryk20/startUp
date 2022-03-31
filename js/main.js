@@ -1,20 +1,17 @@
 window.onload = function () {
-    const nav = document.getElementById('nav');
-    const mainCont = document.getElementById('lock');
+    // Логика мадалки
+    const nav = document.getElementById('nav'),
+        lock = nav.querySelector('.header__nav-wrp'),
+        burger = nav.querySelector('.header__burger');
+
+    const mainCont = document.getElementById('lock'),
+        modalWrp = mainCont.querySelector('.main-form__container'),
+        clickClose = mainCont.querySelector('.main-form__form-wrp');
 
     const body = document.querySelector('body');
-    const lock = nav.querySelector('.header__nav-wrp');
-    const burger = nav.querySelector('.header__burger');
 
-    const main = document.querySelector('main');
-
-    const buttonIndex = main.querySelectorAll('.btn-pop-up');
-    const btnPopUpSend = main.querySelector('.btn-form');
-    const modalWrp = mainCont.querySelector('.main-form__container');
-    const acept = mainCont.querySelector('.popup-accept__container');
-    const formDoc = document.forms.form;
-
-    const clickClose = mainCont.querySelector('.main-form__form-wrp');
+    const main = document.querySelector('main'),
+        buttonIndex = main.querySelectorAll('.btn-pop-up');
 
     burger.addEventListener("click", () => {
         burger.classList.toggle('header__burger-active');
@@ -24,17 +21,13 @@ window.onload = function () {
 
     buttonIndex.forEach((el) => {
         el.addEventListener("click", () => {
-            // modalWrp.classList.remove('main-form__container');
             modalWrp.classList.add('popup-form__container');
             modalWrp.classList.add('popup-form__active');
         })
     });
 
     modalWrp.addEventListener("click", () => {
-        // modalWrp.classList.remove('popup-form__active');
-        formDoc.elements.name.classList.remove('errorInput');
-        formDoc.elements.phone.classList.remove('errorInput');
-        formDoc.elements.email.classList.remove('errorInput');
+        modalWrp.classList.remove('popup-form__active');
         setTimeout(() => {
             modalWrp.classList.remove('popup-form__container');
             modalWrp.classList.add('main-form__container');
@@ -45,28 +38,58 @@ window.onload = function () {
         event.stopPropagation();
     });
 
-    btnPopUpSend.addEventListener("click", function (e) {
-        let name = formDoc.elements.name.value;
-        let email = formDoc.elements.email.value;
-        let phone = formDoc.elements.phone.value;
-        if (name === '') {
-            formDoc.elements.name.classList.add('errorInput');
-        } if (name !== '') {
-            formDoc.elements.name.classList.remove('errorInput');
-        } if (email === '') {
-            formDoc.elements.email.classList.add('errorInput');
-        } if (email !== '') {
-            formDoc.elements.email.classList.remove('errorInput');
-        } if (phone === '') {
-            formDoc.elements.phone.classList.add('errorInput');
-        } if (phone !== '') {
-            formDoc.elements.phone.classList.remove('errorInput');
-        } if (name !== '' && phone !== '' && email !== '') {
-            modalWrp.classList.remove('popup-form__active');
-            acept.classList.add('popup-accept__container-active');
-            setTimeout(() => {
-                acept.classList.remove('popup-accept__container-active');
-            }, 2000)
+    // Валидация
+
+    let form = document.querySelector('.js-form'),
+        formInputs = form.querySelectorAll('.js-input'),
+        inputEmail = form.querySelector('.js-input-email'),
+        inputPhone = form.querySelector('.js-input-phone');
+
+    function validateEmail(email) {
+        let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        return re.test(String(email).toLowerCase());
+    }
+
+    function validateCountry(country) {
+        let reC = new RegExp('.ru$');
+        return reC.test(String(country).toLowerCase());
+    }
+
+
+    form.onsubmit = function () {
+        let emailVal = inputEmail.value,
+            phoneVal = inputPhone.value,
+            emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+
+        formInputs.forEach(function (input) {
+            if (input.value === '') {
+                input.classList.add('errorInput')
+            } else {
+                input.classList.remove('errorInput')
+            }
+        });
+
+        if (emptyInputs.length !== 0) {
+            return false;
         }
-    });
+
+        if (!validateEmail(emailVal)) {
+            console.log("email error");
+            inputEmail.classList.add('errorInput')
+            return false;
+        } else {
+            inputEmail.classList.remove('errorInput')
+        }
+
+        if (validateCountry(emailVal)) {
+            console.log("email error");
+            inputEmail.classList.add('errorInput');
+            alert('Руский военный корабль пошел нахуй')
+            return false;
+        } else {
+            inputEmail.classList.remove('errorInput')
+        }
+    }
+
 }

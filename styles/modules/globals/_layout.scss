@@ -1700,6 +1700,12 @@ body {
       padding: 9px 12px;
       margin-bottom: 18px;
     }
+    // &:in-range {
+    //   border: 1px solid $colorGrey;
+    // }
+    // &:out-of-range {
+    //   border: 1px solid red;
+    // }
   }
   &__form-list-text-wrp {
     @include flexCenter;

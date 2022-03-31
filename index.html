@@ -477,17 +477,13 @@
           <div class="main-form__container">
             <div class="main-form__form-wrp">
               <p class="main-form__form-title">Форма заявки</p>
-              <form
-                class="main-form__form-list"
-                onsubmit="return false;"
-                name="form"
-              >
+              <form class="main-form__form-list js-form" name="form">
                 <div class="main-form__form-list-wrp">
                   <input
                     type="text"
                     name="name"
                     placeholder="Имя"
-                    class="main-form__form-item"
+                    class="main-form__form-item js-input"
                   />
                   <input
                     type="text"
@@ -499,13 +495,13 @@
                     type="number"
                     name="phone"
                     placeholder="Телефон"
-                    class="main-form__form-item"
+                    class="main-form__form-item js-input js-input-phone"
                   />
                   <input
-                    type="email"
+                    type="text"
                     name="email"
                     placeholder="E-mail"
-                    class="main-form__form-item"
+                    class="main-form__form-item js-input js-input-email"
                   />
                 </div>
                 <div class="main-form__form-list-text-wrp">
@@ -518,7 +514,7 @@
                     Ваши данные не будут переданы третьим лицам
                   </p>
                 </div>
-                <button class="main-form__form-button btn-form">
+                <button type="submit" class="main-form__form-button btn-form">
                   Оставить заявку
                 </button>
               </form>

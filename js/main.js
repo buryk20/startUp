@@ -6,6 +6,7 @@ window.onload = function () {
 
     const mainCont = document.getElementById('lock'),
         modalWrp = mainCont.querySelector('.main-form__container'),
+        clickBtnMod = mainCont.querySelector('.btn-form'),
         clickClose = mainCont.querySelector('.main-form__form-wrp');
 
     const body = document.querySelector('body');
@@ -13,26 +14,34 @@ window.onload = function () {
     const main = document.querySelector('main'),
         buttonIndex = main.querySelectorAll('.btn-pop-up');
 
+    const confirmation = document.getElementById('accept');
+
     burger.addEventListener("click", () => {
         burger.classList.toggle('header__burger-active');
         lock.classList.toggle('header__nav-wrp-active');
-        body.classList.toggle('body-lock')
+        body.classList.toggle('body-lock');
     });
 
     buttonIndex.forEach((el) => {
         el.addEventListener("click", () => {
             modalWrp.classList.add('popup-form__container');
             modalWrp.classList.add('popup-form__active');
+
         })
     });
 
     modalWrp.addEventListener("click", () => {
         modalWrp.classList.remove('popup-form__active');
+
         setTimeout(() => {
             modalWrp.classList.remove('popup-form__container');
             modalWrp.classList.add('main-form__container');
-        }, 500);
+        }, 5000);
     });
+
+    clickBtnMod.addEventListener("click", () => {
+
+    })
 
     clickClose.addEventListener("click", function (event) {
         event.stopPropagation();
@@ -70,8 +79,12 @@ window.onload = function () {
         formInputs.forEach(function (input) {
             if (input.value === '') {
                 input.classList.add('errorInput')
+                console.log(input);
             } else {
                 input.classList.remove('errorInput')
+                console.log(input);
+                confirmation.classList.add('popup-accept__container-active')
+                // modalEnter();
             }
         });
 
@@ -89,19 +102,17 @@ window.onload = function () {
 
         if (validateCountry(emailVal)) {
             inputEmail.classList.add('errorInput');
-            alert('Русский военный корабль пошел нахуй')
+            alert('Русский военный корабль пошел нах*й')
             return false;
         } else {
             inputEmail.classList.remove('errorInput')
         }
 
         if (!validatePhone(phoneVal)) {
-            console.log("email error");
             inputEmail.classList.add('errorInput');
             return false;
         } else {
             inputEmail.classList.remove('errorInput')
         }
     }
-
 }

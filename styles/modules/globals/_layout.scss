@@ -27,7 +27,7 @@ body {
     @include _1135 {
       font-size: 14px;
     }
-    @include _820 {
+    @include _960 {
       font-size: 12px;
     }
     @include _680 {
@@ -111,7 +111,7 @@ body {
     }
   }
   &__nav-wrp-active {
-    height: 530px;
+    height: 550px;
     overflow-y: auto;
     padding-top: 30px;
     transition: all 0.3s ease-out;
@@ -158,6 +158,9 @@ body {
     @include _1204 {
       justify-content: space-around;
     }
+    @include _820 {
+      max-width: 106px;
+    }
     @include _680 {
       max-width: 100%;
       @include flexColumnFS;
@@ -181,8 +184,6 @@ body {
   margin-bottom: 101px;
   @include _680 {
     padding-top: 40px;
-  }
-  @include _425 {
     margin-bottom: 52px;
   }
 }
@@ -194,9 +195,13 @@ body {
   background-position-x: left;
   background-position-y: top;
   background-size: contain;
-  @include _425 {
+  @include _583 {
     background-image: url(../img/idea_bg_mob.png);
+    background-size: 90%;
     margin-bottom: 32px;
+  }
+  @include _425 {
+    background-size: contain;
   }
   &__wrp {
     height: 760px;
@@ -218,10 +223,13 @@ body {
     @include _680 {
       height: 290px;
     }
-    @include _425 {
-      padding-top: 62px;
+    @include _583 {
+      padding-top: 31px;
       height: auto;
       display: block;
+    }
+    @include _425 {
+      padding-top: 62px;
     }
     @include _323 {
       padding-top: 31px;
@@ -230,8 +238,15 @@ body {
   &__text {
     max-width: 640px;
     width: 100%;
-    @include _425 {
+    @include _583 {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 290px;
       @include flexCenterColumn;
+    }
+    @include _425 {
+      margin: 0;
+      max-width: 100%;
     }
   }
   &__title {
@@ -244,15 +259,13 @@ body {
       line-height: 39px;
     }
     @include _680 {
-      font-size: 19px;
-      line-height: 29px;
-      margin-bottom: 36px;
-    }
-    @include _425 {
-      max-width: 312px;
-      width: 100%;
       font-size: 18px;
       line-height: 23px;
+      margin-bottom: 36px;
+    }
+    @include _583 {
+      max-width: 312px;
+      width: 100%;
       text-align: center;
       margin-bottom: 24px;
     }
@@ -267,10 +280,13 @@ body {
   &__img-mob {
     max-width: 208px;
     display: none;
-    @include _425 {
-      align-self: flex-end;
+    @include _583 {
+      align-self: center;
       display: block;
       margin-bottom: 24px;
+    }
+    @include _425 {
+      align-self: flex-end;
     }
   }
   &__description {
@@ -281,7 +297,7 @@ body {
     @include _680 {
       font-size: 14px;
     }
-    @include _425 {
+    @include _583 {
       text-align: center;
       color: $colorDark;
       text-align: center;
@@ -292,7 +308,11 @@ body {
     @include _820 {
       padding-top: 0;
     }
-    @include _425 {
+    @include _680 {
+      width: 100%;
+      max-width: 208px;
+    }
+    @include _583 {
       display: none;
     }
   }
@@ -308,7 +328,7 @@ body {
     background: none;
     margin-bottom: 62px;
   }
-  @include _425 {
+  @include _680 {
     @include sectionMob;
   }
   &__wrp {
@@ -316,7 +336,7 @@ body {
     @include _1472 {
       @include paddStart;
     }
-    @include _425 {
+    @include _680 {
       flex-direction: column;
     }
   }
@@ -325,31 +345,24 @@ body {
     @include _960 {
       margin-right: 12px;
     }
-    @include _425 {
+    @include _680 {
       margin-right: 0;
       margin-bottom: 32px;
     }
   }
   &__img {
-    @include _425 {
+    @include _680 {
       @include sizeImgMob;
     }
   }
   &__text {
     max-width: 687px;
     width: 100%;
-    @include _425 {
-      max-width: 312px;
-    }
   }
   &__title {
     @include text(28px, 600, #383737);
     margin-bottom: 38px;
     @include _680 {
-      font-size: 24px;
-      margin-bottom: 28px;
-    }
-    @include _425 {
       font-size: 18px;
       text-align: center;
       margin-bottom: 16px;
@@ -362,10 +375,6 @@ body {
       margin-bottom: 52px;
     }
     @include _680 {
-      font-size: 20px;
-      margin-bottom: 32px;
-    }
-    @include _425 {
       font-size: 14px;
       text-align: center;
       margin-bottom: 24px;
@@ -373,7 +382,7 @@ body {
   }
   &__button-wrp {
     @include flexStartCenter;
-    @include _425 {
+    @include _680 {
       justify-content: center;
     }
   }
@@ -388,10 +397,6 @@ body {
       margin-right: 16px;
     }
     @include _680 {
-      height: 54px;
-      margin-right: 16px;
-    }
-    @include _425 {
       @include buttonMob;
       margin-right: 20px;
     }
@@ -413,7 +418,7 @@ body {
       font-size: 14px;
       height: 54px;
     }
-    @include _425 {
+    @include _680 {
       @include buttonMob;
     }
     &:hover {
@@ -434,7 +439,7 @@ body {
   @include _1024 {
     margin-bottom: 62px;
   }
-  @include _425 {
+  @include _680 {
     margin-bottom: 40px;
   }
   &__wrp {
@@ -448,7 +453,7 @@ body {
     @include text(32px, 600, $colorBlack);
     text-align: center;
     margin-bottom: 28px;
-    @include _425 {
+    @include _680 {
       font-size: 20px;
       margin-bottom: 16px;
     }
@@ -460,7 +465,7 @@ body {
     @include _1024 {
       margin-bottom: 24px;
     }
-    @include _425 {
+    @include _680 {
       font-size: 14px;
       margin-bottom: 20px;
     }
@@ -472,41 +477,24 @@ body {
     margin-bottom: 48px;
     @include _1135 {
       height: 584px;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
-    @include _583 {
-      height: 1134px;
-      margin-bottom: 20px;
-    }
-    @include _425 {
+    @include _680 {
       height: auto;
-    }
-    @include _375 {
-      justify-content: space-evenly;
+      margin-bottom: 20px;
     }
   }
   &__item {
     @include sizeItem;
     @include flexCenterColumn;
-    @include _425 {
+    @include _680 {
       @include sizeItemMob;
       margin-bottom: 20px;
-      &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-      }
-    }
-    @include _323 {
-      &:nth-last-child(2) {
-        margin-bottom: 20px;
-      }
-      &:nth-last-child(1) {
-        margin-bottom: 0;
-      }
     }
   }
   &__item-img {
     @include sizeImgItem;
-    @include _425 {
+    @include _680 {
       @include sizeImgItemMob;
     }
   }
@@ -516,12 +504,9 @@ body {
     @include text(18px, 500, $colorBlack);
     text-transform: uppercase;
     text-align: center;
-    @include _425 {
-      font-size: 13px;
-      max-width: 122px;
-    }
-    @include _375 {
+    @include _680 {
       font-size: 10px;
+      max-width: 130px;
     }
   }
   &__description {
@@ -534,7 +519,7 @@ body {
     @include _1135 {
       padding: 20px 51px;
     }
-    @include _425 {
+    @include _680 {
       padding: 14px 18px;
     }
   }
@@ -542,7 +527,7 @@ body {
     @include text(24px, 400, $colorBlack);
     max-width: 994px;
     width: 100%;
-    @include _425 {
+    @include _680 {
       font-size: 14px;
       display: inline;
     }
@@ -563,7 +548,7 @@ body {
     background: none;
     margin-bottom: 62px;
   }
-  @include _425 {
+  @include _680 {
     @include sectionMob;
   }
   &__wrp {
@@ -573,39 +558,42 @@ body {
     @include _1472 {
       @include paddStart;
     }
-    @include _425 {
+    @include _680 {
       flex-direction: column;
     }
   }
   &__img-wrp {
-    @include _425 {
+    @include _680 {
       margin-bottom: 32px;
     }
   }
   &__img {
-    @include _425 {
+    @include _680 {
       @include sizeImgMob;
     }
   }
   &__text {
     max-width: 657px;
     width: 100%;
+    @include _680 {
+      max-width: 457px;
+    }
   }
   &__title {
     @include text(24px, 400, $colorBlack);
     margin-bottom: 38px;
-    @include _425 {
-      font-size: 20px;
+    @include _680 {
+      text-align: center;
+      @include text(14px, 600, $colorBlack);
     }
     @include _375 {
-      font-size: 14px;
       margin-bottom: 32px;
     }
   }
   &__button-wrp {
     display: flex;
     justify-content: flex-start;
-    @include _425 {
+    @include _680 {
       justify-content: center;
     }
   }
@@ -619,9 +607,6 @@ body {
       height: 54px;
     }
     @include _680 {
-      margin-right: 12px;
-    }
-    @include _425 {
       @include buttonMob;
       margin-right: 20px;
     }
@@ -644,7 +629,7 @@ body {
       font-size: 14px;
       height: 54px;
     }
-    @include _425 {
+    @include _680 {
       @include buttonMob;
     }
     &:hover {
@@ -678,9 +663,9 @@ body {
     @include text(32px, 600, $colorDark);
     text-align: center;
     margin-bottom: 59px;
-    @include _425 {
-      font-size: 24px;
-      margin-bottom: 49px;
+    @include _680 {
+      font-size: 22px;
+      margin-bottom: 40px;
     }
     @include _375 {
       font-size: 20px;
@@ -1008,7 +993,7 @@ body {
   @include _1135 {
     background: none;
   }
-  @include _425 {
+  @include _680 {
     margin-bottom: 100px;
   }
   &__wrp-bg {
@@ -1031,7 +1016,7 @@ body {
     @include _1024 {
       margin-bottom: 62px;
     }
-    @include _425 {
+    @include _680 {
       margin-bottom: 48px;
     }
   }
@@ -1039,7 +1024,7 @@ body {
     @include text(24px, 400, $colorBlack);
     text-align: center;
     margin-bottom: 54px;
-    @include _425 {
+    @include _680 {
       font-size: 14px;
       margin-bottom: 20px;
     }
@@ -1051,35 +1036,21 @@ body {
       height: 584px;
       justify-content: space-evenly;
     }
-    @include _583 {
-      height: 1134px;
-    }
-    @include _425 {
+    @include _680 {
       height: auto;
     }
   }
   &__workwith-item {
     @include sizeItem;
     @include flexCenterColumn;
-    @include _425 {
+    @include _680 {
       @include sizeItemMob;
       margin-bottom: 20px;
-      &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-      }
-    }
-    @include _323 {
-      &:nth-last-child(2) {
-        margin-bottom: 20px;
-      }
-      &:nth-last-child(1) {
-        margin-bottom: 0;
-      }
     }
   }
   &__workwith-item-img {
     @include sizeImgItem;
-    @include _425 {
+    @include _680 {
       @include sizeImgItemMob;
     }
   }
@@ -1089,12 +1060,9 @@ body {
     @include text(18px, 500, $colorBlack);
     text-transform: uppercase;
     text-align: center;
-    @include _425 {
-      font-size: 13px;
-      max-width: 122px;
-    }
-    @include _375 {
+    @include _680 {
       font-size: 10px;
+      max-width: 130px;
     }
   }
   &__advantage-wrp {
@@ -1104,6 +1072,13 @@ body {
     @include text(32px, 600, $colorDark);
     text-align: center;
     margin-bottom: 64px;
+    @include _680 {
+      font-size: 26px;
+      margin-bottom: 48px;
+    }
+    @include _425 {
+      font-size: 20px;
+    }
   }
   &__advantage-list {
     display: flex;
@@ -1153,7 +1128,7 @@ body {
           bottom: -75px;
           transform: rotate(45deg);
         }
-        @include _425 {
+        @include _680 {
           content: url(../icons/ArrowRightMob_icon.svg);
           right: 5px;
           bottom: -50px;
@@ -1163,7 +1138,7 @@ body {
       @include _960 {
         margin-bottom: 48px;
       }
-      @include _425 {
+      @include _680 {
         margin-bottom: 24px;
       }
     }
@@ -1188,7 +1163,7 @@ body {
         right: -15px;
         bottom: -75px;
         transform: rotate(45deg);
-        @include _425 {
+        @include _680 {
           content: url(../icons/ArrowRightMob_icon.svg);
           right: 5px;
           bottom: -50px;
@@ -1199,7 +1174,7 @@ body {
         display: flex;
         margin-bottom: 48px;
       }
-      @include _425 {
+      @include _680 {
         margin-bottom: 24px;
       }
     }
@@ -1217,7 +1192,7 @@ body {
           bottom: -75px;
           transform: rotate(315deg);
         }
-        @include _425 {
+        @include _680 {
           content: url(../icons/ArrowLeftMob_icon.svg);
           left: 5px;
           bottom: -50px;
@@ -1227,7 +1202,7 @@ body {
       @include _960 {
         margin-bottom: 48px;
       }
-      @include _425 {
+      @include _680 {
         margin-bottom: 24px;
       }
     }
@@ -1239,10 +1214,6 @@ body {
       height: 401px;
     }
     @include _680 {
-      width: 380px;
-      height: 380px;
-    }
-    @include _425 {
       width: 286px;
       height: 286px;
     }
@@ -1254,7 +1225,7 @@ body {
   }
   &__advantage-list-img {
     margin-bottom: 24px;
-    @include _425 {
+    @include _680 {
       max-width: 104px;
       width: 100%;
       margin-bottom: 16px;
@@ -1264,7 +1235,7 @@ body {
     @include text(20px, 500, $colorWhite);
     text-align: center;
     margin-bottom: 24px;
-    @include _425 {
+    @include _680 {
       font-size: 16px;
       margin-bottom: 16px;
     }
@@ -1278,7 +1249,7 @@ body {
     @include text(16px, 400, $colorWhite);
     line-height: 20px;
     text-align: center;
-    @include _425 {
+    @include _680 {
       max-width: 230px;
       font-size: 12px;
       line-height: 16px;
@@ -1296,7 +1267,7 @@ body {
     @include _1472 {
       @include paddStart;
     }
-    @include _425 {
+    @include _680 {
       height: 300px;
     }
   }
@@ -1309,7 +1280,7 @@ body {
     @include flexCenter;
     position: absolute;
     top: -125px;
-    @include _425 {
+    @include _680 {
       width: 140px;
       height: 140px;
       top: -66px;
@@ -1318,7 +1289,7 @@ body {
   &__brand-title {
     @include text(36px, 500, $colorWhite);
     text-transform: uppercase;
-    @include _425 {
+    @include _680 {
       font-size: 18px;
     }
   }
@@ -1333,8 +1304,8 @@ body {
     line-height: 42px;
     margin-bottom: 16px;
     text-align: center;
-    @include _425 {
-      font-size: 24px;
+    @include _680 {
+      font-size: 22px;
       line-height: 26px;
       margin-bottom: 12px;
     }
@@ -1347,7 +1318,7 @@ body {
     height: 2px;
     width: 100%;
     margin-bottom: 16px;
-    @include _425 {
+    @include _680 {
       height: 1px;
       margin-bottom: 12px;
     }
@@ -1356,7 +1327,7 @@ body {
     @include text(24px, 600, $colorWhite);
     line-height: 31px;
     text-align: center;
-    @include _425 {
+    @include _680 {
       font-size: 16px;
       line-height: 18px;
     }
@@ -1369,6 +1340,9 @@ body {
 .main-marketing {
   background-color: $colorDark;
   padding-bottom: 86px;
+  @include _680 {
+    padding-bottom: 40px;
+  }
   &__wrp {
     height: 1120px;
     @include flexCenterColumn;
@@ -1397,9 +1371,8 @@ body {
       flex-wrap: wrap;
       height: 395px;
     }
-    @include _425 {
+    @include _680 {
       height: auto;
-      margin-bottom: 20px;
       padding-top: 20px;
     }
   }
@@ -1415,20 +1388,9 @@ body {
       height: 183px;
       padding-top: 30px;
     }
-    @include _425 {
+    @include _680 {
       @include sizeItemMob;
       margin-bottom: 20px;
-      &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-      }
-    }
-    @include _323 {
-      &:nth-last-child(2) {
-        margin-bottom: 20px;
-      }
-      &:nth-last-child(1) {
-        margin-bottom: 0;
-      }
     }
   }
   &__blocks-img {
@@ -1436,7 +1398,7 @@ body {
     @include _960 {
       margin-bottom: 32px;
     }
-    @include _425 {
+    @include _680 {
       @include sizeImgItemMob;
     }
   }
@@ -1453,7 +1415,7 @@ body {
       max-width: 176px;
       font-size: 14px;
     }
-    @include _425 {
+    @include _680 {
       max-width: 138px;
       font-size: 10px;
     }
@@ -1464,7 +1426,7 @@ body {
     @include _960 {
       margin-bottom: 94px;
     }
-    @include _425 {
+    @include _680 {
       margin-bottom: 36px;
     }
   }
@@ -1478,24 +1440,25 @@ body {
     @include _960 {
       margin-bottom: 80px;
     }
-
     @include _820 {
       margin-bottom: 40px;
     }
-
-    @include _425 {
-      max-width: 312px;
+    @include _680 {
       font-size: 14px;
       line-height: 18px;
-      text-align: start;
+      text-align: center;
       margin-bottom: 24px;
+    }
+    @include _425 {
+      max-width: 320px;
+      text-align: left;
     }
   }
   &__body-list {
     max-width: 1206px;
     width: 100%;
     border-bottom: 2px solid $colorWhite;
-    @include _425 {
+    @include _680 {
       border-bottom: 1px solid $colorWhite;
       border-top: 1px solid $colorWhite;
     }
@@ -1507,7 +1470,7 @@ body {
     border-top: 2px solid $colorWhite;
     margin-bottom: 36px;
     padding-top: 36px;
-    @include _425 {
+    @include _680 {
       height: auto;
       flex-direction: column;
       justify-content: center;
@@ -1525,10 +1488,8 @@ body {
     @include _768 {
       font-size: 20px;
     }
-    @include _583 {
+    @include _680 {
       text-align: center;
-    }
-    @include _425 {
       font-size: 14px;
       margin-right: 0;
       margin-bottom: 12px;
@@ -1536,7 +1497,7 @@ body {
   }
   &__body-list-img {
     margin-right: 32px;
-    @include _583 {
+    @include _680 {
       display: none;
     }
   }
@@ -1551,7 +1512,7 @@ body {
     @include _768 {
       font-size: 20px;
     }
-    @include _425 {
+    @include _680 {
       font-size: 14px;
       line-height: 18px;
       text-align: center;
@@ -1569,7 +1530,7 @@ body {
     line-height: 36px;
     text-align: center;
     margin-bottom: 48px;
-    @include _425 {
+    @include _680 {
       font-size: 20px;
       line-height: 26px;
       margin-bottom: 36px;
@@ -1589,7 +1550,6 @@ body {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         linear-gradient(268.2deg, #1dcdfe 1.1%, #5d5fef 100%);
     }
-
     @include _820 {
       height: 53px;
       font-size: 14px;
@@ -1602,7 +1562,7 @@ body {
   &__wrp {
     padding-top: 36px;
     @include flexCenterColumn;
-    @include _425 {
+    @include _680 {
       padding-top: 0;
     }
   }
@@ -1615,12 +1575,9 @@ body {
     @include _1472 {
       @include paddStart;
     }
-    @include _425 {
-      height: 200px;
-      margin-bottom: 36px;
-    }
-    @include _375 {
+    @include _680 {
       height: 150px;
+      margin-bottom: 36px;
     }
   }
   &__title {
@@ -1629,11 +1586,11 @@ body {
     @include text(36px, 600, $colorWhite);
     line-height: 47px;
     text-align: center;
-    @include _425 {
-      font-size: 26px;
-      line-height: 32px;
+    @include _680 {
+      font-size: 22px;
+      line-height: 30px;
     }
-    @include _375 {
+    @include _425 {
       font-size: 20px;
       line-height: 26px;
     }
@@ -1642,7 +1599,6 @@ body {
     width: 100%;
     @include flexCenter;
     @include paddStart;
-    // transition: 1s ease-in;
   }
   &__form-wrp {
     max-width: 604px;
@@ -1655,7 +1611,7 @@ body {
     @include text(24px, 400, $colorDark);
     letter-spacing: 0.01em;
     margin-bottom: 52px;
-    @include _425 {
+    @include _680 {
       font-size: 16px;
       margin-bottom: 36px;
     }
@@ -1665,7 +1621,7 @@ body {
     @include flexCenter;
     flex-direction: column;
     margin-bottom: 36px;
-    @include _425 {
+    @include _680 {
       margin-bottom: 20px;
     }
   }
@@ -1674,7 +1630,7 @@ body {
     @include flexCenter;
     flex-direction: column;
     margin-bottom: 52px;
-    @include _425 {
+    @include _680 {
       margin-bottom: 36px;
     }
   }
@@ -1692,7 +1648,7 @@ body {
     &:last-child {
       margin-bottom: 0;
     }
-    @include _425 {
+    @include _680 {
       font-size: 14px;
       line-height: 18px;
       padding: 9px 12px;
@@ -1708,20 +1664,20 @@ body {
   &__form-list-text-wrp {
     @include flexCenter;
     margin-bottom: 52px;
-    @include _425 {
+    @include _680 {
       margin-bottom: 36px;
     }
   }
   &__form-list-text-img {
     margin-right: 16px;
-    @include _425 {
+    @include _680 {
       margin-right: 12px;
     }
   }
   &__form-list-text {
     @include text(14px, 400, $colorBlack);
     letter-spacing: 0.01em;
-    @include _425 {
+    @include _680 {
       text-align: center;
       font-size: 12px;
     }
@@ -1746,13 +1702,12 @@ body {
 
 .footer {
   background-color: $colorLightGrey;
-  margin-bottom: 32px;
   &__wrp {
-    padding: 60px 16px 0;
+    padding: 60px 16px 32px;
     @include flexCenter;
     flex-direction: column;
     @include _680 {
-      padding: 36px 16px 0;
+      padding: 36px 16px 32px;
     }
   }
   &__nav-wrp {
@@ -1777,7 +1732,7 @@ body {
         margin-bottom: 0;
       }
     }
-    @include _425 {
+    @include _680 {
       font-size: 12px;
       margin-bottom: 18px;
     }
@@ -1816,7 +1771,7 @@ body {
         margin-bottom: 0;
       }
     }
-    @include _425 {
+    @include _680 {
       font-size: 12px;
     }
     &:hover {
@@ -1836,7 +1791,7 @@ body {
   &__copyright {
     @include text(18px, 500, $colorDark);
     text-align: center;
-    @include _425 {
+    @include _680 {
       font-size: 12px;
     }
   }
@@ -1886,7 +1841,6 @@ body {
     z-index: 600;
     visibility: hidden;
     opacity: 0;
-    // transition: opacity 0.3s ease;
     &::before {
       content: "";
       position: absolute;
@@ -1906,13 +1860,13 @@ body {
     @include flexCenter;
     flex-direction: column;
     background-color: $colorWhite;
-    @include _425 {
+    @include _680 {
       height: 389px;
     }
   }
   &__img {
     margin-bottom: 52px;
-    @include _425 {
+    @include _680 {
       width: 86px;
       margin-bottom: 69px;
     }
@@ -1922,7 +1876,7 @@ body {
     width: 100%;
     @include text(18px, 500, $colorDark);
     text-align: center;
-    @include _425 {
+    @include _680 {
       max-width: 250px;
       font-size: 14px;
     }
@@ -1933,6 +1887,8 @@ body {
     // transition: opacity 0.3s ease;
   }
 }
+
+
 
 .nav-list-active,
 .lang-item-active {

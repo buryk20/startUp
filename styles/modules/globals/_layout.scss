@@ -190,13 +190,13 @@ body {
 
 .main-idea {
   margin-bottom: 24px;
-  background-image: url(../img/idea_bg.png);
+  background-image: url(../../img/idea_bg.png);
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
   background-size: contain;
   @include _583 {
-    background-image: url(../img/idea_bg_mob.png);
+    background-image: url(../../img/idea_bg_mob.png);
     background-size: 90%;
     margin-bottom: 32px;
   }
@@ -320,7 +320,7 @@ body {
 
 .main-request {
   height: 573px;
-  background-image: url(../img/Polygon_13.png);
+  background-image: url(../../img/Polygon_13.png);
   background-repeat: no-repeat;
   background-position: right 0% top 42%;
   @include _1024 {
@@ -381,6 +381,7 @@ body {
     }
   }
   &__button-wrp {
+    width: 100%;
     @include flexStartCenter;
     @include _680 {
       justify-content: center;
@@ -540,7 +541,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-image: url(../img/Polygon_14.png);
+  background-image: url(../../img/Polygon_14.png);
   background-repeat: no-repeat;
   background-position: left 0% bottom 42%;
   @include _1024 {
@@ -647,7 +648,7 @@ body {
 }
 
 .main-realization {
-  background-image: url(../img/Polygon_15.png);
+  background-image: url(../../img/Polygon_15.png);
   background-repeat: no-repeat;
   background-position: right 0% top 73%;
   margin-bottom: 76px;
@@ -693,7 +694,7 @@ body {
     }
   }
   &__development-triangle-mob {
-    background-image: url(../img/lightBlue_triangle.svg);
+    background-image: url(../../img/lightBlue_triangle.svg);
     background-repeat: no-repeat;
     @include sizeTriangleMob;
     align-self: center;
@@ -723,7 +724,7 @@ body {
     }
   }
   &__development-triangle {
-    background-image: url(../img/lightBlue_triangle.svg);
+    background-image: url(../../img/lightBlue_triangle.svg);
     background-repeat: no-repeat;
     @include sizeTriangle;
     @include _680 {
@@ -797,7 +798,7 @@ body {
     }
   }
   &__content-triangle-mob {
-    background-image: url(../img/green_triangle.svg);
+    background-image: url(../../img/green_triangle.svg);
     background-repeat: no-repeat;
     @include sizeTriangleMob;
     align-self: center;
@@ -809,7 +810,7 @@ body {
       bottom: 8px;
     }
     &::after {
-      content: url(../icons/Content_icon_mob.svg);
+      content: url(../../icons/Content_icon_mob.svg);
       position: absolute;
       left: 22px;
       top: 22px;
@@ -833,7 +834,7 @@ body {
     }
   }
   &__content-triangle {
-    background-image: url(../img/green_triangle.svg);
+    background-image: url(../../img/green_triangle.svg);
     background-repeat: no-repeat;
     grid-column-start: 2;
     @include sizeTriangle;
@@ -858,7 +859,7 @@ body {
       }
     }
     &::after {
-      content: url(../icons/Content_icon.svg);
+      content: url(../../icons/Content_icon.svg);
       position: absolute;
       left: 50px;
       top: 43px;
@@ -919,12 +920,12 @@ body {
     }
   }
   &__promotion-triangle-mob {
-    background-image: url(../img/blue_triangle.svg);
+    background-image: url(../../img/blue_triangle.svg);
     background-repeat: no-repeat;
     @include sizeTriangleMob;
     align-self: center;
     &::after {
-      content: url(../icons/TrandPromotion_icon_mob.svg);
+      content: url(../../icons/TrandPromotion_icon_mob.svg);
       position: absolute;
       top: 20px;
       left: 10px;
@@ -947,7 +948,7 @@ body {
     }
   }
   &__promotion-triangle {
-    background-image: url(../img/blue_triangle.svg);
+    background-image: url(../../img/blue_triangle.svg);
     background-repeat: no-repeat;
     grid-row-start: 5;
     @include sizeTriangle;
@@ -960,7 +961,7 @@ body {
       display: none;
     }
     &::after {
-      content: url(../icons/TrandPromotion_icon.svg);
+      content: url(../../icons/TrandPromotion_icon.svg);
       position: absolute;
       top: 36px;
       left: 17px;
@@ -986,7 +987,7 @@ body {
 }
 
 .main-advantage {
-  background-image: url(../img/Polygon_16.png);
+  background-image: url(../../img/Polygon_16.png);
   background-repeat: no-repeat;
   background-position: left 0% top -79%;
   margin-bottom: 224px;
@@ -997,7 +998,7 @@ body {
     margin-bottom: 100px;
   }
   &__wrp-bg {
-    background-image: url(../img/Polygon_17.png);
+    background-image: url(../../img/Polygon_17.png);
     background-repeat: no-repeat;
     background-position: right 0% top 155%;
     @include _1135 {
@@ -1121,7 +1122,7 @@ body {
       margin-bottom: 148px;
       position: relative;
       &::after {
-        content: url(../icons/ArrowRight_icon.svg);
+        content: url(../../icons/ArrowRight_icon.svg);
         @include circlePos;
         @include _960 {
           right: -15px;
@@ -1129,7 +1130,7 @@ body {
           transform: rotate(45deg);
         }
         @include _680 {
-          content: url(../icons/ArrowRightMob_icon.svg);
+          content: url(../../icons/ArrowRightMob_icon.svg);
           right: 5px;
           bottom: -50px;
           transform: rotate(0);
@@ -1146,7 +1147,7 @@ body {
       background: linear-gradient(218.42deg, #ffb07d 16.12%, #ff7087 86.01%);
       position: relative;
       &::after {
-        content: url(../icons/ArrowRight_icon.svg);
+        content: url(../../icons/ArrowRight_icon.svg);
         @include circlePos;
       }
       @include _960 {
@@ -1158,13 +1159,13 @@ body {
       position: relative;
       display: none;
       &::after {
-        content: url(../icons/ArrowRight_icon.svg);
+        content: url(../../icons/ArrowRight_icon.svg);
         position: absolute;
         right: -15px;
         bottom: -75px;
         transform: rotate(45deg);
         @include _680 {
-          content: url(../icons/ArrowRightMob_icon.svg);
+          content: url(../../icons/ArrowRightMob_icon.svg);
           right: 5px;
           bottom: -50px;
           transform: rotate(0);
@@ -1183,7 +1184,7 @@ body {
       margin-bottom: 148px;
       position: relative;
       &::before {
-        content: url(../icons/ArrowLeft_icon.svg);
+        content: url(../../icons/ArrowLeft_icon.svg);
         position: absolute;
         left: -115px;
         bottom: 90px;
@@ -1193,7 +1194,7 @@ body {
           transform: rotate(315deg);
         }
         @include _680 {
-          content: url(../icons/ArrowLeftMob_icon.svg);
+          content: url(../../icons/ArrowLeftMob_icon.svg);
           left: 5px;
           bottom: -50px;
           transform: rotate(0);
@@ -1888,7 +1889,48 @@ body {
   }
 }
 
-
+.tilda {
+  margin-bottom: 92px;
+  @include _680 {
+    margin-bottom: 48px;
+  }
+  &__wrp {
+    @include sizeList;
+    @include marCenter;
+    display: flex;
+    justify-content: space-between;
+    @include _1472 {
+      @include paddStart;
+    }
+    @include _680 {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  &__wrp-text {
+    max-width: 687px;
+    @include flexCenter;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 24px;
+    @include _680 {
+      font-size: 14px;
+    }
+  }
+  &__wrp-img {
+    @include _680 {
+      max-width: 208px;
+      margin-bottom: 32px;
+    }
+  }
+  &__text {
+    @include _680 {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+}
 
 .nav-list-active,
 .lang-item-active {

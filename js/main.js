@@ -83,8 +83,7 @@ window.onload = function () {
             } else {
                 input.classList.remove('errorInput')
                 console.log(input);
-                confirmation.classList.add('popup-accept__container-active')
-                // modalEnter();
+
             }
         });
 
@@ -114,5 +113,10 @@ window.onload = function () {
         } else {
             inputEmail.classList.remove('errorInput')
         }
+
+        confirmation.classList.add('popup-accept__container-active');
+        setTimeout(() => {
+            confirmation.classList.remove('popup-accept__container-active');
+        }, 5000);
     }
 }

@@ -16,6 +16,10 @@
     background-color: $bgColor;
 }
 
+@mixin lineRotate($turn) {
+    transform: rotate($turn);
+}
+
 @mixin buttonMob {
     max-width: 146px;
     height: 41px;

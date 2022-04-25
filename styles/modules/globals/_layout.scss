@@ -1605,8 +1605,10 @@ body {
     max-width: 604px;
     width: 100%;
     padding: 36px 16px 0;
+    position: relative;
     background-color: $colorWhite;
     @include flexCenterColumn;
+    border-radius: 8px;
   }
   &__form-title {
     @include text(24px, 400, $colorDark);
@@ -1929,6 +1931,84 @@ body {
       margin-bottom: 24px;
       text-align: center;
     }
+  }
+}
+
+.contacts {
+  &__wrp-cont {
+    max-width: 540px;
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    position: relative;
+    @include _680 {
+      height: 340px;
+    }
+  }
+  &__wrp-cont-width {
+    max-width: 368px;
+  }
+  &__phone-img {
+    width: 50px;
+    margin-right: 24px;
+  }
+  &__link-wrp {
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $colorHoverButton;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    @include _680 {
+      font-size: 18px;
+    }
+  }
+  &__linc-cont-wrp {
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-size: 24px;
+    @include _680 {
+      font-size: 16px;
+    }
+  }
+  &__btn-close {
+    width: 25px;
+    height: 25px;
+    top: 16px;
+    right: 16px;
+    position: absolute;
+    cursor: pointer;
+    &:hover .contacts__btn-close-line {
+      background-color: $colorHoverButton;
+    }
+  }
+  &__btn-close-line {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $colorDark;
+    &:hover {
+      background-color: $colorHoverButton;
+    }
+    // border-radius: 50%;
+  }
+  &__btn-close-line-r {
+    @include lineRotate(45deg);
+  }
+  &__btn-close-line-l {
+    @include lineRotate(-45deg);
   }
 }
 

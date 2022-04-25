@@ -81,7 +81,9 @@
               <button class="main-request__button-request btn-pop-up">
                 Оставить заявку
               </button>
-              <button class="main-request__button-contacts">КОНТАКТЫ</button>
+              <button class="main-request__button-contacts js-btn-contact-item">
+                КОНТАКТЫ
+              </button>
             </div>
           </div>
           <div class="tilda__wrp-img">
@@ -110,7 +112,9 @@
               <button class="main-request__button-request btn-pop-up">
                 Оставить заявку
               </button>
-              <button class="main-request__button-contacts">КОНТАКТЫ</button>
+              <button class="main-request__button-contacts js-btn-contact-item">
+                КОНТАКТЫ
+              </button>
             </div>
           </div>
         </div>
@@ -491,13 +495,16 @@
       </section>
       <section class="main-form">
         <div class="main-form__wrp">
-          <div class="main-form__title-wrp">
-            <p class="main-form__title">
-              Не ждите – сделайте первый шаг к созданию сайта вашей мечты!
-            </p>
-          </div>
-          <div class="main-form__container">
+          <div class="main-form__container js-activ">
             <div class="main-form__form-wrp">
+              <div class="contacts__btn-close js-btn-close">
+                <span
+                  class="contacts__btn-close-line contacts__btn-close-line-r"
+                ></span>
+                <span
+                  class="contacts__btn-close-line contacts__btn-close-line-l"
+                ></span>
+              </div>
               <p class="main-form__form-title">Форма заявки</p>
               <form class="main-form__form-list js-form" name="form">
                 <div class="main-form__form-list-wrp">
@@ -544,6 +551,47 @@
           </div>
         </div>
       </section>
+      <div class="contacts">
+        <div class="main-form__container popup-form__container js-btn-contact">
+          <div class="contacts__wrp-cont">
+            <div class="contacts__btn-close js-btn-close">
+              <span
+                class="contacts__btn-close-line contacts__btn-close-line-r"
+              ></span>
+              <span
+                class="contacts__btn-close-line contacts__btn-close-line-l"
+              ></span>
+            </div>
+            <div class="contacts__wrp-cont-width">
+              <h3 class="contacts__title">Контакты</h3>
+
+              <p class="contacts__linc-cont-wrp">
+                <a class="contacts__link-wrp" href="tel:+380681804842">
+                  <img
+                    class="contacts__phone-img"
+                    src="/icons/phone-icon.svg"
+                    alt="phone number"
+                  />
+                  <span class="contacts__text">+38(068)180 48 42</span>
+                </a>
+              </p>
+              <p>
+                <a
+                  class="contacts__link-wrp"
+                  href="mailto:info@star-up-group.com.ua"
+                >
+                  <img
+                    class="contacts__phone-img"
+                    src="/icons/email-icon.svg"
+                    alt="Emeil"
+                  />
+                  <span class="contacts__text">info@star-up-group.com.ua</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__wrp">

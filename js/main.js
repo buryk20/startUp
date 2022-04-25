@@ -1,13 +1,15 @@
 window.onload = function () {
-    // Логика мадалки
+    // Логика мадалки input
     const nav = document.getElementById('nav'),
         lock = nav.querySelector('.header__nav-wrp'),
         burger = nav.querySelector('.header__burger');
 
     const mainCont = document.getElementById('lock'),
-        modalWrp = mainCont.querySelector('.main-form__container'),
+        modalWrp = mainCont.querySelectorAll('.main-form__container'),
         clickBtnMod = mainCont.querySelector('.btn-form'),
+        formWrp = mainCont.querySelector('.js-activ'),
         clickClose = mainCont.querySelector('.main-form__form-wrp');
+    console.log(modalWrp);
 
     const body = document.querySelector('body');
 
@@ -24,24 +26,24 @@ window.onload = function () {
 
     buttonIndex.forEach((el) => {
         el.addEventListener("click", () => {
-            modalWrp.classList.add('popup-form__container');
-            modalWrp.classList.add('popup-form__active');
+            formWrp.classList.add('popup-form__container');
+            formWrp.classList.add('popup-form__active');
 
         })
     });
 
-    modalWrp.addEventListener("click", () => {
-        modalWrp.classList.remove('popup-form__active');
+    modalWrp.forEach((el) => {
+        el.addEventListener("click", (event) => {
+            event.target.classList.remove('popup-form__active');
 
-        setTimeout(() => {
-            modalWrp.classList.remove('popup-form__container');
-            modalWrp.classList.add('main-form__container');
-        }, 5000);
-    });
-
-    clickBtnMod.addEventListener("click", () => {
-
+            setTimeout(() => {
+                formWrp.classList.remove('popup-form__container');
+                formWrp.classList.add('main-form__container');
+            }, 5000);
+        });
     })
+
+
 
     clickClose.addEventListener("click", function (event) {
         event.stopPropagation();
@@ -119,4 +121,23 @@ window.onload = function () {
             confirmation.classList.remove('popup-accept__container-active');
         }, 5000);
     }
+
+    // логика работы модалки контакты
+    const btnContacts = mainCont.querySelectorAll('.js-btn-contact-item'),
+        contactMod = mainCont.querySelector('.js-btn-contact'),
+        contactClose = mainCont.querySelectorAll('.js-btn-close');
+
+    btnContacts.forEach((el) => {
+        el.addEventListener("click", () => {
+            contactMod.classList.add('popup-form__active');
+
+        })
+    });
+    contactClose.forEach((el) => {
+        el.addEventListener("click", function (event) {
+            contactMod.classList.remove('popup-form__active');
+            formWrp.classList.remove('popup-form__container');
+            formWrp.classList.add('main-form__container');
+        })
+    })
 }

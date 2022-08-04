@@ -1,14 +1,13 @@
 window.onload = function () {
     // Логика мадалки input
+    const mainCont = document.getElementById('lock');
     const nav = document.getElementById('nav'),
         lock = nav.querySelector('.header__nav-wrp'),
         burger = nav.querySelector('.header__burger');
-
-    const mainCont = document.getElementById('lock'),
-        modalWrp = mainCont.querySelectorAll('.main-form__container'),
-        clickBtnMod = mainCont.querySelector('.btn-form'),
-        formWrp = mainCont.querySelector('.js-activ'),
-        clickClose = mainCont.querySelector('.main-form__form-wrp');
+    const modalWrp = mainCont.querySelectorAll('.main-form__container');
+    const clickBtnMod = mainCont.querySelector('.btn-form');
+    const formWrp = mainCont.querySelector('.js-activ');
+    const clickClose = mainCont.querySelector('.main-form__form-wrp');
     console.log(modalWrp);
 
     const body = document.querySelector('body');
@@ -140,4 +139,39 @@ window.onload = function () {
             formWrp.classList.add('main-form__container');
         })
     })
+
+    arrArrow = document.querySelectorAll(".chat-bot-create__arrow");
+    arrVisible = document.querySelectorAll(".chat-bot__js");
+
+    arrArrow.forEach((el, index) => {
+        el.addEventListener("click", function (e) {
+        let indexVisible = 0;
+
+        indexVisible = index;
+        arrArrow[index].classList.toggle("js-active");
+        arrVisible[indexVisible].classList.toggle("js-active");
+        });
+    });
+
+  //select type category
+  arrButton = document.querySelectorAll(".chat-bot-types__slider-item");
+  arrType = document.querySelectorAll(".chat-bot-types__js");
+  arrButton.forEach((el, index) => {
+    el.addEventListener("click", function (e) {
+      delClass(arrButton);
+      delClass(arrType);
+      let indexType = 0;
+
+      indexType = index;
+      arrButton[index].classList.toggle("js-active");
+      arrType[indexType].classList.toggle("js-active");
+      e.stopPropagation();
+    });
+  });
+
+  function delClass(item) {
+    item.forEach((el) => {
+      el.classList.remove("js-active");
+    });
+  }
 }

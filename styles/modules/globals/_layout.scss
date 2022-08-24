@@ -1595,6 +1595,16 @@ body {
       margin-bottom: 36px;
     }
   }
+  &__phone-wrp {
+    max-width: 378px;
+    width: 100%;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  & .iti__country-list {
+    max-width: 378px;
+  }
   &__title {
     max-width: 790px;
     width: 100%;

@@ -1,630 +1,564 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Star Up Group</title>
-    <link rel="icon" type="image/x-icon" href="icons/Main_logo.svg" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/main.js"></script>
-  </head>
-  <body id="lock">
-    <header class="header">
-      <div id="nav" class="header__wrp">
-        <a href="./" class="header__logo-link">
-          <img
-            src="icons/Main_logo.svg"
-            alt="Star Up Group"
-            class="header__logo-img"
-          />
-          <img
-            src="icons/Main_logo_small.svg"
-            alt="Star Up Group"
-            class="header__logo-img-mob"
-          />
-        </a>
-        <div id="burger_active" class="header__burger">
-          <span class="header__burger-midl"></span>
-        </div>
-        <div id="nav_active" class="header__nav-wrp">
-          <nav class="header__nav">
-            <!-- nav-list-active клас активного меню -->
-            <div class="header__nav-item">Главная</div>
-            <div class="header__nav-item">Контакты</div>
-            <div class="header__nav-item">Маркетинг</div>
-            <div class="header__nav-item">Разработка</div>
-            <div class="header__nav-item">Продвижение</div>
-            <div class="header__nav-item">Наполнение контентом</div>
-            <div class="header__nav-item">О нас</div>
-          </nav>
-          <div class="header__nav-line-mob"></div>
-          <div class="header__lang-wrp">
-            <div class="header__lang-item lang-item-active">UA</div>
-            <div class="header__lang-item">DE</div>
-            <div class="header__lang-item">ENG</div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Up Group</title>
+  <link rel="icon" type="image/x-icon" href="icons/Main_logo.svg" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/intlTelInput.css">
+  <script src="js/main.js"></script>
+  <style>
+    #error-msg {
+      color: #E74C3C;
+    }
+
+    #error-msg {
+      color: #5D5FEF;
+    }
+  </style>
+</head>
+
+<body id="lock">
+  <header class="header">
+    <div id="nav" class="header__wrp">
+      <a href="./" class="header__logo-link">
+        <img src="icons/Main_logo.svg" alt="Star Up Group" class="header__logo-img" />
+        <img src="icons/Main_logo_small.svg" alt="Star Up Group" class="header__logo-img-mob" />
+      </a>
+      <div id="burger_active" class="header__burger">
+        <span class="header__burger-midl"></span>
+      </div>
+      <div id="nav_active" class="header__nav-wrp">
+        <nav class="header__nav">
+          <!-- nav-list-active клас активного меню -->
+          <div class="header__nav-item">Главная</div>
+          <div class="header__nav-item">Контакты</div>
+          <div class="header__nav-item">Маркетинг</div>
+          <div class="header__nav-item">Разработка</div>
+          <div class="header__nav-item">Продвижение</div>
+          <div class="header__nav-item">Наполнение контентом</div>
+          <div class="header__nav-item">О нас</div>
+        </nav>
+        <div class="header__nav-line-mob"></div>
+        <div class="header__lang-wrp">
+          <div class="header__lang-item lang-item-active">UA</div>
+          <div class="header__lang-item">DE</div>
+          <div class="header__lang-item">ENG</div>
         </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="main-idea">
-        <div class="main-idea__wrp">
-          <div class="main-idea__text">
-            <h1 class="main-idea__title">
-              Уникальный сайт — от идеи до реализации под ключ!
-            </h1>
-            <img
-              src="img/idea_photo.png"
-              alt="idea"
-              class="main-idea__img-mob"
-            />
-            <p class="main-idea__description">
-              От уникальной концепции до итогового результата. Гарантированно
-              создадим сайт вашей мечты.
-            </p>
-          </div>
-          <div class="main-idea__img-wrp">
-            <img src="img/idea_photo.png" alt="idea" class="main-idea__img" />
-          </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main-idea">
+      <div class="main-idea__wrp">
+        <div class="main-idea__text">
+          <h1 class="main-idea__title">
+            Уникальный сайт — от идеи до реализации под ключ!
+          </h1>
+          <img src="img/idea_photo.png" alt="idea" class="main-idea__img-mob" />
+          <p class="main-idea__description">
+            От уникальной концепции до итогового результата. Гарантированно
+            создадим сайт вашей мечты.
+          </p>
         </div>
-      </section>
-      <!-- //кусок кода который нужно вставить на боевой, начало -->
-      <section class="tilda">
-        <div class="tilda__wrp">
-          <div class="tilda__wrp-text">
-            <p class="tilda__text">
-              Делаем перенос сайтов, визиток, блогов, курсов, лэндингов,
-              интернет магазинов с Тильды на самые популярные CRM системы:
-              WordPress, Yii2, Opencart.
-            </p>
-            <div class="main-request__button-wrp">
-              <button class="main-request__button-request btn-pop-up">
-                Оставить заявку
-              </button>
-              <button class="main-request__button-contacts js-btn-contact-item">
-                КОНТАКТЫ
-              </button>
-            </div>
-          </div>
-          <div class="tilda__wrp-img">
-            <img src="/img/tilda-img.png" alt="Перенос с тильды сайтов" />
-          </div>
+        <div class="main-idea__img-wrp">
+          <img src="img/idea_photo.png" alt="idea" class="main-idea__img" />
         </div>
-      </section>
-      <!-- //конец -->
-      <section class="main-request">
-        <div class="main-request__wrp">
-          <div class="main-request__img-wrp">
-            <img
-              src="img/thinking_man.png"
-              alt="thinking man"
-              class="main-request__img"
-            />
-          </div>
-          <div class="main-request__text">
-            <h3 class="main-request__title">
-              Вы все еще думаете, что сайт — это сложно и дорого?
-            </h3>
-            <p class="main-request__description">
-              В Star Up Group мы докажем обратное!
-            </p>
-            <div class="main-request__button-wrp">
-              <button class="main-request__button-request btn-pop-up">
-                Оставить заявку
-              </button>
-              <button class="main-request__button-contacts js-btn-contact-item">
-                КОНТАКТЫ
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-offer">
-        <div class="main-offer__wrp">
-          <h2 class="main-offer__title">
-            Международная web–студия Star Up Group
-          </h2>
-          <p class="main-offer__text">Что мы предлагаем?</p>
-          <div class="main-offer__list">
-            <div class="main-offer__item">
-              <img
-                src="icons/Key_icon.svg"
-                alt="key"
-                class="main-offer__item-img"
-              />
-              <p class="main-offer__item-text">Разработка сайта под ключ</p>
-            </div>
-            <div class="main-offer__item">
-              <img
-                src="icons/Server_icon.svg"
-                alt="server"
-                class="main-offer__item-img"
-              />
-              <p class="main-offer__item-text">Настройка сервера</p>
-            </div>
-            <div class="main-offer__item">
-              <img
-                src="icons/Trand_icon.svg"
-                alt="trand"
-                class="main-offer__item-img"
-              />
-              <p class="main-offer__item-text">SEO продвижение</p>
-            </div>
-            <div class="main-offer__item">
-              <img
-                src="icons/Ads_icon.svg"
-                alt="ads"
-                class="main-offer__item-img"
-              />
-              <p class="main-offer__item-text">Запуск рекламных кампаний</p>
-            </div>
-          </div>
-          <div class="main-offer__description">
-            <p class="main-offer__description-text">
-              Мы уделяем максимум внимания каждому проекту, чтобы не только
-              разработать для вас функциональный сайт под ключ, но привести на
-              него первых клиентов.
-            </p>
-            <p class="main-offer__description-text">
-              Все, что от вас потребуется – это оставить заявку и утвердить
-              дизайн, об остальном позаботятся специалисты Star Up Group.
-              Сделаем уникальный сайт любой сложности согласно вашим пожеланиям
-              и бюджету.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="main-purpose">
-        <div class="main-purpose__wrp">
-          <div class="main-purpose__img-wrp">
-            <img src="img/woman.png" alt="woman" class="main-purpose__img" />
-          </div>
-          <div class="main-purpose__text">
-            <h3 class="main-purpose__title">
-              Наша цель — разработать сайт, который будет полностью
-              соответствовать вашим ожиданиям.
-            </h3>
-            <div class="main-purpose__button-wrp">
-              <button class="main-purpose__button-order btn-pop-up">
-                заказать сайт
-              </button>
-              <button class="main-purpose__button-about">о нас</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-realization">
-        <div class="main-realization__wrp">
-          <h2 class="main-realization__title">
-            Реализуем ваши самые смелые желания
-          </h2>
-          <div class="main-realization__wrp-grid">
-            <p class="main-realization__development-numer">01</p>
-            <div class="main-realization__development-triangle"></div>
-            <p class="main-realization__development-text">Разработка</p>
-            <div class="main-realization__development-mob">
-              <div class="main-realization__development-triangle-mob"></div>
-              <p class="main-realization__development-text-mob">Разработка</p>
-            </div>
-            <div class="main-realization__development-arrow"></div>
-            <p class="main-realization__content-numer">02</p>
-            <div class="main-realization__content-triangle"></div>
-            <p class="main-realization__content-text">Наполнение контентом</p>
-            <div class="main-realization__content-mob">
-              <div class="main-realization__content-triangle-mob"></div>
-              <p class="main-realization__content-text-mob">
-                Наполнение контентом
-              </p>
-            </div>
-            <div class="main-realization__content-arrow"></div>
-            <p class="main-realization__promotion-numer">03</p>
-            <div class="main-realization__promotion-triangle"></div>
-            <p class="main-realization__promotion-text">Продвижение</p>
-            <div class="main-realization__promotion-mob">
-              <div class="main-realization__promotion-triangle-mob"></div>
-              <p class="main-realization__promotion-text-mob">Продвижение</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-advantage">
-        <div class="main-advantage__wrp-bg">
-          <div class="main-advantage__wrp">
-            <div class="main-advantage__workwith-wrp">
-              <p class="main-advantage__workwith-title">С кем мы работаем:</p>
-              <div class="main-advantage__workwith-list">
-                <div class="main-advantage__workwith-item">
-                  <img
-                    src="icons/Diagram_icon.svg"
-                    alt="Diagram"
-                    class="main-advantage__workwith-item-img"
-                  />
-                  <p class="main-advantage__workwith-item-text">
-                    Инфо-бизнесмены
-                  </p>
-                </div>
-                <div class="main-advantage__workwith-item">
-                  <img
-                    src="icons/Businessman_icon.svg"
-                    alt="Businessman"
-                    class="main-advantage__workwith-item-img"
-                  />
-                  <p class="main-advantage__workwith-item-text">
-                    Собственники бизнесов
-                  </p>
-                </div>
-                <div class="main-advantage__workwith-item">
-                  <img
-                    src="icons/Money_icon.svg"
-                    alt="Money"
-                    class="main-advantage__workwith-item-img"
-                  />
-                  <p class="main-advantage__workwith-item-text">
-                    Предприниматели
-                  </p>
-                </div>
-                <div class="main-advantage__workwith-item">
-                  <img
-                    src="icons/People_icon.svg"
-                    alt="People"
-                    class="main-advantage__workwith-item-img"
-                  />
-                  <p class="main-advantage__workwith-item-text">
-                    Публичные личности
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="main-advantage__advantage-wrp">
-              <h2 class="main-advantage__advantage-title">
-                Преимущества работы с нами
-              </h2>
-              <div class="main-advantage__advantage-list">
-                <div class="main-advantage__advantage-list-left">
-                  <div
-                    class="main-advantage__advantage-list-item-wrp first-circle"
-                  >
-                    <div class="main-advantage__advantage-list-item">
-                      <img
-                        src="icons/Cogwheel_icon.png"
-                        alt="Cogwheel"
-                        class="main-advantage__advantage-list-img"
-                      />
-                      <p class="main-advantage__advantage-list-title">
-                        Внимание к деталям
-                      </p>
-                      <p class="main-advantage__advantage-list-text">
-                        Мы учтем все ваши идеи и воплотим их в реальность,
-                        осуществляя постоянный контроль каждого этапа работ.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="main-advantage__advantage-list-item-wrp second-circle"
-                  >
-                    <div class="main-advantage__advantage-list-item">
-                      <img
-                        src="icons/Geometric_icon.png"
-                        alt="Geometric figures"
-                        class="main-advantage__advantage-list-img"
-                      />
-                      <p class="main-advantage__advantage-list-title">
-                        Комплексность работ
-                      </p>
-                      <p class="main-advantage__advantage-list-text">
-                        Мы не только напишем простой чистый код и разработаем
-                        для вас сайт с оптимальными показателями для поисковых
-                        систем, но также поможем с продвижением, наполнением
-                        сайта.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="main-advantage__advantage-list-right">
-                  <div
-                    class="main-advantage__advantage-list-item-wrp third-circle"
-                  >
-                    <div class="main-advantage__advantage-list-item">
-                      <img
-                        src="icons/Clock_icon.png"
-                        alt="Clock"
-                        class="main-advantage__advantage-list-img"
-                      />
-                      <p class="main-advantage__advantage-list-title">
-                        Экономия вашего времени и нервов
-                      </p>
-                      <p class="main-advantage__advantage-list-text">
-                        Мы возьмем на себя все задачи, создавая логичный и
-                        эстетичный сайт под запросы вашей аудитории.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="main-advantage__advantage-list-item-wrp second-circle-mob"
-                  >
-                    <div class="main-advantage__advantage-list-item">
-                      <img
-                        src="icons/Geometric_icon.png"
-                        alt="Geometric figures"
-                        class="main-advantage__advantage-list-img"
-                      />
-                      <p class="main-advantage__advantage-list-title">
-                        Комплексность работ
-                      </p>
-                      <p class="main-advantage__advantage-list-text">
-                        Мы не только напишем простой чистый код и разработаем
-                        для вас сайт с оптимальными показателями для поисковых
-                        систем, но также поможем с продвижением, наполнением
-                        сайта.
-                      </p>
-                    </div>
-                  </div>
-                  <div
-                    class="main-advantage__advantage-list-item-wrp fourth-circle"
-                  >
-                    <div class="main-advantage__advantage-list-item">
-                      <img
-                        src="icons/Dollar_icon.png"
-                        alt="Dollar"
-                        class="main-advantage__advantage-list-img"
-                      />
-                      <p class="main-advantage__advantage-list-title">
-                        Экономия бюджета
-                      </p>
-                      <p class="main-advantage__advantage-list-text">
-                        Мы укомплектуем ваш сайт только полезными фичами, без
-                        воды и ненужного функционала.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-branding">
-        <div class="main-branding__wrp">
-          <div class="main-branding__brand-circle">
-            <p class="main-branding__brand-title">.Branding</p>
-          </div>
-          <div class="main-branding__brand-text-wrp">
-            <h2 class="main-branding__brand-text-title">
-              Комплексный интернет-маркетинг
-            </h2>
-            <div class="main-branding__brand-text-line"></div>
-            <p class="main-branding__brand-text-main">
-              Star Up Group – создадим легендарный БРЕНД, о котором будут
-              говорить и потребители, и конкуренты.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="main-marketing">
-        <div class="main-marketing__wrp">
-          <div class="main-marketing__body-wrp">
-            <div class="main-marketing__blocks-list">
-              <div class="main-marketing__blocks-item">
-                <img
-                  src="icons/Radial_icon.svg"
-                  alt="Radial"
-                  class="main-marketing__blocks-img"
-                />
-                <p class="main-marketing__blocks-text">
-                  Анализ факторов макро- и микросреды
-                </p>
-              </div>
-              <div class="main-marketing__blocks-item">
-                <img
-                  src="icons/Trand_icon.svg"
-                  alt="Trand"
-                  class="main-marketing__blocks-img"
-                />
-                <p class="main-marketing__blocks-text">Тренды поколений</p>
-              </div>
-              <div class="main-marketing__blocks-item">
-                <img
-                  src="icons/Architecture_icon.svg"
-                  alt="Architecture"
-                  class="main-marketing__blocks-img"
-                />
-                <p class="main-marketing__blocks-text">Архитектура бренда</p>
-              </div>
-              <div class="main-marketing__blocks-item">
-                <img
-                  src="icons/Strategy_icon.svg"
-                  alt="Strategy"
-                  class="main-marketing__blocks-img"
-                />
-                <p class="main-marketing__blocks-text">
-                  Позиционирование и стратегия
-                </p>
-              </div>
-            </div>
-            <p class="main-marketing__body-title">
-              Интернет-маркетинг – это возможность выстроить систему, которая
-              24/7 будет генерировать поток клиентов для вашей компании.
-            </p>
-            <div class="main-marketing__body-list">
-              <div class="main-marketing__body-list-item">
-                <h4 class="main-marketing__body-list-title">Аудит</h4>
-                <img
-                  src="icons/ArrowMarketing.svg"
-                  alt="Arrow"
-                  class="main-marketing__body-list-img"
-                />
-                <p class="main-marketing__body-list-text">
-                  Проведем аудит и определим точки роста и масштабирования для
-                  вашего бизнеса.
-                </p>
-              </div>
-              <div class="main-marketing__body-list-item">
-                <h4 class="main-marketing__body-list-title">Архитектура</h4>
-                <img
-                  src="icons/ArrowMarketing.svg"
-                  alt="Arrow"
-                  class="main-marketing__body-list-img"
-                />
-                <p class="main-marketing__body-list-text">
-                  Выстроим четкую и логичную архитектуру бренда.
-                </p>
-              </div>
-              <div class="main-marketing__body-list-item">
-                <h4 class="main-marketing__body-list-title">Стратегия</h4>
-                <img
-                  src="icons/ArrowMarketing.svg"
-                  alt="Arrow"
-                  class="main-marketing__body-list-img"
-                />
-                <p class="main-marketing__body-list-text">
-                  Разработаем стратегию позиционирования для вашей компании на
-                  конкурентном рынке.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="main-marketing__request-wrp">
-            <p class="main-marketing__request-title">
-              Больше об услугах комплексного интернет-маркетинга
-            </p>
-            <button class="main-marketing__request-button btn-pop-up">
-              Маркетинг в Star Up Group
+      </div>
+    </section>
+    <!-- //кусок кода который нужно вставить на боевой, начало -->
+    <section class="tilda">
+      <div class="tilda__wrp">
+        <div class="tilda__wrp-text">
+          <p class="tilda__text">
+            Делаем перенос сайтов, визиток, блогов, курсов, лэндингов,
+            интернет магазинов с Тильды на самые популярные CRM системы:
+            WordPress, Yii2, Opencart.
+          </p>
+          <div class="main-request__button-wrp">
+            <button class="main-request__button-request btn-pop-up">
+              Оставить заявку
+            </button>
+            <button class="main-request__button-contacts js-btn-contact-item">
+              КОНТАКТЫ
             </button>
           </div>
         </div>
-      </section>
-      <section class="main-form">
-        <div class="main-form__wrp">
-          <div class="main-form__container js-activ">
-            <div class="main-form__form-wrp">
-              <div class="contacts__btn-close js-btn-close">
-                <span
-                  class="contacts__btn-close-line contacts__btn-close-line-r"
-                ></span>
-                <span
-                  class="contacts__btn-close-line contacts__btn-close-line-l"
-                ></span>
+        <div class="tilda__wrp-img">
+          <img src="/img/tilda-img.png" alt="Перенос с тильды сайтов" />
+        </div>
+      </div>
+    </section>
+    <!-- //конец -->
+    <section class="main-request">
+      <div class="main-request__wrp">
+        <div class="main-request__img-wrp">
+          <img src="img/thinking_man.png" alt="thinking man" class="main-request__img" />
+        </div>
+        <div class="main-request__text">
+          <h3 class="main-request__title">
+            Вы все еще думаете, что сайт — это сложно и дорого?
+          </h3>
+          <p class="main-request__description">
+            В Star Up Group мы докажем обратное!
+          </p>
+          <div class="main-request__button-wrp">
+            <button class="main-request__button-request btn-pop-up">
+              Оставить заявку
+            </button>
+            <button class="main-request__button-contacts js-btn-contact-item">
+              КОНТАКТЫ
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-offer">
+      <div class="main-offer__wrp">
+        <h2 class="main-offer__title">
+          Международная web–студия Star Up Group
+        </h2>
+        <p class="main-offer__text">Что мы предлагаем?</p>
+        <div class="main-offer__list">
+          <div class="main-offer__item">
+            <img src="icons/Key_icon.svg" alt="key" class="main-offer__item-img" />
+            <p class="main-offer__item-text">Разработка сайта под ключ</p>
+          </div>
+          <div class="main-offer__item">
+            <img src="icons/Server_icon.svg" alt="server" class="main-offer__item-img" />
+            <p class="main-offer__item-text">Настройка сервера</p>
+          </div>
+          <div class="main-offer__item">
+            <img src="icons/Trand_icon.svg" alt="trand" class="main-offer__item-img" />
+            <p class="main-offer__item-text">SEO продвижение</p>
+          </div>
+          <div class="main-offer__item">
+            <img src="icons/Ads_icon.svg" alt="ads" class="main-offer__item-img" />
+            <p class="main-offer__item-text">Запуск рекламных кампаний</p>
+          </div>
+        </div>
+        <div class="main-offer__description">
+          <p class="main-offer__description-text">
+            Мы уделяем максимум внимания каждому проекту, чтобы не только
+            разработать для вас функциональный сайт под ключ, но привести на
+            него первых клиентов.
+          </p>
+          <p class="main-offer__description-text">
+            Все, что от вас потребуется – это оставить заявку и утвердить
+            дизайн, об остальном позаботятся специалисты Star Up Group.
+            Сделаем уникальный сайт любой сложности согласно вашим пожеланиям
+            и бюджету.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="main-purpose">
+      <div class="main-purpose__wrp">
+        <div class="main-purpose__img-wrp">
+          <img src="img/woman.png" alt="woman" class="main-purpose__img" />
+        </div>
+        <div class="main-purpose__text">
+          <h3 class="main-purpose__title">
+            Наша цель — разработать сайт, который будет полностью
+            соответствовать вашим ожиданиям.
+          </h3>
+          <div class="main-purpose__button-wrp">
+            <button class="main-purpose__button-order btn-pop-up">
+              заказать сайт
+            </button>
+            <button class="main-purpose__button-about">о нас</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-realization">
+      <div class="main-realization__wrp">
+        <h2 class="main-realization__title">
+          Реализуем ваши самые смелые желания
+        </h2>
+        <div class="main-realization__wrp-grid">
+          <p class="main-realization__development-numer">01</p>
+          <div class="main-realization__development-triangle"></div>
+          <p class="main-realization__development-text">Разработка</p>
+          <div class="main-realization__development-mob">
+            <div class="main-realization__development-triangle-mob"></div>
+            <p class="main-realization__development-text-mob">Разработка</p>
+          </div>
+          <div class="main-realization__development-arrow"></div>
+          <p class="main-realization__content-numer">02</p>
+          <div class="main-realization__content-triangle"></div>
+          <p class="main-realization__content-text">Наполнение контентом</p>
+          <div class="main-realization__content-mob">
+            <div class="main-realization__content-triangle-mob"></div>
+            <p class="main-realization__content-text-mob">
+              Наполнение контентом
+            </p>
+          </div>
+          <div class="main-realization__content-arrow"></div>
+          <p class="main-realization__promotion-numer">03</p>
+          <div class="main-realization__promotion-triangle"></div>
+          <p class="main-realization__promotion-text">Продвижение</p>
+          <div class="main-realization__promotion-mob">
+            <div class="main-realization__promotion-triangle-mob"></div>
+            <p class="main-realization__promotion-text-mob">Продвижение</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-advantage">
+      <div class="main-advantage__wrp-bg">
+        <div class="main-advantage__wrp">
+          <div class="main-advantage__workwith-wrp">
+            <p class="main-advantage__workwith-title">С кем мы работаем:</p>
+            <div class="main-advantage__workwith-list">
+              <div class="main-advantage__workwith-item">
+                <img src="icons/Diagram_icon.svg" alt="Diagram" class="main-advantage__workwith-item-img" />
+                <p class="main-advantage__workwith-item-text">
+                  Инфо-бизнесмены
+                </p>
               </div>
-              <p class="main-form__form-title">Форма заявки</p>
-              <form class="main-form__form-list js-form" name="form">
-                <div class="main-form__form-list-wrp">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Имя"
-                    class="main-form__form-item js-input"
-                  />
-                  <input
-                    type="text"
-                    name="company"
-                    placeholder="Компания"
-                    class="main-form__form-item"
-                  />
-                  <input
-                    type="number"
-                    name="phone"
-                    placeholder="Телефон"
-                    class="main-form__form-item js-input js-input-phone"
-                  />
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="E-mail"
-                    class="main-form__form-item js-input js-input-email"
-                  />
+              <div class="main-advantage__workwith-item">
+                <img src="icons/Businessman_icon.svg" alt="Businessman" class="main-advantage__workwith-item-img" />
+                <p class="main-advantage__workwith-item-text">
+                  Собственники бизнесов
+                </p>
+              </div>
+              <div class="main-advantage__workwith-item">
+                <img src="icons/Money_icon.svg" alt="Money" class="main-advantage__workwith-item-img" />
+                <p class="main-advantage__workwith-item-text">
+                  Предприниматели
+                </p>
+              </div>
+              <div class="main-advantage__workwith-item">
+                <img src="icons/People_icon.svg" alt="People" class="main-advantage__workwith-item-img" />
+                <p class="main-advantage__workwith-item-text">
+                  Публичные личности
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="main-advantage__advantage-wrp">
+            <h2 class="main-advantage__advantage-title">
+              Преимущества работы с нами
+            </h2>
+            <div class="main-advantage__advantage-list">
+              <div class="main-advantage__advantage-list-left">
+                <div class="main-advantage__advantage-list-item-wrp first-circle">
+                  <div class="main-advantage__advantage-list-item">
+                    <img src="icons/Cogwheel_icon.png" alt="Cogwheel" class="main-advantage__advantage-list-img" />
+                    <p class="main-advantage__advantage-list-title">
+                      Внимание к деталям
+                    </p>
+                    <p class="main-advantage__advantage-list-text">
+                      Мы учтем все ваши идеи и воплотим их в реальность,
+                      осуществляя постоянный контроль каждого этапа работ.
+                    </p>
+                  </div>
                 </div>
-                <div class="main-form__form-list-text-wrp">
-                  <img
-                    src="icons/FormCheck_icon.svg"
-                    alt="Check"
-                    class="main-form__form-list-text-img"
-                  />
-                  <p class="main-form__form-list-text">
-                    Ваши данные не будут переданы третьим лицам
-                  </p>
+                <div class="main-advantage__advantage-list-item-wrp second-circle">
+                  <div class="main-advantage__advantage-list-item">
+                    <img src="icons/Geometric_icon.png" alt="Geometric figures"
+                      class="main-advantage__advantage-list-img" />
+                    <p class="main-advantage__advantage-list-title">
+                      Комплексность работ
+                    </p>
+                    <p class="main-advantage__advantage-list-text">
+                      Мы не только напишем простой чистый код и разработаем
+                      для вас сайт с оптимальными показателями для поисковых
+                      систем, но также поможем с продвижением, наполнением
+                      сайта.
+                    </p>
+                  </div>
                 </div>
-                <button type="submit" class="main-form__form-button btn-form">
-                  Оставить заявку
-                </button>
-              </form>
+              </div>
+              <div class="main-advantage__advantage-list-right">
+                <div class="main-advantage__advantage-list-item-wrp third-circle">
+                  <div class="main-advantage__advantage-list-item">
+                    <img src="icons/Clock_icon.png" alt="Clock" class="main-advantage__advantage-list-img" />
+                    <p class="main-advantage__advantage-list-title">
+                      Экономия вашего времени и нервов
+                    </p>
+                    <p class="main-advantage__advantage-list-text">
+                      Мы возьмем на себя все задачи, создавая логичный и
+                      эстетичный сайт под запросы вашей аудитории.
+                    </p>
+                  </div>
+                </div>
+                <div class="main-advantage__advantage-list-item-wrp second-circle-mob">
+                  <div class="main-advantage__advantage-list-item">
+                    <img src="icons/Geometric_icon.png" alt="Geometric figures"
+                      class="main-advantage__advantage-list-img" />
+                    <p class="main-advantage__advantage-list-title">
+                      Комплексность работ
+                    </p>
+                    <p class="main-advantage__advantage-list-text">
+                      Мы не только напишем простой чистый код и разработаем
+                      для вас сайт с оптимальными показателями для поисковых
+                      систем, но также поможем с продвижением, наполнением
+                      сайта.
+                    </p>
+                  </div>
+                </div>
+                <div class="main-advantage__advantage-list-item-wrp fourth-circle">
+                  <div class="main-advantage__advantage-list-item">
+                    <img src="icons/Dollar_icon.png" alt="Dollar" class="main-advantage__advantage-list-img" />
+                    <p class="main-advantage__advantage-list-title">
+                      Экономия бюджета
+                    </p>
+                    <p class="main-advantage__advantage-list-text">
+                      Мы укомплектуем ваш сайт только полезными фичами, без
+                      воды и ненужного функционала.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <div class="contacts">
-        <div class="main-form__container popup-form__container js-btn-contact">
-          <div class="contacts__wrp-cont">
+      </div>
+    </section>
+    <section class="main-branding">
+      <div class="main-branding__wrp">
+        <div class="main-branding__brand-circle">
+          <p class="main-branding__brand-title">.Branding</p>
+        </div>
+        <div class="main-branding__brand-text-wrp">
+          <h2 class="main-branding__brand-text-title">
+            Комплексный интернет-маркетинг
+          </h2>
+          <div class="main-branding__brand-text-line"></div>
+          <p class="main-branding__brand-text-main">
+            Star Up Group – создадим легендарный БРЕНД, о котором будут
+            говорить и потребители, и конкуренты.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="main-marketing">
+      <div class="main-marketing__wrp">
+        <div class="main-marketing__body-wrp">
+          <div class="main-marketing__blocks-list">
+            <div class="main-marketing__blocks-item">
+              <img src="icons/Radial_icon.svg" alt="Radial" class="main-marketing__blocks-img" />
+              <p class="main-marketing__blocks-text">
+                Анализ факторов макро- и микросреды
+              </p>
+            </div>
+            <div class="main-marketing__blocks-item">
+              <img src="icons/Trand_icon.svg" alt="Trand" class="main-marketing__blocks-img" />
+              <p class="main-marketing__blocks-text">Тренды поколений</p>
+            </div>
+            <div class="main-marketing__blocks-item">
+              <img src="icons/Architecture_icon.svg" alt="Architecture" class="main-marketing__blocks-img" />
+              <p class="main-marketing__blocks-text">Архитектура бренда</p>
+            </div>
+            <div class="main-marketing__blocks-item">
+              <img src="icons/Strategy_icon.svg" alt="Strategy" class="main-marketing__blocks-img" />
+              <p class="main-marketing__blocks-text">
+                Позиционирование и стратегия
+              </p>
+            </div>
+          </div>
+          <p class="main-marketing__body-title">
+            Интернет-маркетинг – это возможность выстроить систему, которая
+            24/7 будет генерировать поток клиентов для вашей компании.
+          </p>
+          <div class="main-marketing__body-list">
+            <div class="main-marketing__body-list-item">
+              <h4 class="main-marketing__body-list-title">Аудит</h4>
+              <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
+              <p class="main-marketing__body-list-text">
+                Проведем аудит и определим точки роста и масштабирования для
+                вашего бизнеса.
+              </p>
+            </div>
+            <div class="main-marketing__body-list-item">
+              <h4 class="main-marketing__body-list-title">Архитектура</h4>
+              <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
+              <p class="main-marketing__body-list-text">
+                Выстроим четкую и логичную архитектуру бренда.
+              </p>
+            </div>
+            <div class="main-marketing__body-list-item">
+              <h4 class="main-marketing__body-list-title">Стратегия</h4>
+              <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
+              <p class="main-marketing__body-list-text">
+                Разработаем стратегию позиционирования для вашей компании на
+                конкурентном рынке.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main-marketing__request-wrp">
+          <p class="main-marketing__request-title">
+            Больше об услугах комплексного интернет-маркетинга
+          </p>
+          <button class="main-marketing__request-button btn-pop-up">
+            Маркетинг в Star Up Group
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="main-form">
+      <div class="main-form__wrp">
+        <div class="main-form__container js-activ">
+          <div class="main-form__form-wrp">
             <div class="contacts__btn-close js-btn-close">
-              <span
-                class="contacts__btn-close-line contacts__btn-close-line-r"
-              ></span>
-              <span
-                class="contacts__btn-close-line contacts__btn-close-line-l"
-              ></span>
+              <span class="contacts__btn-close-line contacts__btn-close-line-r"></span>
+              <span class="contacts__btn-close-line contacts__btn-close-line-l"></span>
             </div>
-            <div class="contacts__wrp-cont-width">
-              <h3 class="contacts__title">Контакты</h3>
+            <p class="main-form__form-title">Форма заявки</p>
+            <form class="main-form__form-list js-form" name="form">
+              <div class="main-form__form-list-wrp">
+                <input type="text" name="name" placeholder="Имя" class="main-form__form-item js-input" />
+                <input type="text" name="company" placeholder="Компания" class="main-form__form-item" />
+                <div class="main-form__phone-wrp">
+                  <input data-err-phone type="tel" id="phone" name="phone"
+                    class="main-form__form-item js-input js-input-phone" />
+                  <span id="valid-msg" class="hide"></span>
+                  <span id="error-msg" class="hide"></span>
+                </div>
 
-              <p class="contacts__linc-cont-wrp">
-                <a class="contacts__link-wrp" href="tel:+380681804842">
-                  <img
-                    class="contacts__phone-img"
-                    src="/icons/phone-icon.svg"
-                    alt="phone number"
-                  />
-                  <span class="contacts__text">+38(068)180 48 42</span>
-                </a>
-              </p>
-              <p>
-                <a
-                  class="contacts__link-wrp"
-                  href="mailto:info@star-up-group.com.ua"
-                >
-                  <img
-                    class="contacts__phone-img"
-                    src="/icons/email-icon.svg"
-                    alt="Emeil"
-                  />
-                  <span class="contacts__text">info@star-up-group.com.ua</span>
-                </a>
-              </p>
-            </div>
+                <input type="text" name="email" placeholder="E-mail"
+                  class="main-form__form-item js-input js-input-email" />
+              </div>
+              <div class="main-form__form-list-text-wrp">
+                <img src="icons/FormCheck_icon.svg" alt="Check" class="main-form__form-list-text-img" />
+                <p class="main-form__form-list-text">
+                  Ваши данные не будут переданы третьим лицам
+                </p>
+              </div>
+              <button type="submit" class="main-form__form-button btn-form">
+                Оставить заявку
+              </button>
+            </form>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__wrp">
-        <nav class="footer__nav-wrp">
-          <div class="footer__nav-item">Контакты</div>
-          <div class="footer__nav-item">Маркетинг</div>
-          <div class="footer__nav-item">Разработка</div>
-          <div class="footer__nav-item">Продвижение</div>
-          <div class="footer__nav-item">Наполнение контентом</div>
-          <div class="footer__nav-item">О нас</div>
-        </nav>
-        <div class="footer__nav-mob-line"></div>
-        <div class="footer__agreement-wrp">
-          <div class="footer__agreement-item">Политика конфиденциальности</div>
-          <div class="footer__agreement-dot"></div>
-          <div class="footer__agreement-item">Договор публичной оферты</div>
+    </section>
+    <div class="contacts">
+      <div class="main-form__container popup-form__container js-btn-contact">
+        <div class="contacts__wrp-cont">
+          <div class="contacts__btn-close js-btn-close">
+            <span class="contacts__btn-close-line contacts__btn-close-line-r"></span>
+            <span class="contacts__btn-close-line contacts__btn-close-line-l"></span>
+          </div>
+          <div class="contacts__wrp-cont-width">
+            <h3 class="contacts__title">Контакты</h3>
+
+            <p class="contacts__linc-cont-wrp">
+              <a class="contacts__link-wrp" href="tel:+380681804842">
+                <img class="contacts__phone-img" src="/icons/phone-icon.svg" alt="phone number" />
+                <span class="contacts__text">+38(068)180 48 42</span>
+              </a>
+            </p>
+            <p>
+              <a class="contacts__link-wrp" href="mailto:info@star-up-group.com.ua">
+                <img class="contacts__phone-img" src="/icons/email-icon.svg" alt="Emeil" />
+                <span class="contacts__text">info@star-up-group.com.ua</span>
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="footer__copyright">&#169; 2022 Star Up Group</div>
-      </div>
-    </footer>
-    <div id="accept" class="popup-accept__container">
-      <div class="popup-accept__wrp">
-        <img
-          class="popup-accept__img"
-          src="img/check_desk_icon.svg"
-          alt="checked"
-        />
-        <p class="popup-accept__text">
-          Наши специалисты проконсультируют вас и подберут оптимальное решение
-          под вашу бизнес-цель!
-        </p>
       </div>
     </div>
-  </body>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrp">
+      <nav class="footer__nav-wrp">
+        <div class="footer__nav-item">Контакты</div>
+        <div class="footer__nav-item">Маркетинг</div>
+        <div class="footer__nav-item">Разработка</div>
+        <div class="footer__nav-item">Продвижение</div>
+        <div class="footer__nav-item">Наполнение контентом</div>
+        <div class="footer__nav-item">О нас</div>
+      </nav>
+      <div class="footer__nav-mob-line"></div>
+      <div class="footer__agreement-wrp">
+        <div class="footer__agreement-item">Политика конфиденциальности</div>
+        <div class="footer__agreement-dot"></div>
+        <div class="footer__agreement-item">Договор публичной оферты</div>
+      </div>
+      <div class="footer__copyright">&#169; 2022 Star Up Group</div>
+    </div>
+  </footer>
+  <div id="accept" class="popup-accept__container">
+    <div class="popup-accept__wrp">
+      <img class="popup-accept__img" src="img/check_desk_icon.svg" alt="checked" />
+      <p class="popup-accept__text">
+        Наши специалисты проконсультируют вас и подберут оптимальное решение
+        под вашу бизнес-цель!
+      </p>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/intlTelInput-jquery.min.js"></script>
+  <script src="js/intlTelInput.js"></script>
+
+  <script>
+    var input = document.querySelector('#phone'),
+      errorMsg = document.querySelector("#error-msg"),
+      validMsg = document.querySelector("#valid-msg");
+    var errorClasse = document.querySelector('.js-input-phone')
+    var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+    console.log(errorClasse);
+    var intl = window.intlTelInput(input, {
+      initialCountry: "auto",
+      geoIpLookup: function (callback) {
+        $.get('https://ipinfo.io', function () { }, "jsonp").always(function (resp) {
+          var countryCode = (resp && resp.country) ? resp.country : "ua";
+          callback(countryCode);
+        });
+      },
+      utilsScript: "js/utils.js"
+    });
+
+
+
+    var reset = function () {
+      input.classList.remove("error");
+      errorMsg.innerHTML = "";
+      errorMsg.classList.add("hide");
+      validMsg.classList.add("hide");
+    };
+
+    // Validate on blur event
+    input.addEventListener('blur', function () {
+      reset();
+      if (input.value.trim()) {
+        if (intl.isValidNumber()) {
+          validMsg.classList.remove("hide");
+          errorClasse.classList.remove("errorInput")
+          console.log("err");
+        } else {
+          input.classList.add("error");
+          var errorCode = intl.getValidationError();
+          errorMsg.innerHTML = errorMap[errorCode];
+
+
+          errorMsg.classList.remove("hide");
+          console.log(errorMsg.classList.contains('hide'));
+          errorClasse.classList.remove("errorInput");
+          if (errorMsg.classList.contains('hide') === false) {
+            errorClasse.classList.add("errorInput")
+          }
+
+        }
+      }
+      // console.log(errorMsg.classList.contains);
+
+    });
+
+    // Reset on keyup/change event
+    input.addEventListener('change', reset);
+    input.addEventListener('keyup', reset);
+
+
+  </script>
+</body>
+
 </html>

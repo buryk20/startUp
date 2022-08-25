@@ -495,28 +495,32 @@
     </div>
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/intlTelInput-jquery.min.js"></script>
-  <script src="js/intlTelInput.js"></script>
+  <!-- <script src="/js/jquery-mini.js"></script> -->
+  <script src="/js/intlTelInput.js"></script>
 
   <script>
-    var input = document.querySelector('#phone'),
-      errorMsg = document.querySelector("#error-msg"),
+    var input = document.querySelector('#phone');
+    errorMsg = document.querySelector("#error-msg"),
       validMsg = document.querySelector("#valid-msg");
     var errorClasse = document.querySelector('.js-input-phone')
     var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
-    console.log(errorClasse);
-    var intl = window.intlTelInput(input, {
+    intlTelInput(input, {
       initialCountry: "auto",
-      geoIpLookup: function (callback) {
-        $.get('https://ipinfo.io', function () { }, "jsonp").always(function (resp) {
-          var countryCode = (resp && resp.country) ? resp.country : "ua";
-          callback(countryCode);
+      geoIpLookup: function (success, failure) {
+        $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
+          var countryCode = (resp && resp.country) ? resp.country : "";
+          success(countryCode);
         });
       },
       utilsScript: "js/utils.js"
     });
 
+
+    var intl = window.intlTelInput(input, {
+      utilsScript: "js/utils.js"
+    });
 
 
     var reset = function () {

@@ -7,17 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Star Up Group</title>
   <link rel="icon" type="image/x-icon" href="icons/Main_logo.svg" />
-  <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/intlTelInput.css">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/intlTelInput.css">
   <script src="js/main.js"></script>
   <style>
-    #error-msg {
-      color: #E74C3C;
-    }
-
-    #error-msg {
-      color: #5D5FEF;
-    }
   </style>
 </head>
 
@@ -497,8 +490,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/intlTelInput-jquery.min.js"></script>
-  <!-- <script src="/js/jquery-mini.js"></script> -->
-  <script src="/js/intlTelInput.js"></script>
+  <script src="js/intlTelInput.js"></script>
+  <script src="js/utils.js"></script>
 
   <script>
     var input = document.querySelector('#phone');
@@ -506,7 +499,7 @@
       validMsg = document.querySelector("#valid-msg");
     var errorClasse = document.querySelector('.js-input-phone')
     var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
-    intlTelInput(input, {
+    var intl = window.intlTelInput(input, {
       initialCountry: "auto",
       geoIpLookup: function (success, failure) {
         $.get('http://ip-api.com/json/', function () { }, 'jsonp').always(
@@ -520,7 +513,6 @@
       },
       utilsScript: "js/utils.js"
     });
-
 
     var reset = function () {
       input.classList.remove("error");

@@ -509,16 +509,15 @@
     intlTelInput(input, {
       initialCountry: "auto",
       geoIpLookup: function (success, failure) {
-        $.get("https://ipinfo.io", function () { }, "jsonp").always(function (resp) {
-          var countryCode = (resp && resp.country) ? resp.country : "";
-          success(countryCode);
-        });
+        $.get('http://ip-api.com/json/', function () { }, 'jsonp').always(
+          function (resp) {
+            var countryCode =
+              resp && resp.countryCode ? resp.countryCode : '';
+            console.log(countryCode);
+            success(countryCode);
+          },
+        );
       },
-      utilsScript: "js/utils.js"
-    });
-
-
-    var intl = window.intlTelInput(input, {
       utilsScript: "js/utils.js"
     });
 

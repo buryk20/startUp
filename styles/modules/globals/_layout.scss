@@ -121,12 +121,16 @@ body {
     transition: all 0.3s ease-out;
   }
   &__nav {
-    max-width: 900px;
+    max-width: 600px;
     width: 100%;
+
+    gap: 24px;
+
     @include flexCenterSb;
-    @include _1146 {
-      justify-content: space-around;
-    }
+    justify-content: flex-end;
+    // @include _1146 {
+    //   justify-content: space-around;
+    // }
     @include _680 {
       max-width: 100%;
       @include flexColumnFS;
@@ -134,7 +138,7 @@ body {
     }
   }
   &__nav-item {
-    color: #3a3a3a00;
+    color: #3a3a3a;
     @include _680 {
       margin-bottom: 27px;
       &:nth-last-child(1) {
@@ -144,6 +148,10 @@ body {
     &:hover {
       color: $colorMain;
       cursor: pointer;
+    }
+
+    &.noActive {
+      display: none;
     }
   }
   &__nav-line-mob {
@@ -1739,6 +1747,10 @@ body {
     max-width: 994px;
     width: 100%;
     @include flexCenterSb;
+    justify-content: center;
+
+    column-gap: 24px;
+
     margin-bottom: 91px;
     @include _960 {
       max-width: 860px;
@@ -1764,6 +1776,10 @@ body {
     &:hover {
       color: $colorMain;
       cursor: pointer;
+    }
+
+    &.noActive {
+      display: none;
     }
   }
   &__nav-mob-line {
@@ -1975,8 +1991,8 @@ body {
     max-width: 368px;
   }
   &__phone-img {
-    width: 50px;
-    margin-right: 24px;
+    width: 24px;
+    margin-right: 8px;
   }
   &__link-wrp {
     display: flex;
@@ -1987,13 +2003,22 @@ body {
   }
   &__title {
     margin-bottom: 24px;
-    font-size: 32px;
+    font-size: 26px;
     text-transform: uppercase;
     text-align: center;
     @include _680 {
       font-size: 18px;
     }
   }
+
+  &__dev-site-wrp {
+    margin-bottom: 24px;
+  }
+
+  &__dev-bot-wrp {
+    margin-bottom: 48px;
+  }
+
   &__linc-cont-wrp {
     margin-bottom: 16px;
   }
@@ -2014,6 +2039,48 @@ body {
       background-color: $colorHoverButton;
     }
   }
+
+  &__dev-site-text {
+    margin-bottom: 8px;
+
+    text-align: center;
+    @include text($fontSize: 20px, $fontWeight: 600, $color: $colorBlack);
+  }
+
+  &__dev-site-tel-text {
+    text-align: center;
+  }
+
+  &__dev-site-tel-wrp {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    & + & {
+      margin-top: 8px;
+    }
+  }
+
+  &__dev-site-icon {
+    width: 24px;
+  }
+
+  &__dev-site-tel-text {
+    font-size: 22px;
+  }
+
+  &__dev-site-tel-number-wrp {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    &:hover {
+      color: $colorHoverButton;
+    }
+  }
+
   &__btn-close-line {
     position: absolute;
     top: 10px;
@@ -2024,7 +2091,6 @@ body {
     &:hover {
       background-color: $colorHoverButton;
     }
-    // border-radius: 50%;
   }
   &__btn-close-line-r {
     @include lineRotate(45deg);

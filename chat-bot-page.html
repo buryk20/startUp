@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/intlTelInput.css">
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
   <title>Chat-bot</title>
 </head>
 
@@ -43,7 +43,7 @@
       </div>
     </div>
   </header>
-  <main class="chat-bot">
+  <main data-chat-dot class="chat-bot">
     <section class="chat-bot-banner">
       <div class="chat-bot__wrp chat-bot-banner__container">
         <div class="chat-bot-banner__content">
@@ -690,7 +690,7 @@
       </div>
     </section>
 
-    <section class="chat-bot-form main-form">
+    <section data-input-wrp class="chat-bot-form main-form">
       <div class="chat-bot-form__container">
         <h3 class="chat-bot-content__title chat-bot-content__title_white">
           Хотите рассчитать стоимость чат-бота, или остались вопросы?

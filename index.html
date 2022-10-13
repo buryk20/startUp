@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="stylesheet" href="css/animate.css">
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
   <style>
   </style>
 </head>
@@ -45,7 +45,7 @@
       </div>
     </div>
   </header>
-  <main class="main">
+  <main data-main-page class="main">
     <section class="main-idea">
       <div class="main-idea__wrp">
         <div class="main-idea__text wow animate__animated animate__fadeInLeft">
@@ -66,7 +66,7 @@
     <!-- //кусок кода который нужно вставить на боевой, начало -->
     <section class="tilda">
       <div class="tilda__wrp">
-        <div data-wow-offset="300" class="tilda__wrp-text wow animate__animated animate__fadeInLeft">
+        <div class="tilda__wrp-text">
           <p class="tilda__text">
             Делаем перенос сайтов, визиток, блогов, курсов, лэндингов,
             интернет магазинов с Тильды на самые популярные CRM системы:
@@ -81,7 +81,7 @@
             </button>
           </div>
         </div>
-        <div data-wow-offset="300" class="tilda__wrp-img wow animate__animated animate__fadeInRight">
+        <div class="tilda__wrp-img">
           <img src="/img/tilda-img.png" alt="Перенос с тильды сайтов" />
         </div>
       </div>
@@ -89,10 +89,10 @@
     <!-- //конец -->
     <section class="main-request">
       <div class="main-request__wrp">
-        <div data-wow-offset="300" class="main-request__img-wrp wow animate__animated animate__fadeInLeft">
+        <div class="main-request__img-wrp wow animate__animated animate__fadeInLeft">
           <img src="img/thinking_man.png" alt="thinking man" class="main-request__img" />
         </div>
-        <div data-wow-offset="300" class="main-request__text wow animate__animated animate__fadeInRight">
+        <div class="main-request__text wow animate__animated ">
           <h3 class="main-request__title">
             Вы все еще думаете, что сайт — это сложно и дорого?
           </h3>
@@ -400,7 +400,7 @@
         </div>
       </div>
     </section>
-    <section class="main-form">
+    <section data-input-wrp class="main-form">
       <div class="main-form__wrp">
         <div class="main-form__container js-activ">
           <div class="main-form__form-wrp">
@@ -437,7 +437,7 @@
         </div>
       </div>
     </section>
-    <div class="contacts">
+    <div data-contacts-wrp class="contacts">
       <div class="main-form__container popup-form__container js-btn-contact">
         <div class="contacts__wrp-cont">
           <div class="contacts__btn-close js-btn-close">

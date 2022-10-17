@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="stylesheet" href="css/animate.css">
-  <script type="module" src="js/main.js"></script>
+  <!-- <script type="module" src="js/main.js"></script> -->
   <style>
   </style>
 </head>
@@ -45,28 +45,28 @@
       </div>
     </div>
   </header>
-  <main data-main-page class="main">
+  <main data-main-page data-animation-wrp class="main">
     <section class="main-idea">
       <div class="main-idea__wrp">
-        <div class="main-idea__text wow animate__animated animate__fadeInLeft">
+        <div data-left class="main-idea__text wow animate__animated">
           <h1 class="main-idea__title">
             Уникальный сайт — от идеи до реализации под ключ!
           </h1>
-          <img src="img/idea_photo.png" alt="idea" class="main-idea__img-mob" />
+          <img data-right src="img/idea_photo.png" alt="idea" class="main-idea__img-mob wow animate__animated" />
           <p class="main-idea__description">
             От уникальной концепции до итогового результата. Гарантированно
             создадим сайт вашей мечты.
           </p>
         </div>
-        <div class="main-idea__img-wrp wow animate__animated animate__fadeInRight">
-          <img src="img/idea_photo.png" alt="idea" class="main-idea__img" />
+        <div class="main-idea__img-wrp">
+          <img data-right class="wow animate__animated" src="img/idea_photo.png" alt="idea" class="main-idea__img" />
         </div>
       </div>
     </section>
     <!-- //кусок кода который нужно вставить на боевой, начало -->
     <section class="tilda">
       <div class="tilda__wrp">
-        <div class="tilda__wrp-text">
+        <div data-left data-wow-offset="200" class="tilda__wrp-text wow animate__animated">
           <p class="tilda__text">
             Делаем перенос сайтов, визиток, блогов, курсов, лэндингов,
             интернет магазинов с Тильды на самые популярные CRM системы:
@@ -82,17 +82,18 @@
           </div>
         </div>
         <div class="tilda__wrp-img">
-          <img src="/img/tilda-img.png" alt="Перенос с тильды сайтов" />
+          <img data-right data-wow-offset="200" class="wow animate__animated" src="/img/tilda-img.png"
+            alt="Перенос с тильды сайтов" />
         </div>
       </div>
     </section>
     <!-- //конец -->
     <section class="main-request">
       <div class="main-request__wrp">
-        <div class="main-request__img-wrp wow animate__animated animate__fadeInLeft">
+        <div data-left data-wow-offset="200" class="main-request__img-wrp wow animate__animated">
           <img src="img/thinking_man.png" alt="thinking man" class="main-request__img" />
         </div>
-        <div class="main-request__text wow animate__animated ">
+        <div data-right data-wow-offset="200" class="main-request__text wow animate__animated">
           <h3 class="main-request__title">
             Вы все еще думаете, что сайт — это сложно и дорого?
           </h3>
@@ -111,7 +112,7 @@
       </div>
     </section>
     <section class="main-offer">
-      <div class="main-offer__wrp">
+      <div data-wow-offset="200" class="main-offer__wrp">
         <h2 class="main-offer__title">
           Международная web–студия Star Up Group
         </h2>
@@ -137,8 +138,8 @@
             <p class="main-offer__item-text">Запуск рекламных кампаний</p>
           </div>
         </div>
-        <div data-wow-offset="300" data-wow-offset="200"
-          class="main-offer__description wow animate__animated animate__fadeInRight">
+        <div data-right data-wow-offset="200" data-wow-offset="200"
+          class="main-offer__description wow animate__animated">
           <p class="main-offer__description-text">
             Мы уделяем максимум внимания каждому проекту, чтобы не только
             разработать для вас функциональный сайт под ключ, но привести на
@@ -155,10 +156,10 @@
     </section>
     <section class="main-purpose">
       <div class="main-purpose__wrp">
-        <div data-wow-offset="300" class="main-purpose__img-wrp wow animate__animated animate__fadeInRight">
+        <div data-right data-wow-offset="200" class="main-purpose__img-wrp wow animate__animated ">
           <img src="img/woman.png" alt="woman" class="main-purpose__img" />
         </div>
-        <div data-wow-offset="300" class="main-purpose__text wow animate__animated animate__fadeInLeft">
+        <div data-left data-wow-offset="200" class="main-purpose__text wow animate__animated">
           <h3 class="main-purpose__title">
             Наша цель — разработать сайт, который будет полностью
             соответствовать вашим ожиданиям.
@@ -179,28 +180,32 @@
         </h2>
         <div class="main-realization__wrp-grid">
           <p class="main-realization__development-numer">01</p>
-          <div class="main-realization__development-triangle"></div>
+          <div class="main-realization__development-triangle wow animate__animated animate__rubberBand"></div>
           <p class="main-realization__development-text">Разработка</p>
           <div class="main-realization__development-mob">
-            <div class="main-realization__development-triangle-mob"></div>
+            <div class="main-realization__development-triangle-mob wow animate__animated animate__rubberBand"></div>
             <p class="main-realization__development-text-mob">Разработка</p>
           </div>
           <div class="main-realization__development-arrow"></div>
           <p class="main-realization__content-numer">02</p>
-          <div class="main-realization__content-triangle"></div>
+          <div data-wow-delay="0.4s"
+            class="main-realization__content-triangle wow animate__animated animate__rubberBand"></div>
           <p class="main-realization__content-text">Наполнение контентом</p>
           <div class="main-realization__content-mob">
-            <div class="main-realization__content-triangle-mob"></div>
+            <div data-wow-delay="0.4s"
+              class="main-realization__content-triangle-mob wow animate__animated animate__rubberBand"></div>
             <p class="main-realization__content-text-mob">
               Наполнение контентом
             </p>
           </div>
           <div class="main-realization__content-arrow"></div>
           <p class="main-realization__promotion-numer">03</p>
-          <div class="main-realization__promotion-triangle"></div>
+          <div data-wow-delay="0.8s"
+            class="main-realization__promotion-triangle wow animate__animated animate__rubberBand"></div>
           <p class="main-realization__promotion-text">Продвижение</p>
           <div class="main-realization__promotion-mob">
-            <div class="main-realization__promotion-triangle-mob"></div>
+            <div data-wow-delay="0.8s"
+              class="main-realization__promotion-triangle-mob wow animate__animated animate__rubberBand"></div>
             <p class="main-realization__promotion-text-mob">Продвижение</p>
           </div>
         </div>
@@ -212,25 +217,28 @@
           <div class="main-advantage__workwith-wrp">
             <p class="main-advantage__workwith-title">С кем мы работаем:</p>
             <div class="main-advantage__workwith-list">
-              <div class="main-advantage__workwith-item">
+              <div data-wow-offset="200" class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
                 <img src="icons/Diagram_icon.svg" alt="Diagram" class="main-advantage__workwith-item-img" />
                 <p class="main-advantage__workwith-item-text">
                   Инфо-бизнесмены
                 </p>
               </div>
-              <div class="main-advantage__workwith-item">
+              <div data-wow-offset="200" data-wow-delay="0.2s"
+                class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
                 <img src="icons/Businessman_icon.svg" alt="Businessman" class="main-advantage__workwith-item-img" />
                 <p class="main-advantage__workwith-item-text">
                   Собственники бизнесов
                 </p>
               </div>
-              <div class="main-advantage__workwith-item">
+              <div data-wow-offset="200" data-wow-delay="0.4s"
+                class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
                 <img src="icons/Money_icon.svg" alt="Money" class="main-advantage__workwith-item-img" />
                 <p class="main-advantage__workwith-item-text">
                   Предприниматели
                 </p>
               </div>
-              <div class="main-advantage__workwith-item">
+              <div data-wow-offset="200" data-wow-delay="0.6s"
+                class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
                 <img src="icons/People_icon.svg" alt="People" class="main-advantage__workwith-item-img" />
                 <p class="main-advantage__workwith-item-text">
                   Публичные личности
@@ -244,7 +252,8 @@
             </h2>
             <div class="main-advantage__advantage-list">
               <div class="main-advantage__advantage-list-left">
-                <div class="main-advantage__advantage-list-item-wrp first-circle">
+                <div data-wow-offset="200"
+                  class="main-advantage__advantage-list-item-wrp first-circle wow animate__animated animate__bounceInUp">
                   <div class="main-advantage__advantage-list-item">
                     <img src="icons/Cogwheel_icon.png" alt="Cogwheel" class="main-advantage__advantage-list-img" />
                     <p class="main-advantage__advantage-list-title">
@@ -256,7 +265,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="main-advantage__advantage-list-item-wrp second-circle">
+                <div data-wow-offset="200"
+                  class="main-advantage__advantage-list-item-wrp second-circle wow animate__animated animate__bounceInUp">
                   <div class="main-advantage__advantage-list-item">
                     <img src="icons/Geometric_icon.png" alt="Geometric figures"
                       class="main-advantage__advantage-list-img" />
@@ -273,7 +283,8 @@
                 </div>
               </div>
               <div class="main-advantage__advantage-list-right">
-                <div class="main-advantage__advantage-list-item-wrp third-circle">
+                <div data-wow-offset="200"
+                  class="main-advantage__advantage-list-item-wrp third-circle wow animate__animated animate__bounceInUp">
                   <div class="main-advantage__advantage-list-item">
                     <img src="icons/Clock_icon.png" alt="Clock" class="main-advantage__advantage-list-img" />
                     <p class="main-advantage__advantage-list-title">
@@ -285,7 +296,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="main-advantage__advantage-list-item-wrp second-circle-mob">
+                <div data-wow-offset="200"
+                  class="main-advantage__advantage-list-item-wrp second-circle-mob wow animate__animated animate__bounceInUp">
                   <div class="main-advantage__advantage-list-item">
                     <img src="icons/Geometric_icon.png" alt="Geometric figures"
                       class="main-advantage__advantage-list-img" />
@@ -300,7 +312,8 @@
                     </p>
                   </div>
                 </div>
-                <div class="main-advantage__advantage-list-item-wrp fourth-circle">
+                <div data-wow-offset="200"
+                  class="main-advantage__advantage-list-item-wrp fourth-circle wow animate__animated animate__bounceInUp">
                   <div class="main-advantage__advantage-list-item">
                     <img src="icons/Dollar_icon.png" alt="Dollar" class="main-advantage__advantage-list-img" />
                     <p class="main-advantage__advantage-list-title">
@@ -531,7 +544,8 @@
   </div>
   <!-- <script src="dist/bundle.js"></script> -->
   <script src="js/wow.min.js"></script>
-  <script>
+  <script type="module" src="js/main.js"></script>
+  <!-- <script>
     new WOW(
       {
         boxClass: 'wow',      // default
@@ -541,7 +555,7 @@
         live: true        // default
       }
     ).init();
-  </script>
+  </script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/intlTelInput-jquery.min.js"></script>
   <script src="js/intlTelInput.js"></script>

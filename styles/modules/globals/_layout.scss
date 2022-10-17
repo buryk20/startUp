@@ -1052,9 +1052,10 @@ body {
   }
   &__workwith-list {
     @include flexCenterSb;
-    flex-wrap: wrap;
+    gap: 16px;
     @include _1135 {
       height: 584px;
+      flex-wrap: wrap;
       justify-content: space-evenly;
     }
     @include _680 {
@@ -1384,6 +1385,8 @@ body {
     @include flexCenterSb;
     position: absolute;
     top: -106px;
+    gap: 16px;
+    padding: 0 16px;
     @include _960 {
       justify-content: space-evenly;
     }

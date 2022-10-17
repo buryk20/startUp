@@ -2153,13 +2153,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  gap: 16px;
 }
 
 @media (max-width: 1135px) {
   .main-advantage__workwith-list {
     height: 584px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -2812,6 +2813,8 @@ body {
           align-items: center;
   position: absolute;
   top: -106px;
+  gap: 16px;
+  padding: 0 16px;
 }
 
 @media (max-width: 960px) {

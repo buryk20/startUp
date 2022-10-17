@@ -12,6 +12,9 @@ modalApplication();
 
 import {modalContacts} from './modalConntacts.js';
 modalContacts();
+
+import {animation} from './animation.js';
+animation();
     
 
     

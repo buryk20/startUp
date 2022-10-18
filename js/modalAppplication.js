@@ -9,7 +9,6 @@ export let modalApplication = function() {
         const clickBtnMod = mainCont.querySelector('.btn-form');
         const formWrp = mainCont.querySelector('.js-activ');
         const clickClose = mainCont.querySelector('.main-form__form-wrp');
-        console.log(modalWrp);
 
         const body = document.querySelector('body');
 
@@ -17,6 +16,15 @@ export let modalApplication = function() {
             buttonIndex = main.querySelectorAll('.btn-pop-up');
 
         const confirmation = document.getElementById('accept');
+
+        const contactClose = mainCont.querySelectorAll('.js-btn-close');
+
+        contactClose.forEach((el) => {
+            el.addEventListener("click", function (event) {
+                formWrp.classList.remove('popup-form__active');
+                formWrp.classList.remove('popup-form__container');
+            })
+        })
 
         burger.addEventListener("click", () => {
             burger.classList.toggle('header__burger-active');
@@ -26,6 +34,7 @@ export let modalApplication = function() {
 
         buttonIndex.forEach((el) => {
             el.addEventListener("click", () => {
+                console.log('sdfc');
                 formWrp.classList.add('popup-form__container');
                 formWrp.classList.add('popup-form__active');
 

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="stylesheet" href="css/animate.css">
-  <!-- <script type="module" src="js/main.js"></script> -->
+  <script type="module" src="js/main.js"></script>
   <style>
   </style>
 </head>
@@ -138,8 +138,7 @@
             <p class="main-offer__item-text">Запуск рекламных кампаний</p>
           </div>
         </div>
-        <div data-right data-wow-offset="200" data-wow-offset="200"
-          class="main-offer__description wow animate__animated">
+        <div data-right data-wow-offset="200" class="main-offer__description wow animate__animated">
           <p class="main-offer__description-text">
             Мы уделяем максимум внимания каждому проекту, чтобы не только
             разработать для вас функциональный сайт под ключ, но привести на
@@ -253,7 +252,7 @@
             <div class="main-advantage__advantage-list">
               <div class="main-advantage__advantage-list-left">
                 <div data-wow-offset="200"
-                  class="main-advantage__advantage-list-item-wrp first-circle wow animate__animated animate__bounceInUp">
+                  class="main-advantage__advantage-list-item-wrp wow first-circle wow animate__animated animate__bounceInUp">
                   <div class="main-advantage__advantage-list-item">
                     <img src="icons/Cogwheel_icon.png" alt="Cogwheel" class="main-advantage__advantage-list-img" />
                     <p class="main-advantage__advantage-list-title">
@@ -352,21 +351,24 @@
       <div class="main-marketing__wrp">
         <div class="main-marketing__body-wrp">
           <div class="main-marketing__blocks-list">
-            <div class="main-marketing__blocks-item">
+            <div data-wow-offset="200" class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
               <img src="icons/Radial_icon.svg" alt="Radial" class="main-marketing__blocks-img" />
               <p class="main-marketing__blocks-text">
                 Анализ факторов макро- и микросреды
               </p>
             </div>
-            <div class="main-marketing__blocks-item">
+            <div data-wow-offset="200" data-wow-delay="0.2s"
+              class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
               <img src="icons/Trand_icon.svg" alt="Trand" class="main-marketing__blocks-img" />
               <p class="main-marketing__blocks-text">Тренды поколений</p>
             </div>
-            <div class="main-marketing__blocks-item">
+            <div data-wow-offset="200" data-wow-delay="0.4s"
+              class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
               <img src="icons/Architecture_icon.svg" alt="Architecture" class="main-marketing__blocks-img" />
               <p class="main-marketing__blocks-text">Архитектура бренда</p>
             </div>
-            <div class="main-marketing__blocks-item">
+            <div data-wow-offset="200" data-wow-delay="0.6s"
+              class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
               <img src="icons/Strategy_icon.svg" alt="Strategy" class="main-marketing__blocks-img" />
               <p class="main-marketing__blocks-text">
                 Позиционирование и стратегия
@@ -378,7 +380,8 @@
             24/7 будет генерировать поток клиентов для вашей компании.
           </p>
           <div class="main-marketing__body-list">
-            <div class="main-marketing__body-list-item">
+            <div data-wow-offset="200"
+              class="main-marketing__body-list-item  wow animate__animated animate__fadeInLeft">
               <h4 class="main-marketing__body-list-title">Аудит</h4>
               <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
               <p class="main-marketing__body-list-text">
@@ -386,14 +389,16 @@
                 вашего бизнеса.
               </p>
             </div>
-            <div class="main-marketing__body-list-item">
+            <div data-wow-offset="200" data-wow-delay="0.4s"
+              class="main-marketing__body-list-item wow animate__animated animate__fadeInLeft">
               <h4 class="main-marketing__body-list-title">Архитектура</h4>
               <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
               <p class="main-marketing__body-list-text">
                 Выстроим четкую и логичную архитектуру бренда.
               </p>
             </div>
-            <div class="main-marketing__body-list-item">
+            <div data-wow-offset="200" data-wow-delay="0.8s"
+              class="main-marketing__body-list-item wow animate__animated animate__fadeInLeft">
               <h4 class="main-marketing__body-list-title">Стратегия</h4>
               <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
               <p class="main-marketing__body-list-text">
@@ -542,20 +547,9 @@
       </p>
     </div>
   </div>
-  <!-- <script src="dist/bundle.js"></script> -->
+  <!-- <script type="modyle" src="dist/bundle.js"></script> -->
   <script src="js/wow.min.js"></script>
   <script type="module" src="js/main.js"></script>
-  <!-- <script>
-    new WOW(
-      {
-        boxClass: 'wow',      // default
-        animateClass: 'animated', // default
-        offset: 0,          // default
-        mobile: true,       // default
-        live: true        // default
-      }
-    ).init();
-  </script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/intlTelInput-jquery.min.js"></script>
   <script src="js/intlTelInput.js"></script>
@@ -574,7 +568,6 @@
           function (resp) {
             var countryCode =
               resp && resp.countryCode ? resp.countryCode : '';
-            console.log(countryCode);
             success(countryCode);
           },
         );

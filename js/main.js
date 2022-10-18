@@ -1,6 +1,3 @@
-import {wowCastomMainPage} from './wowCastom.js';
-wowCastomMainPage();
-
 import {chatBot} from './chatBot.js';
 chatBot();
 
@@ -16,7 +13,8 @@ modalContacts();
 import {animation} from './animation.js';
 animation();
     
+// import {phoneValidCantry} from './phoneValidCantry.js';
+// phoneValidCantry();
 
     
-
 

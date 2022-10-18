@@ -1811,7 +1811,7 @@ body {
 }
 
 .main-realization__content-triangle::after {
-  content: url(../../icons/Content_icon.svg);
+  content: url(../../icons/content_icon.svg);
   position: absolute;
   left: 50px;
   top: 43px;
@@ -2759,6 +2759,7 @@ body {
 @media (max-width: 680px) {
   .main-marketing {
     padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 

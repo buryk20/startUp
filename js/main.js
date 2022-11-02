@@ -12,7 +12,12 @@ modalContacts();
 
 import {animation} from './animation.js';
 animation();
+
+import {navigationTitle} from './navigationTitle.js';
+navigationTitle();
     
+
+
 // import {phoneValidCantry} from './phoneValidCantry.js';
 // phoneValidCantry();
 

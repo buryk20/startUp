@@ -400,6 +400,10 @@ body {
   display: none;
 }
 
+.header__nav-item.active {
+  color: #4144F1;
+}
+
 .header__nav-line-mob {
   display: none;
 }
@@ -484,7 +488,7 @@ body {
 
 .main-idea {
   margin-bottom: 24px;
-  background-image: url(../../img/idea_bg.png);
+  background-image: url(../img/idea_bg.png);
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
@@ -499,7 +503,7 @@ body {
 
 @media (max-width: 583px) {
   .main-idea {
-    background-image: url(../../img/idea_bg_mob.png);
+    background-image: url(../img/idea_bg_mob.png);
     background-size: 90%;
     margin-bottom: 32px;
   }

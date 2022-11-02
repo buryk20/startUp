@@ -153,6 +153,10 @@ body {
     &.noActive {
       display: none;
     }
+
+    &.active {
+      color: $colorHoverButton;
+    }
   }
   &__nav-line-mob {
     display: none;
@@ -203,7 +207,7 @@ body {
 
 .main-idea {
   margin-bottom: 24px;
-  background-image: url(../../img/idea_bg.png);
+  background-image: url(../img/idea_bg.png);
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
@@ -212,7 +216,7 @@ body {
     background-size: 70%;
   }
   @include _583 {
-    background-image: url(../../img/idea_bg_mob.png);
+    background-image: url(../img/idea_bg_mob.png);
     background-size: 90%;
     margin-bottom: 32px;
   }

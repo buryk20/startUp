@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/intlTelInput.css">
-  <script type="module" src="js/main.js"></script>
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- <script type="module" src="js/main.js"></script> -->
   <title>Chat-bot</title>
 </head>
 
@@ -43,10 +44,10 @@
       </div>
     </div>
   </header>
-  <main data-chat-dot class="chat-bot">
+  <main data-chat-dot data-animation-wrp class="chat-bot">
     <section class="chat-bot-banner">
       <div class="chat-bot__wrp chat-bot-banner__container">
-        <div class="chat-bot-banner__content">
+        <div data-left class="chat-bot-banner__content wow animate__animated">
           <h1 class="chat-bot-banner__title">Создание чат-бота под ключ</h1>
           <p class="chat-bot-banner__text">
             Мессенджер-маркетинг для бизнеса – эффективный канал
@@ -56,7 +57,7 @@
           <button class="chat-bot__button btn-pop-up">Заказать бота</button>
         </div>
         <div class="chat-bot-banner__picture">
-          <img src="img/chat_bot_banner.png" alt="banner" class="" />
+          <img data-right class="wow animate__animated" src="img/chat_bot_banner.png" alt="banner" class="" />
         </div>
       </div>
     </section>
@@ -71,26 +72,29 @@
             Достаточно посмотреть на мнение пользователей:
           </p>
           <div class="chat-bot-statistics__content">
-            <div class="chat-bot-statistics__item">
+            <div data-wow-offset="200" class="chat-bot-statistics__item wow animate__animated animate__fadeInUp">
               <p class="chat-bot-statistics__percent">69%</p>
               <p class="chat-bot-statistics__text">
                 предпочитают получать быстрый отклик, чем ожидать ответ от
                 менеджера
               </p>
             </div>
-            <div class="chat-bot-statistics__item">
+            <div data-wow-offset="200" data-wow-delay="0.2s"
+              class="chat-bot-statistics__item wow animate__animated animate__fadeInUp">
               <p class="chat-bot-statistics__percent">40%</p>
               <p class="chat-bot-statistics__text">
                 пользуются чат-ботами каждый день, и это цифра растет
               </p>
             </div>
-            <div class="chat-bot-statistics__item">
+            <div data-wow-offset="200" data-wow-delay="0.4s"
+              class="chat-bot-statistics__item wow animate__animated animate__fadeInUp">
               <p class="chat-bot-statistics__percent">35%</p>
               <p class="chat-bot-statistics__text">
                 хотят, чтобы как можно больше брендов использовало чат-боты
               </p>
             </div>
-            <div class="chat-bot-statistics__item">
+            <div data-wow-offset="200" data-wow-delay="0.6s"
+              class="chat-bot-statistics__item wow animate__animated animate__fadeInUp">
               <p class="chat-bot-statistics__percent">21%</p>
               <p class="chat-bot-statistics__text">
                 считают общение через чат-бот наиболее простым путем
@@ -98,7 +102,7 @@
               </p>
             </div>
           </div>
-          <div class="chat-bot-statistics__proof">
+          <div data-right data-wow-offset="200" class="chat-bot-statistics__proof wow animate__animated">
             <p class="chat-bot-content__subtitle chat-bot-content__subtitle_italic">
               Хорошо проработанные и настроенные чат-боты получают ответы в
               90% случаев.
@@ -114,10 +118,10 @@
       </div>
       <div class="chat-bot__wrp">
         <div class="chat-bot-why__container">
-          <div class="chat-bot-why__picture">
+          <div data-left data-wow-offset="200" class="chat-bot-why__picture wow animate__animated">
             <img src="img/why.png" alt="why" />
           </div>
-          <div class="chat-bot-why__content">
+          <div data-right data-wow-offset="200" class="chat-bot-why__content wow animate__animated">
             <h3 class="chat-bot-content__title">
               Почему чат-бот – это выгодно
             </h3>
@@ -151,7 +155,7 @@
           Чем чат-бот полезен бизнесу
         </h2>
         <div class="chat-bot-advantages__container">
-          <div class="chat-bot-advantages__item">
+          <div data-wow-offset="200" class="chat-bot-advantages__item wow animate__animated animate__fadeInLeft">
             <img src="img/icon_advantage.png" alt="icon" class="chat-bot-advantages__icon" />
             <div class="chat-bot-advantages__content">
               <h3 class="chat-bot-advantages__subtitle">
@@ -166,7 +170,8 @@
               </p>
             </div>
           </div>
-          <div class="chat-bot-advantages__item">
+          <div data-wow-offset="200" data-wow-delay="0.4s"
+            class="chat-bot-advantages__item wow animate__animated animate__fadeInLeft">
             <img src="img/icon_advantage_selling.png" alt="icon" class="chat-bot-advantages__icon" />
             <div class="chat-bot-advantages__content">
               <h3 class="chat-bot-advantages__subtitle">
@@ -181,7 +186,8 @@
               </p>
             </div>
           </div>
-          <div class="chat-bot-advantages__item">
+          <div data-wow-offset="200" data-wow-delay="0.8s"
+            class="chat-bot-advantages__item wow animate__animated animate__fadeInLeft">
             <img src="img/icon_advantage_passage-of-time.png" alt="icon" class="chat-bot-advantages__icon" />
             <div class="chat-bot-advantages__content">
               <h3 class="chat-bot-advantages__subtitle">
@@ -213,7 +219,7 @@
     <section class="chat-bot-explanation">
       <div class="chat-bot__wrp">
         <div class="chat-bot-explanation__container">
-          <div class="chat-bot-explanation__item">
+          <div data-left data-wow-offset="200" class="chat-bot-explanation__item wow animate__animated">
             <p class="chat-bot-content__text chat-bot-content__text_white">
               <b>Чат-бот</b> – это, по сути, виртуальный менеджер вашей
               компании. Он выяснит потребность клиента и поможет удовлетворить
@@ -229,18 +235,20 @@
             </p>
           </div>
           <div class="chat-bot-explanation__picture">
-            <img src="img/explanation_picture.png" alt="picture" />
+            <img data-right data-wow-offset="200" class="wow animate__animated" src="img/explanation_picture.png"
+              alt="picture" />
           </div>
         </div>
         <div class="chat-bot-explanation__content">
-          <div class="chat-bot-explanation__text chat-bot-content__text chat-bot-content__text_weight">
+          <div data-left data-wow-offset="200"
+            class="chat-bot-explanation__text chat-bot-content__text chat-bot-content__text_weight wow animate__animated">
             Чат-бот позволит вашему бизнесу выйти на существенно новый уровень
             взаимодействия с потенциальными и существующими клиентами. Он
             моментально удовлетворит запрос, предусмотрит все возможные
             сценарии развития общения и коммуникации с клиентом, предоставив
             релевантный ответ.
           </div>
-          <div class="chat-bot-explanation__content-item">
+          <div data-right data-wow-offset="200" class="chat-bot-explanation__content-item wow animate__animated">
             <h4 class="chat-bot-content__subtitle chat-bot-content__subtitle_white chat-bot-explanation__position">
               Наша команда реализует для вас чат-бота, который возьмет на себя
               большую часть рутинных бизнес-процессов:
@@ -439,7 +447,7 @@
         </div>
         <div class="chat-bot-types__js js-active">
           <div class="chat-bot-types__item">
-            <div class="chat-bot-types__item-content">
+            <div data-wow-offset="200" class="chat-bot-types__item-content wow animate__animated animate__fadeInLeft">
               <div class="chat-bot-types__subtitle-box">
                 <img src="icons/web_icon.png" alt="icon" class="chat-bot-types__icon" />
                 <h4 class="chat-bot-types__subtitle">
@@ -467,7 +475,8 @@
                 </li>
               </ul>
             </div>
-            <div class="chat-bot-types__item-content">
+            <div data-wow-offset="200" data-wow-delay="0.4s"
+              class="chat-bot-types__item-content wow animate__animated animate__fadeInLeft">
               <div class="chat-bot-types__subtitle-box">
                 <img src="icons/customer_support_icon.png" alt="icon" class="chat-bot-types__icon" />
                 <h4 class="chat-bot-types__subtitle">
@@ -495,7 +504,8 @@
                 </li>
               </ul>
             </div>
-            <div class="chat-bot-types__item-content">
+            <div data-wow-offset="200" data-wow-delay="0.8s"
+              class="chat-bot-types__item-content wow animate__animated animate__fadeInLeft">
               <div class="chat-bot-types__subtitle-box">
                 <img src="icons/work__staff_icon.png" alt="icon" class="chat-bot-types__icon" />
                 <h4 class="chat-bot-types__subtitle">
@@ -526,7 +536,7 @@
           <div class="chat-bot-types__item">
             <div class="chat-bot-types__item-content">
               <div>
-                <div class="chat-bot-types__subtitle-box">
+                <div class="chat-bot-types__subtitle-box chat-bot-types__subtitle-box-br">
                   <img src="icons/video_call_icon.svg" alt="icon" class="chat-bot-types__icon" />
                   <h4 class="chat-bot-types__subtitle chat-bot-types__subtitle_info">
                     Чат-бот для конференций, форумов, вебинаров и марафонов.
@@ -795,10 +805,12 @@
   </div>
 
   <!-- <script type="modyle" src="dist/bundle.js"></script> -->
+  <script src="js/wow.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/intlTelInput-jquery.min.js"></script>
   <script src="js/intlTelInput.js"></script>
   <script src="js/utils.js"></script>
+  <script src="dist/bundle.js"></script>
 
   <script>
     var input = document.querySelector('#phone');

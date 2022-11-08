@@ -3782,6 +3782,12 @@ body {
   transition: opacity, 0.3s ease-out;
 }
 
+.popup-form__active > .main-form__form-wrp > .js-btn-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .popup-accept__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4046,6 +4052,7 @@ body {
 .contacts__btn-close {
   width: 25px;
   height: 25px;
+  display: none;
   top: 16px;
   right: 16px;
   position: absolute;
@@ -4222,7 +4229,7 @@ body {
 
 .chat-bot-banner {
   padding-top: 90px;
-  background-image: url(../../img/idea_bg.png);
+  background-image: url(../img/idea_bg.png);
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
@@ -4233,7 +4240,7 @@ body {
 
 @media (max-width: 425px) {
   .chat-bot-banner {
-    background-image: url(../../img/chat_bot_bg_mob.png);
+    background-image: url(../img/chat_bot_bg_mob.png);
     background-size: 100%;
   }
 }
@@ -5091,6 +5098,10 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-right: 10px;
+}
+
+.chat-bot-types__subtitle-box.chat-bot-types__subtitle-box-br {
+  max-width: 100%;
 }
 
 .chat-bot-types__icon {

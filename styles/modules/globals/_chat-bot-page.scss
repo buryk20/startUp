@@ -88,7 +88,7 @@
 
 .chat-bot-banner {
   padding-top: 90px;
-  background-image: url(../../img/idea_bg.png);
+  background-image: url(../img/idea_bg.png);
   background-repeat: no-repeat;
   background-position-x: left;
   background-position-y: top;
@@ -97,7 +97,7 @@
   margin-bottom: 120px;
 
   @include _425 {
-    background-image: url(../../img/chat_bot_bg_mob.png);
+    background-image: url(../img/chat_bot_bg_mob.png);
     background-size: 100%;
   }
 
@@ -882,6 +882,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding-right: 10px;
+
+    &.chat-bot-types__subtitle-box-br {
+      max-width: 100%;
+    }
   }
 
   &__icon {

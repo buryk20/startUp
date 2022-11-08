@@ -1875,6 +1875,10 @@ body {
     visibility: visible;
     opacity: 1;
     transition: opacity, 0.3s ease-out;
+
+    & > .main-form__form-wrp > .js-btn-close {
+      display: flex;
+    }
   }
 }
 
@@ -2039,6 +2043,9 @@ body {
   &__btn-close {
     width: 25px;
     height: 25px;
+
+    display: none;
+
     top: 16px;
     right: 16px;
     position: absolute;

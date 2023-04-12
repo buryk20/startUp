@@ -48,7 +48,7 @@ export let modalApplication = function() {
                 setTimeout(() => {
                     formWrp.classList.remove('popup-form__container');
                     formWrp.classList.add('main-form__container');
-                }, 5000);
+                }, 3000);
             });
         })
 

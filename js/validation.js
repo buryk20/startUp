@@ -1,6 +1,9 @@
 export let validation = function() {
     const validationWrp = document.querySelector('[data-input-wrp]') 
     if(validationWrp != null) {
+        const confirmation = document.getElementById('accept');
+        console.log(confirmation);
+        const formWrp = document.querySelector('.js-activ');
         let form = document.querySelector('.js-form'),
         formInputs = form.querySelectorAll('.js-input'),
         inputEmail = form.querySelector('.js-input-email'),
@@ -31,10 +34,8 @@ export let validation = function() {
             formInputs.forEach(function (input) {
                 if (input.value === '') {
                     input.classList.add('errorInput')
-                    console.log(input);
                 } else {
                     input.classList.remove('errorInput')
-                    console.log(input);
 
                 }
             });
@@ -69,7 +70,9 @@ export let validation = function() {
             confirmation.classList.add('popup-accept__container-active');
             setTimeout(() => {
                 confirmation.classList.remove('popup-accept__container-active');
-            }, 5000);
+                formWrp.classList.remove('popup-form__container');
+                formWrp.classList.remove('popup-form__active');
+            }, 3000);
         }
 
     }

@@ -15,6 +15,9 @@ animation();
 
 import {navigationTitle} from './navigationTitle.js';
 navigationTitle();
+
+import {inputForm} from './inputForm.js';
+inputForm();
     
 
 

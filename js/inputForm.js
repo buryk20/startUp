@@ -21,14 +21,14 @@ export let inputForm = function() {
             inputValue[nameIn] = el.value;
         });
         if(inputValue.name !== '' && inputValue.company !== '' && inputValue.phone !== '' && inputValue.email !== '') {
-            message.text = string(JSON. stringify(inputValue)) + ` Страница: ${namePage}`;
+            message.text = string(JSON. stringify(inputValue)) + '\n' + `Страница: ${namePage}`;
             console.log(message.text);
             xhr.send(JSON.stringify(message));
         }
     }
 
     function string(srt) {
-        return ((srt.replace(/[{}"]/g, '')).replace(/,/gi, ', ')).replace(/:/gi, ': ');
+        return ((srt.replace(/[{}"]/g, '')).replace(/,/gi, ',\n')).replace(/:/gi, ': ');
     }
 
     const xhr = new XMLHttpRequest();

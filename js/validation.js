@@ -2,7 +2,6 @@ export let validation = function() {
     const validationWrp = document.querySelector('[data-input-wrp]') 
     if(validationWrp != null) {
         const confirmation = document.getElementById('accept');
-        console.log(confirmation);
         const formWrp = document.querySelector('.js-activ');
         let form = document.querySelector('.js-form'),
         formInputs = form.querySelectorAll('.js-input'),

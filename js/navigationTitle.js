@@ -4,19 +4,11 @@ export let navigationTitle = function() {
         const arrNavItem = navMainWrp.querySelectorAll('.header__nav-item');
         let namePage = document.URL;
         arrNavItem.forEach((el, index) => {
-            el.addEventListener('click', () => {
-                localStorage.setItem(el.getAttributeNode('data-name').nodeValue, index)
-                // if(namePage === el.getAttributeNode('data-name').nodeValue){
-                //     arrNavItem[index].classList.add('nav-list-active');
-                // } else {
-                //     if(namePage.includes(el.getAttributeNode('data-name').nodeValue) && (namePage != el.getAttributeNode('data-name').nodeValue)) {
-                //         arrNavItem[index].classList.add('nav-list-active');
-                //     }
-                // }
-                arrNavItem.[localStorage.getItem(el.getAttributeNode('data-name').nodeValue)]
-            })
+            if(namePage === el.getAttributeNode('data-name').nodeValue) {
+                el.classList.add('nav-list-active');
+            } if(namePage.includes(el.getAttributeNode('data-name').nodeValue) && (index !== 0)) {
+                el.classList.add('nav-list-active');
+            }
         });
     }
-    console.log(localStorage.getItem('https://laravel.star-up-group.com.ua/'));
-    
 }

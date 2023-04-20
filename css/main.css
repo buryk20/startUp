@@ -3643,6 +3643,10 @@ body {
   display: none;
 }
 
+.footer__nav-item.active {
+  color: #5D5FEF;
+}
+
 .footer__nav-mob-line {
   max-width: 312px;
   width: 100%;

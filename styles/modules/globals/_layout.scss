@@ -1784,10 +1784,15 @@ body {
     &:hover {
       color: $colorMain;
       cursor: pointer;
+
     }
 
     &.noActive {
       display: none;
+    }
+
+    &.active {
+      color: $colorMain;;
     }
   }
   &__nav-mob-line {

@@ -194,6 +194,10 @@ body {
         margin-bottom: 0;
       }
     }
+
+    &.active {
+      color: $colorMain;
+    }
   }
 }
 
@@ -1784,7 +1788,6 @@ body {
     &:hover {
       color: $colorMain;
       cursor: pointer;
-
     }
 
     &.noActive {
@@ -1792,7 +1795,7 @@ body {
     }
 
     &.active {
-      color: $colorMain;;
+      color: $colorMain;
     }
   }
   &__nav-mob-line {

@@ -41,9 +41,9 @@
                 </nav>
                 <div class="header__nav-line-mob"></div>
                 <div class="header__lang-wrp">
-                    <div class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('ua') }}">UA</a></div>
-                    <div class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('ru') }}">RU</a></div>
-                    <div class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('en') }}">EN</a></div>
+                    <div data-name="ua" class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('ua') }}">UA</a></div>
+                    <div data-name="ua/ru/" class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('ru') }}">RU</a></div>
+                    <div data-name="ua/en/" class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('en') }}">EN</a></div>
                 </div>
             </div>
         </div>

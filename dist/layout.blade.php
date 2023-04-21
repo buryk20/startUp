@@ -30,20 +30,20 @@
             <div id="nav_active" class="header__nav-wrp">
                 <nav class="header__nav">
                     <!-- nav-list-active клас активного меню -->
-                    <div data-name="https://laravel.star-up-group.com.ua/" class="header__nav-item"><a href="{{ LaravelLocalization::localizeUrl('/') }}">{{ __('header.Homepage') }}</a></div>
-                    <div data-name="contacts" style="display: none;" class="header__nav-item">{{ __('header.Contacts') }}</div>
-                    <div data-name="marketing" style="display: none;" class="header__nav-item">{{ __('header.Marketing') }}</div>
-                    <div data-name="web-development" style="display: none;" class="header__nav-item">{{ __('header.WebDevelopment') }}</div>
-                    <div data-name="chatbots" class="header__nav-item"><a href="{{ LaravelLocalization::localizeUrl('/chatbots') }}">{{ __('header.Chatbots') }}</a></div>
-                    <div data-name="SEO" style="display: none;" class="header__nav-item">{{ __('header.SEO') }}</div>
-                    <div data-name="content" style="display: none;" class="header__nav-item">{{ __('header.Content') }}</div>
-                    <div data-name="about-us" style="display: none;" class="header__nav-item">{{ __('header.AboutUs') }}</a></div>
+                    <div data-name="/" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/') }}">{{ __('header.Homepage') }}</a></div>
+                    <div data-name="/contacts" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.Contacts') }}</a></div>
+                    <div data-name="/marketing" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.Marketing') }}</a></div>
+                    <div data-name="/web-development" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.WebDevelopment') }}</a></div>
+                    <div data-name="/chatbots" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/chatbots') }}">{{ __('header.Chatbots') }}</a></div>
+                    <div data-name="/SEO" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.SEO') }}</a></div>
+                    <div data-name="/content" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.Content') }}</a></div>
+                    <div data-name="/about-us" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.AboutUs') }}</a></div>
                 </nav>
                 <div class="header__nav-line-mob"></div>
                 <div class="header__lang-wrp">
-                    <div data-name="ua" class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('ua') }}">UA</a></div>
-                    <div data-name="ua/ru/" class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('ru') }}">RU</a></div>
-                    <div data-name="ua/en/" class="header__lang-item"><a href="{{ LaravelLocalization::getLocalizedURL('en') }}">EN</a></div>
+                    <div data-name="ua" class="header__lang-item"><a data-lang href="{{ LaravelLocalization::getLocalizedURL('ua') }}">UA</a></div>
+                    <div data-name="ua/ru/" class="header__lang-item"><a data-lang href="{{ LaravelLocalization::getLocalizedURL('ru') }}">RU</a></div>
+                    <div data-name="ua/en/" class="header__lang-item"><a data-lang href="{{ LaravelLocalization::getLocalizedURL('en') }}">EN</a></div>
                 </div>
             </div>
         </div>

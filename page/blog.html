@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div id="nav" class="header__wrp">
+            <a href="./" class="header__logo-link">
+                <picture>
+                    <source srcset="icons/Main_logo_small.svg" media="(max-width: 680px)" />
+                    <img src="../icons/Main_logo.svg" alt="logo" />
+                </picture>
+            </a>
+            <div id="burger_active" class="header__burger">
+                <span class="header__burger-midl"></span>
+            </div>
+            <div id="nav_active" class="header__nav-wrp">
+                <nav class="header__nav">
+                    <!-- nav-list-active клас активного меню -->
+                    <div name="cont" data-name="/" class="header__nav-item"><a data-link-nav>Контакты</a></div>
+                    <!-- <div class="header__nav-item">Маркетинг</div>
+              <div class="header__nav-item">Сайты</div> -->
+                    <div name="bot" data-name="/chatbots" class="header__nav-item"><a data-link-nav>Чат-боты</a></div>
+                    <!-- <div class="header__nav-item">Продвижение</div>
+              <div class="header__nav-item">Наполнение контентом</div>
+              <div class="header__nav-item">О нас</div> -->
+                </nav>
+                <div class="header__nav-line-mob"></div>
+                <div class="header__lang-wrp">
+                    <div name="ua" class="header__lang-item lang-item-active"><a data-lang href="">UA</a> </div>
+                    <div name="ua/ru/" class="header__lang-item"><a data-lang href="">DE</a></div>
+                    <div name="ua/en/" class="header__lang-item"><a data-lang href="">ENG</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="blog">
+            <h1 class="blog__title">Новое в блоге</h1>
+            <div class="blog__article-wrp">
+                <img class="blog__article-img"
+                    src="https://hivelife.com/wp-content/uploads/2020/09/ceo-roles-hive-life-banner-1024x427.jpg"
+                    alt="">
+                <div class="blog__article-text-wrp">
+                    <a href="#">
+                        <h2 class="blog__article-text-title">Название статьи</h2>
+                        <p>Короткое описание, статьи</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrp">
+            <nav class="footer__nav-wrp">
+                <div name="contacts" class="footer__nav-item">Контакты</div>
+                <div class="footer__nav-item">Маркетинг</div>
+                <div class="footer__nav-item">Разработка</div>
+                <div class="footer__nav-item">Продвижение</div>
+                <div class="footer__nav-item">Наполнение контентом</div>
+                <div class="footer__nav-item">О нас</div>
+            </nav>
+            <div class="footer__nav-mob-line"></div>
+            <div class="footer__agreement-wrp">
+                <div class="footer__agreement-item">Политика конфиденциальности</div>
+                <div class="footer__agreement-dot"></div>
+                <div class="footer__agreement-item">Договор публичной оферты</div>
+            </div>
+            <div class="footer__copyright">&#169; 2022 Star Up Group</div>
+        </div>
+    </footer>
+</body>
+
+</html>

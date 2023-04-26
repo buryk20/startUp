@@ -248,6 +248,7 @@ body {
   font-size: 38px;
   font-weight: 700;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 49px;
   text-transform: uppercase;
@@ -305,6 +306,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
 }
 @media (max-width: 820px) {
@@ -408,6 +410,7 @@ body {
   font-size: 28px;
   font-weight: 600;
   color: #383737;
+  line-height: 140%;
   letter-spacing: 0.005em;
   margin-bottom: 38px;
 }
@@ -422,6 +425,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   margin-bottom: 72px;
 }
@@ -550,6 +554,7 @@ body {
   font-size: 32px;
   font-weight: 600;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
   margin-bottom: 28px;
@@ -564,6 +569,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
   margin-bottom: 54px;
@@ -642,6 +648,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-transform: uppercase;
   text-align: center;
@@ -674,6 +681,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   max-width: 994px;
   width: 100%;
@@ -751,6 +759,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   margin-bottom: 38px;
 }
@@ -760,6 +769,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     color: #000000;
+    line-height: 140%;
     letter-spacing: 0.005em;
   }
 }
@@ -873,6 +883,7 @@ body {
   font-size: 32px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
   margin-bottom: 59px;
@@ -934,6 +945,7 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   letter-spacing: 0.07em;
   font-family: "IBM Plex Mono", monospace, sans-serif, Arial;
@@ -944,12 +956,14 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
 }
 .main-realization__development-numer {
   font-size: 48px;
   font-weight: 700;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   justify-self: right;
   margin-right: 48px;
@@ -991,6 +1005,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   letter-spacing: 0.07em;
   font-family: "IBM Plex Mono", monospace, sans-serif, Arial;
@@ -1008,6 +1023,7 @@ body {
   font-size: 28px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   justify-self: left;
   margin-left: 48px;
@@ -1102,6 +1118,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   position: absolute;
   right: 10px;
@@ -1117,12 +1134,14 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
 }
 .main-realization__content-numer {
   font-size: 48px;
   font-weight: 700;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   grid-row-start: 3;
   grid-column-start: 3;
@@ -1166,6 +1185,7 @@ body {
   font-size: 36px;
   font-weight: 400;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   position: absolute;
   right: 23px;
@@ -1194,6 +1214,7 @@ body {
   font-size: 28px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   grid-row-start: 3;
   text-align: right;
@@ -1296,12 +1317,14 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
 }
 .main-realization__promotion-numer {
   font-size: 48px;
   font-weight: 700;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   grid-row-start: 5;
   justify-self: right;
@@ -1355,6 +1378,7 @@ body {
   font-size: 28px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   grid-row-start: 5;
   justify-self: left;
@@ -1428,6 +1452,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
   margin-bottom: 54px;
@@ -1498,6 +1523,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-transform: uppercase;
   text-align: center;
@@ -1517,6 +1543,7 @@ body {
   font-size: 32px;
   font-weight: 600;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
   margin-bottom: 64px;
@@ -1731,6 +1758,7 @@ body {
   font-size: 20px;
   font-weight: 500;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
   margin-bottom: 24px;
@@ -1752,6 +1780,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 20px;
   text-align: center;
@@ -1809,6 +1838,7 @@ body {
   font-size: 36px;
   font-weight: 500;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-transform: uppercase;
 }
@@ -1829,6 +1859,7 @@ body {
   font-size: 32px;
   font-weight: 600;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 42px;
   margin-bottom: 16px;
@@ -1862,6 +1893,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 31px;
   text-align: center;
@@ -2001,6 +2033,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-transform: uppercase;
   text-align: center;
@@ -2044,6 +2077,7 @@ body {
   font-size: 28px;
   font-weight: 500;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 36px;
   text-align: center;
@@ -2108,6 +2142,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: right;
   margin-right: 32px;
@@ -2139,6 +2174,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: left;
 }
@@ -2172,6 +2208,7 @@ body {
   font-size: 28px;
   font-weight: 500;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 36px;
   text-align: center;
@@ -2279,6 +2316,7 @@ body {
   font-size: 36px;
   font-weight: 600;
   color: #ffffff;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 47px;
   text-align: center;
@@ -2323,6 +2361,7 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   letter-spacing: 0.01em;
   margin-bottom: 52px;
@@ -2372,6 +2411,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   line-height: 21px;
   letter-spacing: 0.01em;
@@ -2421,6 +2461,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   letter-spacing: 0.01em;
 }
@@ -2512,6 +2553,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
 }
@@ -2570,6 +2612,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
 }
@@ -2605,6 +2648,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
 }
@@ -2707,6 +2751,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
 }
@@ -2853,6 +2898,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
 }
 .contacts__dev-site-tel-text {
@@ -3625,6 +3671,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: #000000;
+  line-height: 140%;
   letter-spacing: 0.005em;
   background: #ffffff;
   border-radius: 8px;
@@ -4070,6 +4117,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   color: #3a3a3a;
+  line-height: 140%;
   letter-spacing: 0.005em;
 }
 @media (max-width: 1472px) {
@@ -4298,17 +4346,23 @@ body {
 }
 .blog__title {
   margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
 }
 .blog__article-wrp {
-  max-width: 886px;
+  max-width: 600px;
   width: 100%;
-  height: 560px;
-  display: flex;
-  position: relative;
+  border-radius: 8px;
+}
+.blog__article-img-wrp {
+  margin-bottom: 16px;
   border-radius: 8px;
   overflow: hidden;
 }
-.blog__article-wrp:hover > .blog__article-img {
+.blog__article-img-wrp:hover .blog__article-img {
   transform: scale(1.1);
   transition: transform 0.3s;
 }
@@ -4321,13 +4375,158 @@ body {
 }
 .blog__article-text-wrp {
   width: 100%;
-  padding: 16px;
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(93, 95, 239, 0.5607843137);
-  color: #ffffff;
-  cursor: pointer;
 }
 .blog__article-text-title {
   display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  color: #006ca9;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+.blog__article-text-link {
+  margin-bottom: 16px;
+  display: inline-flex;
+}
+.blog__article-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+.blog__article-type-wrp {
+  width: 100%;
+  margin-bottom: 16px;
+  gap: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.blog__article-type {
+  padding: 10px 1.5rem;
+  display: inline-flex;
+  background-color: #5d5fef;
+  border-radius: 8px;
+  border: 1px solid #006ca9;
+  color: #ffffff;
+  transition: 0.3s;
+}
+.blog__article-type:hover {
+  background-color: #ffffff;
+  color: #5d5fef;
+  transition: 0.3s;
+}
+.blog__article-type-img {
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+  margin-right: 8px;
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.blog__article-type-specialist-wrp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.blog__article-type-specialist-text {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4144f1;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+.article-text {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+.article-text li {
+  margin-bottom: 12px;
+}
+.article-text li::before {
+  content: "•";
+  padding-right: 10px;
+  color: #006ca9;
+}
+.article-text a {
+  text-decoration: underline;
+  transition: 0.3s;
+}
+.article-text a:hover {
+  color: #006ca9;
+  transition: 0.3s;
+}
+.article-text h2,
+.article-text h3,
+.article-text h4 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+.article-text P {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 160%;
+  letter-spacing: 0.005em;
+}
+.article-text strong {
+  color: #006ca9;
+}
+
+.article__wrp {
+  max-width: 1364px;
+  width: 100%;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article__img {
+  max-width: 1100px;
+  width: 100%;
+  height: 440px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article__title-wrp {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  background-color: #5d5fef;
+}
+.article__title {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 1364px;
+  width: 100%;
+  position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

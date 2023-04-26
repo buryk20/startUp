@@ -1,7 +1,13 @@
-@mixin text($fontSize, $fontWeight, $color) {
+@mixin text(
+  $fontSize,
+  $fontWeight: 400,
+  $color: $colorDark,
+  $lineHeight: 140%
+) {
   font-size: $fontSize;
   font-weight: $fontWeight;
   color: $color;
+  line-height: $lineHeight;
   letter-spacing: 0.005em;
 }
 

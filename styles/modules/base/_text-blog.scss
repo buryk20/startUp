@@ -1,0 +1,46 @@
+.article-text {
+  max-width: 1100px;
+
+  @include marCenter;
+
+  @include text($fontSize: 16px);
+
+  li {
+    margin-bottom: 12px;
+
+    &::before {
+      content: "•";
+      padding-right: 10px;
+      color: $colorBlue_60;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    transition: 0.3s;
+
+    &:hover {
+      color: $colorBlue_60;
+
+      transition: 0.3s;
+    }
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @include text($fontSize: 28px);
+  }
+
+  P {
+    margin-bottom: 12px;
+    @include text($fontSize: 16px, $lineHeight: 160%);
+  }
+
+  strong {
+    color: $colorBlue_60;
+  }
+}

@@ -30,4 +30,12 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 	Route::get('blog', function () {
 		return View::make('blog');
 	});
+
+	Route::get('blog/SEO', function () {
+		return View::make('SEO');
+	});
+
+	Route::get('blog/SEO/chto-takoye-seo', function () {
+		return View::make('chto-takoye-seo');
+	});
 });

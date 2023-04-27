@@ -1,5 +1,5 @@
 export let navigationTitle = function() {
-    const navMainWrp = document.querySelector('#nav');
+    console.log(navMainWrp);
     if(navMainWrp != null) {
         const arrNavItemNode = navMainWrp.querySelectorAll('[data-link-nav]');
         const arrLeng = navMainWrp.querySelectorAll('[data-lang]');
@@ -9,7 +9,6 @@ export let navigationTitle = function() {
             }
         });
         arrLeng.forEach((el, index) => {
-            console.log(window.location.pathname.includes('/' + (el.innerHTML).toLowerCase()));
             if(window.location.pathname.includes('/' + (el.innerHTML).toLowerCase())) {
                 arrLeng[index].classList.add('active');
             }

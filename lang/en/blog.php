@@ -1,6 +1,8 @@
 <?php
 
 return [
-    'title' => 'Blog'
+    'title' => 'New on the blog',
+    'metaTitle' => 'The most recent and up-to-date',
+    'metaDescription' => "Read"
 
 ];

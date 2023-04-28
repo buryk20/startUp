@@ -1,7 +1,6 @@
 @extends('layout')
 
-@section('title'){{ __('chto-takoye-seo.metaTitle') }}@endsection
-@section('metaDiscription'){{ __('chto-takoye-seo.metaDescription') }}@endsection
+@section('title'){{ __('blog.title') }}@endsection
 
 @section('main_content')
 <main class="article">

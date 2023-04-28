@@ -1,6 +1,8 @@
 <?php
 
 return [
-    'title' => 'Блог'
+    'title' => 'Новое в блоге',
+    'metaTitle' => 'Самое свежее и актуальное',
+    'metaDescription' => "Читайте"
 
 ];

@@ -6,7 +6,7 @@
 @section('main_content')
 <main class="article">
     <div class="article__title-wrp">
-        <h1 class="article__title">Что такое SEO?</h1>
+        <h1 class="article__title">{{ __('chto-takoye-seo.title') }}</h1>
     </div>
     <div class="article__wrp">
         <div class="article__img-wrp">
@@ -14,101 +14,43 @@
         </div>
         <div class="article-text">
             <ol>
-                <li><a href="#chto takoe seo"><strong>Что такое SEO?</strong></a></li>
-                <li><a href="#kakie problemi reshaet seo"><strong>Какие проблемы исправляет SEO?</strong></a></li>
-                <li><a href="#Sostavlyayuschie SEO prodvijeniya"><strong>Составляющие SEO-продвижения</strong></a>
+                <li><a href="#chto takoe seo"><strong>{{ __('chto-takoye-seo.title') }}</strong></a></li>
+                <li><a href="#kakie problemi reshaet seo"><strong>{{ __('chto-takoye-seo.problems') }}</strong></a></li>
+                <li><a href="#Sostavlyayuschie SEO prodvijeniya"><strong>{{ __('chto-takoye-seo.components') }}</strong></a>
                 </li>
-                <li><a href="#uspeshnost SEO prodvijeniya"><strong>Что влияет на успешность
-                            SEO-продвижения?</strong></a></li>
-                <li><a href="#samostoyatelnoe prodvijenie"><strong>Можно ли продвигать сайты
-                            самостоятельно</strong></a>
+                <li><a href="#uspeshnost SEO prodvijeniya"><strong>{{ __('chto-takoye-seo.success') }}</strong></a></li>
+                <li><a href="#samostoyatelnoe prodvijenie"><strong>{{ __('chto-takoye-seo.onOwn') }}</strong></a>
                 </li>
             </ol>
-            <h2 style="text-align: center;"><strong>SEO продвижение: что это и как с ним работать?</strong></h2>
-            <p>SEO продвижение &ndash; это процесс оптимизации сайта для поисковых систем с целью улучшения его
-                позиций
-                в поисковой выдаче. Хорошо продвигаемый сайт позволяет привлечь больше трафика на сайт и увеличить
-                его
-                видимость в сети.</p>
-            <h2 style="text-align: center;"><a id="chto takoe seo" name="chto takoe seo"></a><strong>Что такое
-                    SEO?</strong></h2>
-            <p><strong>SEO (Search Engine Optimization)</strong> - это процесс оптимизации сайта и его контента для
-                улучшения ранжирования в поисковых системах.
-            <p>Цель SEO-оптимизации состоит в том, чтобы увеличить
-                количество органического трафика на сайт, т.е. посетителей, которые находят сайт через поисковые
-                запросы
-                без использования платных рекламных объявлений.
-            </p>Однако для достижения успеха в SEO-оптимизации
-            необходимо постоянно следить за обновлениями поисковых алгоритмов, анализировать конкурентов и
-            создавать
-            уникальные SEO-стратегии для каждого сайта.</p>
-            <h3 style="text-align: center;"><a id="kakie problemi reshaet seo" name="kakie problemi reshaet seo"></a><strong>Какие проблемы исправляет SEO?</strong></h3>
-            <p>SEO-оптимизация помогает решить множество проблем, с которыми сталкиваются владельцы сайтов.
-                Например,
-                если сайт имеет низкое качество контента или он не оптимизирован для поисковых систем, то он может
-                иметь
-                низкий рейтинг и не получать достаточно трафика. При этом, сайт может иметь отличный дизайн, удобную
-                навигацию и интересный контент, но если он не отображается на первых страницах поисковых систем, то
-                потенциальные посетители его просто не найдут.</p>
-            <p>Другой проблемой, которую помогает решить SEO, является конкуренция в определенной нише. Если в нише
-                есть
-                множество других сайтов, которые предлагают похожий контент, то может быть трудно выделиться и
-                привлечь
-                внимание. С помощью SEO-оптимизации можно улучшить качество и уникальность контента, оптимизировать
-                сайт
-                для более точных запросов пользователей и создать уникальную стратегию, которая позволит повысить
-                авторитетность сайта. Эти методы помогают выделиться на фоне конкурентов и привлечь больше трафика
-                на
-                сайт.</p>
-            <p>Таким образом, SEO-оптимизация является важным инструментом, который помогает исправить множество
-                проблем, с которыми сталкиваются владельцы сайтов, и позволяет повысить рейтинг и трафик на сайте.
+            <h2 style="text-align: center;"><strong>{{ __('chto-takoye-seo.whatSeo') }}</strong></h2>
+            <p>{{ __('chto-takoye-seo.process') }}</p>
+            <h2 style="text-align: center;"><a id="chto takoe seo" name="chto takoe seo"></a><strong>{{ __('chto-takoye-seo.title') }}</strong></h2>
+            <p><strong>SEO (Search Engine Optimization)</strong> {{ __('chto-takoye-seo.seoIs') }}
+            <p>{{ __('chto-takoye-seo.target') }}
+            </p>{{ __('chto-takoye-seo.success') }}</p>
+            <h3 style="text-align: center;"><a id="kakie problemi reshaet seo" name="kakie problemi reshaet seo"></a><strong>{{ __('chto-takoye-seo.problems') }}</strong></h3>
+            <p>{{ __('chto-takoye-seo.seoOptimization') }}</p>
+            <p>{{ __('chto-takoye-seo.seoOptimization_1') }}</p>
+            <p>{{ __('chto-takoye-seo.seoOptimization_2') }}
             </p>
-            <h3 style="text-align: center;"><a id="Sostavlyayuschie SEO prodvijeniya" name="Sostavlyayuschie SEO prodvijeniya"></a><strong>Составляющие SEO-продвижения</strong></h3>
-            <p>Составляющие SEO-продвижения включают в себя ряд элементов, каждый из которых важен для создания
-                эффективной стратегии продвижения. Вот некоторые из основных составляющих:</p>
+            <h3 style="text-align: center;"><a id="Sostavlyayuschie SEO prodvijeniya" name="Sostavlyayuschie SEO prodvijeniya"></a><strong>{{ __('chto-takoye-seo.components') }}</strong></h3>
+            <p>{{ __('chto-takoye-seo.elemSeo') }}</p>
             <ul>
-                <li><strong>Исследование ключевых слов:</strong> это процесс определения ключевых слов и фраз,
-                    наиболее
-                    подходящих для вашего бизнеса и которые пользователи часто используют в своих запросах в
-                    поисковых
-                    системах.</li>
-                <li><strong>Анализ конкурентов:</strong> изучение того, как ваши конкуренты продвигают свои сайты в
-                    поисковых системах, может помочь вам определить свою стратегию продвижения и выявить уникальные
-                    возможности для вашего бизнеса.</li>
-                <li><strong>Оптимизация веб-сайта:</strong> это важный этап SEO-продвижения, который включает в себя
-                    создание уникального и интересного контента, оптимизацию метатегов, заголовков и описаний
-                    страниц,
-                    ускорение загрузки страниц и улучшение пользовательского опыта.</li>
-                <li><strong>Сбор ссылок: </strong>это процесс получения внешних ссылок на ваш сайт, что помогает
-                    повысить его авторитетность и рейтинг в поисковых системах.</li>
-                <li><strong>Мониторинг и анализ результатов: </strong>это процесс отслеживания и анализа того, как
-                    ваш
-                    сайт продвигается в поисковых системах, а также оценки эффективности вашей стратегии продвижения
-                    и
-                    корректировки ее в соответствии с результатами.</li>
-                <li><strong>Социальные сигналы: </strong>это процесс продвижения вашего сайта через социальные сети,
-                    такие как Facebook, Twitter, LinkedIn и другие.</li>
+                <li><strong>{{ __('chto-takoye-seo.elemSeo_1_s') }}</strong>{{ __('chto-takoye-seo.elemSeo_1') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.elemSeo_2_s') }}</strong>{{ __('chto-takoye-seo.elemSeo_2') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.elemSeo_3_s') }}</strong> {{ __('chto-takoye-seo.elemSeo_3') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.elemSeo_4_s') }}</strong>{{ __('chto-takoye-seo.elemSeo_4') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.elemSeo_5_s') }}</strong>{{ __('chto-takoye-seo.elemSeo_5') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.elemSeo_6_s') }}</strong>{{ __('chto-takoye-seo.elemSeo_6') }}</li>
             </ul>
-            <h3 style="text-align: center;"><a id="uspeshnost SEO prodvijeniya" name="uspeshnost SEO prodvijeniya"></a><strong>Что влияет на успешность
-                    SEO-продвижения?</strong>
+            <h3 style="text-align: center;"><a id="uspeshnost SEO prodvijeniya" name="uspeshnost SEO prodvijeniya"></a><strong>{{ __('chto-takoye-seo.successfulPromotion') }}</strong>
             </h3>
-            <p>Успешность SEO-продвижения зависит от многих факторов, включая:</p>
+            <p>{{ __('chto-takoye-seo.successfulPromotionList') }}</p>
             <ul>
-                <li><strong>Качество контента:</strong> поисковые системы всегда стремятся показать наиболее
-                    релевантный
-                    и полезный контент для пользователей, поэтому качество контента является одним из ключевых
-                    факторов
-                    для успешной SEO-оптимизации.</li>
-                <li><strong>Технические аспекты сайта: </strong>скорость загрузки страниц, адаптивность сайта под
-                    разные
-                    устройства и браузеры, наличие карта сайта и robots.txt файла и другие технические параметры
-                    сайта
-                    могут влиять на его ранжирование в поисковой выдаче.</li>
-                <li><strong>Ключевые слова: </strong>правильное использование ключевых слов может повысить позиции
-                    сайта
-                    в поисковой выдаче, но слишком частое их использование может привести к негативным последствиям,
-                    таким как попадание в спам-фильтры поисковых систем.</li>
-                <li><strong>Backlink-стратегия: </strong>количество и качество внешних ссылок, указывающих на сайт,
+                <li><strong>{{ __('chto-takoye-seo.successfulPromotionList_1_s') }}</strong>{{ __('chto-takoye-seo.successfulPromotionList_1') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.successfulPromotionList_2_s') }}</strong>{{ __('chto-takoye-seo.successfulPromotionList_2') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.successfulPromotionList_3_s') }}</strong>{{ __('chto-takoye-seo.successfulPromotionList_3') }}</li>
+                <li><strong>{{ __('chto-takoye-seo.successfulPromotionList_4_s') }}</strong>количество и качество внешних ссылок, указывающих на сайт,
                     могут влиять на его ранжирование в поисковой выдаче. Однако, важно, чтобы эти ссылки были
                     органическими и натуральными, а не созданными искусственно.</li>
                 <li><strong>Социальные сигналы: </strong>количество лайков, репостов и комментариев на страницах

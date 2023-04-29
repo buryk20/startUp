@@ -2,15 +2,13 @@ export let modalApplication = function() {
     const modalApplicationWrp = document.querySelector('[data-input-wrp]');
     if(modalApplicationWrp != null) {
         const mainCont = document.getElementById('lock');
-        const nav = document.getElementById('nav'),
-            lock = nav.querySelector('.header__nav-wrp'),
-            burger = nav.querySelector('.header__burger');
+        const nav = document.getElementById('nav');
         const modalWrp = mainCont.querySelectorAll('.main-form__container');
         const clickBtnMod = mainCont.querySelector('.btn-form');
         const formWrp = mainCont.querySelector('.js-activ');
         const clickClose = mainCont.querySelector('.main-form__form-wrp');
 
-        const body = document.querySelector('body');
+        // const body = document.querySelector('body');
 
         const main = document.querySelector('main'),
             buttonIndex = main.querySelectorAll('.btn-pop-up');
@@ -26,11 +24,11 @@ export let modalApplication = function() {
             })
         })
 
-        burger.addEventListener("click", () => {
-            burger.classList.toggle('header__burger-active');
-            lock.classList.toggle('header__nav-wrp-active');
-            body.classList.toggle('body-lock');
-        });
+        // burger.addEventListener("click", () => {
+        //     burger.classList.toggle('header__burger-active');
+        //     lock.classList.toggle('header__nav-wrp-active');
+        //     body.classList.toggle('body-lock');
+        // });
 
         buttonIndex.forEach((el) => {
             el.addEventListener("click", () => {

@@ -10,7 +10,7 @@
   </div>
   <div class="article__wrp">
     <div class="article__img-wrp">
-      <img class="article__img" src="https://hivelife.com/wp-content/uploads/2020/09/ceo-roles-hive-life-banner-1024x427.jpg" alt="">
+      <img class="article__img" src="/img/chat_bot_banner.png" alt="{{ __('chto-takoye-seo.title') }}">
     </div>
     <div class="article-text">
       <ol>

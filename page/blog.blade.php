@@ -10,7 +10,7 @@
     <div class="blog__article-wrp">
       <div class="blog__article-img-wrp">
         <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-seo') }}">
-          <img class="blog__article-img" src="https://hivelife.com/wp-content/uploads/2020/09/ceo-roles-hive-life-banner-1024x427.jpg" alt="{{ __('chto-takoye-seo.title') }}">
+          <img class="blog__article-img" src="/img/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-seo.title') }}">
         </a>
       </div>
       <div class="blog__article-type-wrp">

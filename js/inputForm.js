@@ -24,25 +24,50 @@ export let inputForm = function() {
         });
         if(inputValue.name !== '' && inputValue.company !== '' && inputValue.phone !== '' && inputValue.email !== '') {
             message.text = string(JSON.stringify(inputValue)) + '\n' + `Страница: ${namePage}`;
-            getFun(message.text);
+            // getFun(message.text);
+            postTel(message.text);
         }
-        
+
     }
     function string(srt) {
         return ((srt.replace(/[{}"]/g, '')).replace(/,/gi, ',\n')).replace(/:/gi, ': ');
     }
 
     // const xhr = new XMLHttpRequest();
-    function getFun(post) {
-        const url = "http://localhost:3103/step";
-        xhr.open("POST", url, true);
-        xhr.onload = function() {
-        }
-        xhr.send(post);
-    }
-    
+    // function getFun(post) {
+    //     const url = "http://localhost:3103/step";
+    //     xhr.open("POST", url, true);
+    //     xhr.onload = function() {
+    //     }
+    //     xhr.send(post);
+    // }
 
+    function postTel(messageText) {
+        const token = '1086684695:AAGUePIsqeOsnHABuEJ939JBv1hdjVZSYGQ'; // замените на свой токен
+        const chatId = '-1001819362362'; // замените на свой ID чата
 
+        const message = messageText; // сообщение, которое вы хотите отправить
+
+        fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message
+            })
+        })
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`Failed to send message: ${res.status} ${res.statusText}`);
+            }
+            console.log('Message sent successfully!');
+        })
+        .catch(err => {
+            console.error(err);
+        });
+      }
 
 
     // xhr.setRequestHeader("Content-Type", "application/json");

@@ -14,6 +14,15 @@
     <!-- <script type="module" src="js/main.js"></script> -->
     <style>
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNGRYGT9DP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XNGRYGT9DP');
+    </script>
 </head>
 
 <body>

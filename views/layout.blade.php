@@ -14,18 +14,26 @@
     <!-- <script type="module" src="js/main.js"></script> -->
     <style>
     </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNGRYGT9DP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      <!-- End Google Tag Manager -->
 
-        gtag('config', 'G-XNGRYGT9DP');
-    </script>
+  <!-- Google tag (gtag.js) ПЕТЯ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNGRYGT9DP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNGRYGT9DP');
+  </script>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) ДИМА -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59GT497" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <header class="header">
         <div id="nav" class="header__wrp">
             <a href="{{ url('/') }}" class="header__logo-link">

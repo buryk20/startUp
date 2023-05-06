@@ -38,4 +38,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 	Route::get('blog/SEO/chto-takoye-seo', function () {
 		return View::make('chto-takoye-seo');
 	});
+
+	Route::get('privacy-policy', function () {
+		return View::make('privacy-policy');
+	});
 });

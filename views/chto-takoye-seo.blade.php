@@ -10,7 +10,7 @@
     </div>
     <div class="article__wrp">
         <div class="article__img-wrp">
-            <img class="article__img" src="/img/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-seo.title') }}">
+            <img class="article__img" src="/img/blog/chto-takoye-seo/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-seo.title') }}">
         </div>
         <div class="article-text">
             <ol>
@@ -29,6 +29,7 @@
             <p>{{ __('chto-takoye-seo.target') }}
             </p>{{ __('chto-takoye-seo.successT') }}</p>
             <h3 style="text-align: center;"><a id="kakie problemi reshaet seo" name="kakie problemi reshaet seo"></a><strong>{{ __('chto-takoye-seo.problems') }}</strong></h3>
+            <img src="/img/blog/chto-takoye-seo/chto-takoye-seo-img.png" alt="{{ __('chto-takoye-seo.problems') }}">
             <p>{{ __('chto-takoye-seo.seoOptimization') }}</p>
             <p>{{ __('chto-takoye-seo.seoOptimization_1') }}</p>
             <p>{{ __('chto-takoye-seo.seoOptimization_2') }}

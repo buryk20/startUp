@@ -4488,6 +4488,11 @@ body {
 .article-text strong {
   color: #006ca9;
 }
+.article-text img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
 
 .article__wrp {
   max-width: 1364px;

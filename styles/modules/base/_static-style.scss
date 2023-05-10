@@ -1,0 +1,14 @@
+.title-h1 {
+    margin-bottom: 24px;
+
+    @include text($fontSize: 32px, $fontWeight: 600, $color: $colorDark);
+}
+
+.wrp-margin {
+    margin-top: 48px;
+    margin-bottom: 64px;
+
+    @include sizePage;
+    @include marCenter;
+    @include paddingMob;
+}

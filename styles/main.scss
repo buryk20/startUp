@@ -1,9 +1,11 @@
 @import "modules/base/normalize";
 @import "modules/config/variables";
 @import "modules/config/mixins";
+@import "./modules/base/static-style";
 @import "modules/globals/layout";
 @import "modules/globals/chat-bot-page";
 @import "./modules/globals/header";
 @import "./modules/globals/blog";
 @import "./modules/base/text-blog";
 @import "./modules/globals/article";
+@import "./modules/globals/out-team";

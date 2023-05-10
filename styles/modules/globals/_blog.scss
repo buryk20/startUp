@@ -1,15 +1,13 @@
 .blog {
-  margin-top: 48px;
-  margin-bottom: 64px;
+  // margin-top: 48px;
+  // margin-bottom: 64px;
 
-  @include sizePage;
-  @include marCenter;
-  @include paddingMob;
+  // @include sizePage;
+  // @include marCenter;
+  // @include paddingMob;
 
   &__title {
-    margin-bottom: 24px;
 
-    @include text($fontSize: 32px, $fontWeight: 600, $color: $colorDark);
   }
 
   &__article-wrp {
@@ -21,6 +19,10 @@
     justify-content: space-between;
 
     border-radius: 8px;
+
+    @include _680 {
+      flex-wrap: wrap;
+    }
   }
 
   &__article-img-wrp {

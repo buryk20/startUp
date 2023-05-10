@@ -46,4 +46,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 	Route::get('blog/SEO/chto-takoye-SEO-prodvizheniye-sayta', function () {
 		return View::make('chto-takoye-SEO-prodvizheniye-sayta');
 	});
+
+	Route::get('out-team', function () {
+		return View::make('out-team');
+	});
 });

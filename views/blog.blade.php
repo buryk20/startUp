@@ -5,8 +5,8 @@
 
 @section('main_content')
 <main>
-  <div class="blog">
-    <h1 class="blog__title">{{ __('blog.titleCat') }}</h1>
+  <div class="blog wrp-margin">
+    <h1 class="title-h1">{{ __('blog.titleCat') }}</h1>
     <div class="blog__article-wrp">
       <div class="">
         <div class="blog__article-img-wrp">

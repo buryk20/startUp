@@ -13,8 +13,12 @@
   }
 
   &__article-wrp {
-    max-width: 600px;
     width: 100%;
+
+    gap: 16px;
+
+    display: flex;
+    justify-content: space-between;
 
     border-radius: 8px;
   }

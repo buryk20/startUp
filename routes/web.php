@@ -42,4 +42,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 	Route::get('privacy-policy', function () {
 		return View::make('privacy-policy');
 	});
+
+	Route::get('blog/SEO/chto-takoye-SEO-prodvizheniye-sayta', function () {
+		return View::make('chto-takoye-SEO-prodvizheniye-sayta');
+	});
 });

@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'TatyanaMokraya' => 'Tatyana Mokraya',
-
+    'TatyanaMokraya' => 'Tatiana Mokraya',
+    'SergeyBurtsev' => 'Sergey Burtsev',
 ];

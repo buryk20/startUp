@@ -8,25 +8,49 @@
   <div class="blog">
     <h1 class="blog__title">{{ __('blog.titleCat') }}</h1>
     <div class="blog__article-wrp">
-      <div class="blog__article-img-wrp">
-        <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-seo') }}">
-          <img class="blog__article-img" src="/img/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-seo.title') }}">
-        </a>
-      </div>
-      <div class="blog__article-type-wrp">
-        <a class="blog__article-type" href="#">SEO</a>
-        <a class="blog__article-type-specialist-wrp" href="http://">
-          <img class="blog__article-type-img" src="../img/seo-tatiana.jpg" alt="">
-          <p class="blog__article-type-specialist-text">{{ __('names-employees.TatyanaMokraya') }}</p>
-        </a>
-      </div>
-      <div class="blog__article-text-wrp">
-        <a class="blog__article-text-link" href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-seo') }}">
-          <h2 class="blog__article-text-title">{{ __('chto-takoye-seo.title') }}</h2>
+      <div class="">
+        <div class="blog__article-img-wrp">
+          <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-seo') }}">
+            <img class="blog__article-img" src="/img/blog/chto-takoye-seo/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-seo.title') }}">
+          </a>
+        </div>
+        <div class="blog__article-type-wrp">
+          <a class="blog__article-type" href="#">SEO</a>
+          <a class="blog__article-type-specialist-wrp" href="http://">
+            <img class="blog__article-type-img" src="../img/seo-tatiana.jpg" alt="{{ __('names-employees.TatyanaMokraya') }}">
+            <p class="blog__article-type-specialist-text">{{ __('names-employees.TatyanaMokraya') }}</p>
+          </a>
+        </div>
+        <div class="blog__article-text-wrp">
+          <a class="blog__article-text-link" href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-seo') }}">
+            <h2 class="blog__article-text-title">{{ __('chto-takoye-seo.title') }}</h2>
 
-        </a>
-        <p class="blog__article-text">{{ __('chto-takoye-seo.shortDescription') }}
-        </p>
+          </a>
+          <p class="blog__article-text">{{ __('chto-takoye-seo.shortDescription') }}
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="blog__article-img-wrp">
+          <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-SEO-prodvizheniye-sayta') }}">
+            <img class="blog__article-img" src="/img/blog/chto-takoye-seo/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}">
+          </a>
+        </div>
+        <div class="blog__article-type-wrp">
+          <a class="blog__article-type" href="#">SEO</a>
+          <a class="blog__article-type-specialist-wrp" href="http://">
+            <img class="blog__article-type-img" src="../img/SergeyBurtsev.jpg" alt="{{ __('names-employees.SergeyBurtsev') }}">
+            <p class="blog__article-type-specialist-text">{{ __('names-employees.SergeyBurtsev') }}</p>
+          </a>
+        </div>
+        <div class="blog__article-text-wrp">
+          <a class="blog__article-text-link" href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-SEO-prodvizheniye-sayta') }}">
+            <h2 class="blog__article-text-title">{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}</h2>
+
+          </a>
+          <p class="blog__article-text">{{ __('chto-takoye-SEO-prodvizheniye-sayta.shortDescription') }}
+          </p>
+        </div>
       </div>
     </div>
   </div>

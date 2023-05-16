@@ -5631,6 +5631,7 @@ body {
 }
 
 .blog__article-img-wrp {
+  max-width: 620px;
   margin-bottom: 16px;
   border-radius: 8px;
   overflow: hidden;
@@ -5871,5 +5872,21 @@ body {
   max-width: 240px;
   width: 100%;
   border-radius: 50%;
+}
+
+.out-team__text-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+.out-team__text-speciality {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
 }
 /*# sourceMappingURL=main.css.map */

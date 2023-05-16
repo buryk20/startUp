@@ -10,7 +10,7 @@
     </div>
     <div class="article__wrp">
         <div class="article__img-wrp">
-            <img class="article__img" src="/img/blog/chto-takoye-seo/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-seo.title') }}">
+            <img class="article__img" src="/img/blog/chto-takoye-SEO-prodvizheniye-sayta/chto-takoye-SEO-prodvizheniye-sayta-main.png" alt="{{ __('chto-takoye-seo.title') }}">
         </div>
         <div class="article-text">
             <ol>
@@ -25,7 +25,7 @@
             <p>{{ __('chto-takoye-SEO-prodvizheniye-sayta.nav_item_1_text_2') }}</p>
             <p>{{ __('chto-takoye-SEO-prodvizheniye-sayta.nav_item_1_text_3') }}</p>
             <h3 style="text-align: center;"><a id="How-SEO-promotion-works" name="How-SEO-promotion-works"></a><strong>{{ __('chto-takoye-SEO-prodvizheniye-sayta.nav_item_2') }}</strong></h3>
-            <img src="/img/blog/chto-takoye-seo/chto-takoye-seo-img.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.nav_item_2') }}">
+            <img src="/img/blog/chto-takoye-SEO-prodvizheniye-sayta/chto-takoye-SEO-prodvizheniye-sayta.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.nav_item_2') }}">
             <p>{{ __('chto-takoye-SEO-prodvizheniye-sayta.nav_item_2_text_1') }}</p>
             <p>{{ __('chto-takoye-SEO-prodvizheniye-sayta.nav_item_2_text_2') }}</p>
             </p>

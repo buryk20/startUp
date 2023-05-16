@@ -33,7 +33,7 @@
       <div>
         <div class="blog__article-img-wrp">
           <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-SEO-prodvizheniye-sayta') }}">
-            <img class="blog__article-img" src="/img/blog/chto-takoye-seo/main-banner-chto-takoye-seo-img.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}">
+            <img class="blog__article-img" src="/img/blog/chto-takoye-SEO-prodvizheniye-sayta/chto-takoye-SEO-prodvizheniye-sayta-main.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}">
           </a>
         </div>
         <div class="blog__article-type-wrp">

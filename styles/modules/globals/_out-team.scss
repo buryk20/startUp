@@ -1,6 +1,27 @@
-.out-team__img-emp {
-    max-width: 240px;
-    width: 100%;
+.out-team {
+    &__img-emp {
+        max-width: 240px;
+        width: 100%;
 
-    border-radius: 50%;
+        border-radius: 50%;
+    }
+
+
+    &__text-name {
+        @include text(
+            $fontSize: 18px,
+            $fontWeight: 600,
+            $color: $colorDark,
+            $lineHeight: 140%
+          );
+    }
+
+    &__text-speciality {
+        @include text(
+            $fontSize: 16px,
+            $fontWeight: 400,
+            $color: $colorDark,
+            $lineHeight: 140%
+          );
+    }
 }

@@ -1,3 +1,11 @@
+%centreColumFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @mixin text(
   $fontSize,
   $fontWeight: 400,

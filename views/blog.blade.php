@@ -16,7 +16,7 @@
         </div>
         <div class="blog__article-type-wrp">
           <a class="blog__article-type" href="#">SEO</a>
-          <a class="blog__article-type-specialist-wrp" href="http://">
+          <a class="blog__article-type-specialist-wrp" href="{{ LaravelLocalization::localizeUrl('/out-team') }}">
             <img class="blog__article-type-img" src="../img/seo-tatiana.jpg" alt="{{ __('names-employees.TatyanaMokraya') }}">
             <p class="blog__article-type-specialist-text">{{ __('names-employees.TatyanaMokraya') }}</p>
           </a>
@@ -38,7 +38,7 @@
         </div>
         <div class="blog__article-type-wrp">
           <a class="blog__article-type" href="#">SEO</a>
-          <a class="blog__article-type-specialist-wrp" href="http://">
+          <a class="blog__article-type-specialist-wrp" href="{{ LaravelLocalization::localizeUrl('/out-team') }}">
             <img class="blog__article-type-img" src="../img/SergeyBurtsev.jpg" alt="{{ __('names-employees.SergeyBurtsev') }}">
             <p class="blog__article-type-specialist-text">{{ __('names-employees.SergeyBurtsev') }}</p>
           </a>

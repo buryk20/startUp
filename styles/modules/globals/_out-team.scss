@@ -1,4 +1,6 @@
 .out-team {
+    height: 100vh;
+
     &__img-emp {
         max-width: 240px;
         width: 100%;
@@ -11,17 +13,38 @@
         @include text(
             $fontSize: 18px,
             $fontWeight: 600,
-            $color: $colorDark,
+            $color: $colorMain,
             $lineHeight: 140%
           );
     }
 
     &__text-speciality {
+        max-width: 260px;
+
         @include text(
             $fontSize: 16px,
             $fontWeight: 400,
             $color: $colorDark,
             $lineHeight: 140%
-          );
+        );
+        text-align: center;
+    }
+
+    &__wrp-cont {
+        gap: 24px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        @include _960 {
+            justify-content: center;
+        }
+    }
+
+    &__conteiner-wrp {
+        gap: 12px;
+
+        @extend %centreColumFlex;
+        justify-content: start;
     }
 }

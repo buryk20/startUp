@@ -9,3 +9,10 @@
 @import "./modules/base/text-blog";
 @import "./modules/globals/article";
 @import "./modules/globals/out-team";
+@import "./modules/globals/pop-up-modal";
+
+body {
+  &.active {
+    overflow: hidden;
+  }
+}

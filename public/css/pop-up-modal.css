@@ -1,0 +1,19 @@
+.pop-up-modal {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 500;
+  opacity: 0;
+  transition: opacity, 0.3s ease-in;
+}
+.pop-up-modal.active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity, 0.3s ease-out;
+}/*# sourceMappingURL=pop-up-modal.css.map */

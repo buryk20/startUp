@@ -6,4 +6,13 @@ return [
 
     'SergeyBurtsev' => 'Сергей Бурцев',
     'SergeyBurtsev_specialist' => 'Сооснователь StarUpGroup, SEO-специалист, front-end developer',
+
+    'PetrLadan' => 'Петр Ладан',
+    'PetrLadan_specialist' => 'Сооснователь StarUpGroup, Project & PPC manager',
+
+    'DmytroBokhan' => 'Дмитрий Бохан',
+    'DmytroBokhan_specialist' => 'Сооснователь StarUpGroup, руководитель отдела разработки чат-ботов',
+
+    'YuliaTimchenko' => 'Юлия Тымченко',
+    'YuliaTimchenko_specialist' => 'Менеджер по продажам',
 ];

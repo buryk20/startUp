@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Star Up Group</title>
   <link rel="icon" type="image/x-icon" href="icons/Main_logo.svg" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="/public/css/main.css" />
   <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="stylesheet" href="css/animate.css">
-  <script type="module" src="js/main.js"></script>
+  <!-- <script type="module" src="js/main.js"></script> -->
   <style>
   </style>
 </head>
@@ -76,7 +76,7 @@
             <button class="main-request__button-request btn-pop-up">
               Оставить заявку
             </button>
-            <button class="main-request__button-contacts js-btn-contact-item">
+            <button data-contact-btn class="main-request__button-contacts">
               КОНТАКТЫ
             </button>
           </div>
@@ -104,7 +104,7 @@
             <button class="main-request__button-request btn-pop-up">
               Оставить заявку
             </button>
-            <button class="main-request__button-contacts js-btn-contact-item">
+            <button data-contact-btn class="main-request__button-contacts ">
               КОНТАКТЫ
             </button>
           </div>
@@ -455,10 +455,10 @@
         </div>
       </div>
     </section>
-    <div data-contacts-wrp class="contacts">
-      <div class="main-form__container popup-form__container js-btn-contact">
-        <div class="contacts__wrp-cont">
-          <div class="contacts__btn-close js-btn-close">
+    <div data-contacts-wrp-pop-up class="contacts">
+      <div data-contact-modal class="pop-up-modal">
+        <div data-contact-modal-container class="contacts__wrp-cont">
+          <div data-contact-btn-close class="contacts__btn-close js-btn-close">
             <span class="contacts__btn-close-line contacts__btn-close-line-r"></span>
             <span class="contacts__btn-close-line contacts__btn-close-line-l"></span>
           </div>
@@ -554,7 +554,7 @@
   <script src="js/intlTelInput-jquery.min.js"></script>
   <script src="js/intlTelInput.js"></script>
   <script src="js/utils.js"></script>
-  <!-- <script src="dist/bundle.js"></script> -->
+  <script src="dist/bundle.js"></script>
 
   <script>
     var input = document.querySelector('#phone');

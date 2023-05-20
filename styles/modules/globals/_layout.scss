@@ -1809,8 +1809,11 @@ body {
     background-color: #ffffff;
     border-radius: 8px;
     position: relative;
+
     @include _680 {
-      height: 340px;
+      height: 100vh;
+
+      border-radius: 0;
     }
   }
   &__wrp-cont-width {
@@ -1858,14 +1861,16 @@ body {
     width: 25px;
     height: 25px;
 
-    display: none;
-
     top: 16px;
     right: 16px;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     &:hover .contacts__btn-close-line {
       background-color: $colorHoverButton;
+    }
+
+    @include _680 {
+      top: 10px;
     }
   }
 

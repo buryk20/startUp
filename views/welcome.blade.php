@@ -29,7 +29,7 @@
           <button class="main-request__button-request btn-pop-up">
             {{ __('home.tilda_buttonform') }}
           </button>
-          <button class="main-request__button-contacts js-btn-contact-item">
+          <button data-contact-btn class="main-request__button-contacts js-btn-contact-item">
             {{ __('home.tilda_buttoncontacts') }}
           </button>
         </div>
@@ -56,7 +56,7 @@
           <button class="main-request__button-request btn-pop-up">
             {{ __('home.main-request_buttonform') }}
           </button>
-          <button class="main-request__button-contacts js-btn-contact-item">
+          <button data-contact-btn class="main-request__button-contacts js-btn-contact-item">
             {{ __('home.main-request_buttoncontacts') }}
           </button>
         </div>
@@ -357,69 +357,6 @@
       </div>
     </div>
   </section>
-  <div data-contacts-wrp class="contacts">
-    <div class="main-form__container popup-form__container js-btn-contact">
-      <div class="contacts__wrp-cont">
-        <div class="contacts__btn-close js-btn-close">
-          <span class="contacts__btn-close-line contacts__btn-close-line-r"></span>
-          <span class="contacts__btn-close-line contacts__btn-close-line-l"></span>
-        </div>
-        <div class="contacts__wrp-cont-width">
-          <h3 class="contacts__title">{{ __('home.main-contacts_title') }}</h3>
-          <div class="contacts__dev-site-wrp">
-            <h4 class="contacts__dev-site-text">{{ __('home.main-modalform_websites') }}</h4>
-            <div class="contacts__dev-site-tel-wrp">
-              <a class="contacts__dev-site-tel-number-wrp" href="tel:+380660773734">
-                <img src="icons/flag-ua-contacts.svg" alt="">
-                <p class="contacts__dev-site-tel-text">+38 (066) 077 37 34</p>
-              </a>
-              <a href="https://t.me/StarUpGroupTeamLead" target="_blank">
-                <img class="contacts__dev-site-icon" src="icons/telegram-contacts-icon.svg" alt="telegram">
-              </a>
-              <a href="viber://chat?number=%2B380660773734">
-                <img class="contacts__dev-site-icon" src="icons/viber-contacts-icon.svg" alt="viber">
-              </a>
-            </div>
-            <div class="contacts__dev-site-tel-wrp">
-              <a class="contacts__dev-site-tel-number-wrp" href="tel:+353852004531">
-                <img src="icons/flag-eu-contacts.svg" alt="">
-                <p class="contacts__dev-site-tel-text">+353 (85) 200 45 31</p>
-              </a>
-              <a href="https://t.me/@starupgroup" target="_blank">
-                <img class="contacts__dev-site-icon" src="icons/telegram-contacts-icon.svg" alt="telegram">
-              </a>
-              <a href="viber://chat?number=%2B380660773734">
-                <img class="contacts__dev-site-icon" src="icons/viber-contacts-icon.svg" alt="viber">
-              </a>
-            </div>
-          </div>
-          <div class="contacts__dev-bot-wrp">
-            <h4 class="contacts__dev-site-text">{{ __('home.main-modalform_chatbots') }}</h4>
-            <div class="contacts__dev-site-tel-wrp">
-              <a class="contacts__dev-site-tel-number-wrp" href="tel:+380631269453">
-                <img src="icons/flag-ua-contacts.svg" alt="">
-                <p class="contacts__dev-site-tel-text">+38 (063) 126 94 53</p>
-              </a>
-              <a href="https://t.me/@dmytro_bokhan" target="_blank">
-                <img class="contacts__dev-site-icon" src="icons/telegram-contacts-icon.svg" alt="telegram">
-              </a>
-              <a href="viber://chat?number=%2B380631269453">
-                <img class="contacts__dev-site-icon" src="icons/viber-contacts-icon.svg" alt="viber">
-              </a>
-              <a href="http://">
-                <img class="contacts__dev-site-icon" src="icons/WhatsApp.svg" alt="">
-              </a>
-            </div>
-          </div>
-          <a class="contacts__link-wrp" href="mailto:info@star-up-group.com.ua">
-            <img class="contacts__phone-img" src="/icons/email-icon.svg" alt="Emeil" />
-            <span class="contacts__dev-site-tel-text">info@star-up-group.com.ua</span>
-          </a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 </main>
 @endsection
 @section('pop-up')

@@ -107,7 +107,9 @@
           <button class="main-purpose__button-order btn-pop-up">
             {{ __('home.main-purpose_buttonform') }}
           </button>
-          <button class="main-purpose__button-about">{{ __('home.main-purpose_buttonaboutus') }}</button>
+          <a class="main-purpose__button-about" href="{{ LaravelLocalization::localizeUrl('/out-team') }}">
+            {{ __('home.main-purpose_buttonaboutus') }}
+          </a>
         </div>
       </div>
     </div>

@@ -73,11 +73,11 @@
         <div class="footer__wrp">
             <nav class="footer__nav-wrp">
                 <div class="footer__nav-item"><a href="{{ LaravelLocalization::localizeUrl('/') }}">{{ __('footer.Homepage') }}</a></div>
-                <div style="display: none;" class="footer__nav-item">{{ __('footer.Contacts') }}</div>
+                <div data-contact-btn class="footer__nav-item">{{ __('header.Contacts') }}</div>
                 <div style="display: none;" class="footer__nav-item">{{ __('footer.Marketing') }}</div>
                 <div class="footer__nav-item"><a href="{{ LaravelLocalization::localizeUrl('/chatbots') }}">{{ __('footer.Chatbots') }}</a></div>
-                <div style="display: none;" class="footer__nav-item">{{ __('footer.WebDevelopment') }}</div>
-                <div style="display: none;" class="footer__nav-item">{{ __('footer.SEO') }}</div>
+                <div class="footer__nav-item"><a href="{{ LaravelLocalization::localizeUrl('/out-team') }}">{{ __('out-team.title') }}</a></div>
+                <div class="footer__nav-item"><a href="{{ LaravelLocalization::localizeUrl('/blog') }}">{{ __('blog.title') }}</a></div>
                 <div style="display: none;" class="footer__nav-item">{{ __('footer.Content') }}</div>
                 <div style="display: none;" class="footer__nav-item">{{ __('footer.AboutUs') }}</div>
             </nav>
@@ -108,10 +108,10 @@
                                 <p class="contacts__dev-site-tel-text">+38 (066) 077 37 34</p>
                             </a>
                             <a href="https://t.me/StarUpGroupTeamLead" target="_blank">
-                                <img class="contacts__dev-site-icon" src="icons/telegram-contacts-icon.svg" alt="telegram">
+                                <img class="contacts__dev-site-icon" src="/icons/telegram-contacts-icon.svg" alt="telegram">
                             </a>
                             <a href="viber://chat?number=%2B380660773734">
-                                <img class="contacts__dev-site-icon" src="icons/viber-contacts-icon.svg" alt="viber">
+                                <img class="contacts__dev-site-icon" src="/icons/viber-contacts-icon.svg" alt="viber">
                             </a>
                         </div>
                         <div class="contacts__dev-site-tel-wrp">
@@ -120,10 +120,10 @@
                                 <p class="contacts__dev-site-tel-text">+353 (85) 200 45 31</p>
                             </a>
                             <a href="https://t.me/@starupgroup" target="_blank">
-                                <img class="contacts__dev-site-icon" src="icons/telegram-contacts-icon.svg" alt="telegram">
+                                <img class="contacts__dev-site-icon" src="/icons/telegram-contacts-icon.svg" alt="telegram">
                             </a>
                             <a href="viber://chat?number=%2B380660773734">
-                                <img class="contacts__dev-site-icon" src="icons/viber-contacts-icon.svg" alt="viber">
+                                <img class="contacts__dev-site-icon" src="/icons/viber-contacts-icon.svg" alt="viber">
                             </a>
                         </div>
                     </div>
@@ -135,13 +135,13 @@
                                 <p class="contacts__dev-site-tel-text">+38 (063) 126 94 53</p>
                             </a>
                             <a href="https://t.me/@dmytro_bokhan" target="_blank">
-                                <img class="contacts__dev-site-icon" src="icons/telegram-contacts-icon.svg" alt="telegram">
+                                <img class="contacts__dev-site-icon" src="/icons/telegram-contacts-icon.svg" alt="telegram">
                             </a>
                             <a href="viber://chat?number=%2B380631269453">
-                                <img class="contacts__dev-site-icon" src="icons/viber-contacts-icon.svg" alt="viber">
+                                <img class="contacts__dev-site-icon" src="/icons/viber-contacts-icon.svg" alt="viber">
                             </a>
                             <a href="http://">
-                                <img class="contacts__dev-site-icon" src="icons/WhatsApp.svg" alt="">
+                                <img class="contacts__dev-site-icon" src="/icons/WhatsApp.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -158,8 +158,7 @@
         <div class="popup-accept__wrp">
             <img class="popup-accept__img" src="img/check_desk_icon.svg" alt="checked" />
             <p class="popup-accept__text">
-                Наши специалисты проконсультируют вас и подберут оптимальное решение
-                под вашу бизнес-цель!
+                {{ __('home.thank') }}
             </p>
         </div>
     </div>

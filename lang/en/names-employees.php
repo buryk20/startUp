@@ -13,6 +13,9 @@ return [
     'DmytroBokhan' => 'Dmytro Bokhan',
     'DmytroBokhan_specialist' => 'Co-founder of StarUpGroup, head of the chatbot development department',
 
-    'YuliaTimchenko' => 'Юлія Тимченко',
+    'YuliaTimchenko' => 'Yulia Timchenko',
     'YuliaTimchenko_specialist' => 'Sales manager',
+
+    'EvgenyVitchenko' => 'Evgeny Vitchenko',
+    'EvgenyVitchenko_specialist' => 'front-end developer',
 ];

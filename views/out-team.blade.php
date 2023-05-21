@@ -32,6 +32,11 @@
             <p class="out-team__text-name">{{ __('names-employees.YuliaTimchenko') }}</p>
             <h3 class="out-team__text-speciality">{{ __('names-employees.YuliaTimchenko_specialist') }}</h3>
         </div>
+        <div class="out-team__conteiner-wrp">
+            <img class="out-team__img-emp" src="/img/Evgeny-Vitchenko.jpg" alt="{{ __('names-employees.EvgenyVitchenko') }}">
+            <p class="out-team__text-name">{{ __('names-employees.EvgenyVitchenko') }}</p>
+            <h3 class="out-team__text-speciality">{{ __('names-employees.EvgenyVitchenko_specialist') }}</h3>
+        </div>
     </div>
 </main>
 @endsection

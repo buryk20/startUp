@@ -460,6 +460,8 @@ body {
     text-transform: uppercase;
     transition: all 0.3s, ease;
 
+    @extend %centreColumFlex;
+
     @include _820 {
       font-size: 14px;
       height: 54px;
@@ -1404,6 +1406,10 @@ body {
     @include _680 {
       padding-top: 0;
     }
+
+    & > .contacts__btn-close {
+      position: absolute;
+    }
   }
   &__title-wrp {
     width: 100%;
@@ -1863,7 +1869,7 @@ body {
 
     top: 16px;
     right: 16px;
-    position: fixed;
+    position: absolute;
     cursor: pointer;
     &:hover .contacts__btn-close-line {
       background-color: $colorHoverButton;

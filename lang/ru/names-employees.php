@@ -15,4 +15,7 @@ return [
 
     'YuliaTimchenko' => 'Юлия Тымченко',
     'YuliaTimchenko_specialist' => 'Менеджер по продажам',
+
+    'EvgenyVitchenko' => 'Евгений Витченко',
+    'EvgenyVitchenko_specialist' => 'front-end developer',
 ];

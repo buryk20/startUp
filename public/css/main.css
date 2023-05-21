@@ -127,7 +127,7 @@ label {
   font-family: "IBM Plex Mono", monospace;
   src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 }
-.out-team__conteiner-wrp {
+.out-team__conteiner-wrp, .main-purpose__button-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2301,6 +2301,10 @@ body {
     padding-top: 0;
   }
 }
+.main-form__wrp > .contacts__btn-close,
+.popup-form__wrp > .contacts__btn-close {
+  position: absolute;
+}
 .main-form__title-wrp,
 .popup-form__title-wrp {
   width: 100%;
@@ -2914,7 +2918,7 @@ body {
   height: 25px;
   top: 16px;
   right: 16px;
-  position: fixed;
+  position: absolute;
   cursor: pointer;
 }
 .contacts__btn-close:hover .contacts__btn-close-line {
@@ -4500,6 +4504,15 @@ body {
   line-height: 140%;
   letter-spacing: 0.005em;
 }
+@media (max-width: 680px) {
+  .article-text h2,
+.article-text h3,
+.article-text h4 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+}
 .article-text P {
   margin-bottom: 12px;
   font-size: 16px;
@@ -4529,7 +4542,6 @@ body {
 .article__img {
   max-width: 1100px;
   width: 100%;
-  height: 440px;
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
@@ -4540,6 +4552,11 @@ body {
   margin-top: 48px;
   margin-bottom: 48px;
   background-color: #5d5fef;
+}
+@media (max-width: 680px) {
+  .article__title-wrp {
+    margin-top: 68px;
+  }
 }
 .article__title {
   padding-top: 48px;
@@ -4557,6 +4574,13 @@ body {
   line-height: 140%;
   letter-spacing: 0.005em;
   text-align: center;
+}
+@media (max-width: 680px) {
+  .article__title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+  }
 }
 
 .out-team__img-emp {

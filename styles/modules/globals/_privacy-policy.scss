@@ -1,0 +1,43 @@
+.privacy-policy {
+
+    @include text(
+        $fontSize: 16px,
+        $fontWeight: 400,
+        $color: $colorDark,
+        $lineHeight: 140%
+      );
+
+    h1 {
+        margin-bottom: 24px;
+
+        @include _680 {
+            font-size: 24px;
+        }
+    }
+
+    ol {
+        padding-left: 32px;
+        margin-bottom: 24px;
+
+        list-style: auto;
+    }
+
+    p, li {
+        margin-bottom: 16px;
+
+        position: relative;
+    }
+
+    ul {
+        padding-left: 24px;
+    }
+
+    &__list {
+        position: absolute;
+        left: -42px;
+    }
+
+    & li > ul {
+        margin-top: 16px;
+    }
+}

@@ -83,7 +83,7 @@
             </nav>
             <div class="footer__nav-mob-line"></div>
             <div class="footer__agreement-wrp" style="justify-content: center;">
-                <div class="footer__agreement-item">{{ __('footer.PrivacyPolicy') }}</div>
+                <div class="footer__agreement-item"><a href="{{ LaravelLocalization::localizeUrl('/privacy-policy') }}">{{ __('footer.PrivacyPolicy') }}</a></div>
                 <div style="display: none;" class="footer__agreement-dot"></div>
                 <div style="display: none;" class="footer__agreement-item">{{ __('footer.PublicOfferAgreement') }}</div>
             </div>

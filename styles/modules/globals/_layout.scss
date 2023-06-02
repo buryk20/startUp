@@ -1869,14 +1869,14 @@ body {
 
     top: 16px;
     right: 16px;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     &:hover .contacts__btn-close-line {
       background-color: $colorHoverButton;
     }
 
     @include _680 {
-      top: 10px;
+      // top: 10px;
     }
   }
 

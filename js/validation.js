@@ -1,5 +1,5 @@
 export let validation = function() {
-    const validationWrp = document.querySelector('[data-input-wrp]') 
+    const validationWrp = document.querySelector('[data-input-wrp]')
     if(validationWrp != null) {
         const confirmation = document.getElementById('accept');
         const formWrp = document.querySelector('.js-activ');
@@ -8,21 +8,21 @@ export let validation = function() {
         inputEmail = form.querySelector('.js-input-email'),
         inputPhone = form.querySelector('.js-input-phone');
 
-    function validateEmail(email) {
-        let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        function validateEmail(email) {
+            let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-        return re.test(String(email).toLowerCase());
-        }
+            return re.test(String(email).toLowerCase());
+            }
 
-        function validateCountry(country) {
-            let reC = new RegExp('.ru$');
-            return reC.test(String(country).toLowerCase());
-        }
+            function validateCountry(country) {
+                let reC = new RegExp('.ru$');
+                return reC.test(String(country).toLowerCase());
+            }
 
-        function validatePhone(phone) {
-            let rePh = /^[0-9]*$/;
-            return rePh.test(String(phone));
-        }
+            function validatePhone(phone) {
+                let rePh = /^[0-9]*$/;
+                return rePh.test(String(phone));
+            }
 
 
         form.onsubmit = function () {

@@ -1,5 +1,5 @@
 export let headerBurger = function() {
-    const nav = document.querySelector('#nav')
+    const nav = document.querySelector('#nav');
     if(nav != null) {
         const lock = nav.querySelector('.header__nav-wrp');
         const burger = nav.querySelector('.header__burger');

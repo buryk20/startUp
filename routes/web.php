@@ -50,4 +50,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 	Route::get('out-team', function () {
 		return View::make('out-team');
 	});
+	Route::get('blog/SEO/title-vazhen-ili-net', function () {
+		return View::make('title-vazhen-ili-net');
+	});
 });

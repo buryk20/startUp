@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title')</title>
     <meta name="description" content="@yield('metaDiscription')">
-    <link rel="icon" type="image/x-icon" href="/icons/Main_logo.svg" />
+    <link rel="icon" type="image/x-icon" href="/svg/Main_logo.svg" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/intlTelInput.css">
     <link rel="stylesheet" href="/css/animate.css">
@@ -38,8 +38,8 @@
         <div id="nav" class="header__wrp">
             <a href="{{ url('/') }}" class="header__logo-link">
                 <picture>
-                    <source srcset="/icons/Main_logo_small.svg" media="(max-width: 680px)" />
-                    <img src="/icons/Main_logo.svg" alt="logo" />
+                    <source srcset="/svg/Main_logo_small.svg" media="(max-width: 680px)" />
+                    <img src="/svg/Main_logo.svg" alt="logo" />
                 </picture>
             </a>
             <div id="burger_active" class="header__burger">
@@ -53,7 +53,7 @@
                     <div data-name="/marketing" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.Marketing') }}</a></div>
                     <div data-name="/web-development" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.WebDevelopment') }}</a></div>
                     <div data-name="/chatbots" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/chatbots') }}">{{ __('header.Chatbots') }}</a></div>
-                    <div data-name="/blog" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/out-team') }}">{{ __('out-team.title') }}</a></div>
+                    <div data-name="/out-team" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/out-team') }}">{{ __('out-team.title') }}</a></div>
                     <div data-name="/blog" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/blog') }}">{{ __('blog.title') }}</a></div>
                     <div data-name="/SEO" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.SEO') }}</a></div>
                     <div data-name="/content" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.Content') }}</a></div>
@@ -108,10 +108,10 @@
                                 <p class="contacts__dev-site-tel-text">+38 (066) 077 37 34</p>
                             </a>
                             <a href="https://t.me/StarUpGroupTeamLead" target="_blank">
-                                <img class="contacts__dev-site-icon" src="/icons/telegram-contacts-icon.svg" alt="telegram">
+                                <img class="contacts__dev-site-icon" src="/svg/telegram-contacts-icon.svg" alt="telegram">
                             </a>
                             <a href="viber://chat?number=%2B380660773734">
-                                <img class="contacts__dev-site-icon" src="/icons/viber-contacts-icon.svg" alt="viber">
+                                <img class="contacts__dev-site-icon" src="/svg/viber-contacts-icon.svg" alt="viber">
                             </a>
                         </div>
                         <div class="contacts__dev-site-tel-wrp">
@@ -120,10 +120,10 @@
                                 <p class="contacts__dev-site-tel-text">+353 (85) 200 45 31</p>
                             </a>
                             <a href="https://t.me/@starupgroup" target="_blank">
-                                <img class="contacts__dev-site-icon" src="/icons/telegram-contacts-icon.svg" alt="telegram">
+                                <img class="contacts__dev-site-icon" src="/svg/telegram-contacts-icon.svg" alt="telegram">
                             </a>
                             <a href="viber://chat?number=%2B380660773734">
-                                <img class="contacts__dev-site-icon" src="/icons/viber-contacts-icon.svg" alt="viber">
+                                <img class="contacts__dev-site-icon" src="/svg/viber-contacts-icon.svg" alt="viber">
                             </a>
                         </div>
                     </div>
@@ -135,18 +135,18 @@
                                 <p class="contacts__dev-site-tel-text">+38 (063) 126 94 53</p>
                             </a>
                             <a href="https://t.me/@dmytro_bokhan" target="_blank">
-                                <img class="contacts__dev-site-icon" src="/icons/telegram-contacts-icon.svg" alt="telegram">
+                                <img class="contacts__dev-site-icon" src="/svg/telegram-contacts-icon.svg" alt="telegram">
                             </a>
                             <a href="viber://chat?number=%2B380631269453">
-                                <img class="contacts__dev-site-icon" src="/icons/viber-contacts-icon.svg" alt="viber">
+                                <img class="contacts__dev-site-icon" src="/svg/viber-contacts-icon.svg" alt="viber">
                             </a>
                             <a href="http://">
-                                <img class="contacts__dev-site-icon" src="/icons/WhatsApp.svg" alt="">
+                                <img class="contacts__dev-site-icon" src="/svg/WhatsApp.svg" alt="">
                             </a>
                         </div>
                     </div>
                     <a class="contacts__link-wrp" href="mailto:info@star-up-group.com.ua">
-                        <img class="contacts__phone-img" src="/icons/email-icon.svg" alt="Emeil" />
+                        <img class="contacts__phone-img" src="/svg/email-icon.svg" alt="Emeil" />
                         <span class="contacts__dev-site-tel-text">info@star-up-group.com.ua</span>
                     </a>
                     </p>

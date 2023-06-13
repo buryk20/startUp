@@ -2952,6 +2952,10 @@ body {
   }
 }
 
+.main-form__form-wrp > .contacts__btn-close {
+  position: absolute;
+}
+
 .main-form__wrp,
 .popup-form__wrp {
   padding-top: 36px;
@@ -5544,7 +5548,7 @@ body {
   }
 }
 
-.header__nav-item > a.active {
+.header__nav-item.active {
   color: #4144f1;
 }
 

@@ -1398,6 +1398,12 @@ body {
   }
 }
 
+.main-form__form-wrp {
+  & > .contacts__btn-close {
+    position: absolute;
+  }
+}
+
 .main-form,
 .popup-form {
   &__wrp {
@@ -1455,6 +1461,7 @@ body {
     @include flexCenter;
     @include paddStart;
   }
+
   &__form-wrp {
     max-width: 604px;
     width: 100%;
@@ -1464,6 +1471,7 @@ body {
     @include flexCenterColumn;
     border-radius: 8px;
   }
+
   &__form-title {
     @include text(24px, 400, $colorDark);
     letter-spacing: 0.01em;

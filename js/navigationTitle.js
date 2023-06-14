@@ -7,22 +7,20 @@ export let navigationTitle = function() {
         const arrLeng = navMainWrp.querySelectorAll('[data-lang]');
         let arrLengBolean = [];
         const elemNav = navMainWrp.querySelectorAll('[data-name]');
-
-
         let stringUrl = document.location.pathname;
-        urlDelLeng();
-        function urlDelLeng() {
-            if(stringUrl != "/" & stringUrl != "/ru" & stringUrl != "/en") {
-                stringUrl = (stringUrl.replace(/\/ru/gi, '')).replace(/\/en/gi, '');
 
-                for(let i = 1; i < elemNav.length; i++) {
-                    if(stringUrl.startsWith(elemNav[i].getAttribute('data-name'))) {
-                        elemNav[i].classList.add('active');
+        urlDelLeng(stringUrl, elemNav);
+
+        function urlDelLeng(url, arr) {
+            if(url != "/" & url != "/ru" & url != "/en") {
+                url = (url.replace(/\/ru/gi, '')).replace(/\/en/gi, '');
+                for(let i = 1; i < arr.length; i++) {
+                    if(url.startsWith(arr[i].getAttribute('data-name'))) {
+                        arr[i].classList.add('active');
                     }
                 }
-
             } else {
-                elemNav[0].classList.add('active');
+                arr[0].classList.add('active');
             }
         }
 
@@ -38,11 +36,3 @@ export let navigationTitle = function() {
         });
     }
 }
-
-// elemNav.forEach((el, index) => {
-                //     console.log(el.getAttribute('data-name'));
-                //     if(stringUrl.startsWith(el.getAttribute('data-name'))) {
-                //         console.log(el.getAttribute('data-name'));
-                //         el.classList.add('active');
-                //     }
-                // })

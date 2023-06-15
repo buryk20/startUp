@@ -1,5 +1,6 @@
-@extends('layout')
+﻿@extends('layout')
 @section('title'){{ __('home.seo-title') }}@endsection
+@section('metaDiscription'){{ __('home.metaDescription') }}@endsection
 @section('main_content')
 <main id="lock" data-main-page data-animation-wrp class="main">
   <section class="main-idea">
@@ -71,19 +72,19 @@
       <p class="main-offer__text">{{ __('home.main-offer_subtitle') }}</p>
       <div class="main-offer__list">
         <div data-wow-offset="200" class="main-offer__item wow animate__animated animate__fadeInUp">
-          <img src="icons/Key_icon.svg" alt="key" class="main-offer__item-img" />
+          <img src="svg/Key_icon.svg" alt="key" class="main-offer__item-img" />
           <p class="main-offer__item-text">{{ __('home.main-offer_block1') }}</p>
         </div>
         <div data-wow-offset="200" data-wow-delay="0.2s" class="main-offer__item wow animate__animated animate__fadeInUp">
-          <img src="icons/Server_icon.svg" alt="server" class="main-offer__item-img" />
+          <img src="svg/Server_icon.svg" alt="server" class="main-offer__item-img" />
           <p class="main-offer__item-text">{{ __('home.main-offer_block2') }}</p>
         </div>
         <div data-wow-offset="200" data-wow-delay="0.4s" class="main-offer__item wow animate__animated animate__fadeInUp">
-          <img src="icons/Trand_icon.svg" alt="trand" class="main-offer__item-img" />
+          <img src="svg/Trand_icon.svg" alt="trand" class="main-offer__item-img" />
           <p class="main-offer__item-text">{{ __('home.main-offer_block3') }}</p>
         </div>
         <div data-wow-offset="200" data-wow-delay="0.6s" class="main-offer__item wow animate__animated animate__fadeInUp">
-          <img src="icons/Ads_icon.svg" alt="ads" class="main-offer__item-img" />
+          <img src="svg/Ads_icon.svg" alt="ads" class="main-offer__item-img" />
           <p class="main-offer__item-text">{{ __('home.main-offer_block4') }}</p>
         </div>
       </div>
@@ -153,25 +154,25 @@
           <p class="main-advantage__workwith-title">{{ __('home.main-advantage_title1') }}</p>
           <div class="main-advantage__workwith-list">
             <div data-wow-offset="200" class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
-              <img src="icons/Diagram_icon.svg" alt="Diagram" class="main-advantage__workwith-item-img" />
+              <img src="svg/Diagram_icon.svg" alt="Diagram" class="main-advantage__workwith-item-img" />
               <p class="main-advantage__workwith-item-text">
                 {{ __('home.main-advantage_textblock1') }}
               </p>
             </div>
             <div data-wow-offset="200" data-wow-delay="0.2s" class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
-              <img src="icons/Businessman_icon.svg" alt="Businessman" class="main-advantage__workwith-item-img" />
+              <img src="svg/Businessman_icon.svg" alt="Businessman" class="main-advantage__workwith-item-img" />
               <p class="main-advantage__workwith-item-text">
                 {{ __('home.main-advantage_textblock2') }}
               </p>
             </div>
             <div data-wow-offset="200" data-wow-delay="0.4s" class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
-              <img src="icons/Money_icon.svg" alt="Money" class="main-advantage__workwith-item-img" />
+              <img src="svg/Money_icon.svg" alt="Money" class="main-advantage__workwith-item-img" />
               <p class="main-advantage__workwith-item-text">
                 {{ __('home.main-advantage_textblock3') }}
               </p>
             </div>
             <div data-wow-offset="200" data-wow-delay="0.6s" class="main-advantage__workwith-item wow animate__animated animate__fadeInUp">
-              <img src="icons/People_icon.svg" alt="People" class="main-advantage__workwith-item-img" />
+              <img src="svg/People_icon.svg" alt="People" class="main-advantage__workwith-item-img" />
               <p class="main-advantage__workwith-item-text">
                 {{ __('home.main-advantage_textblock4') }}
               </p>
@@ -186,7 +187,7 @@
             <div class="main-advantage__advantage-list-left">
               <div data-wow-offset="200" class="main-advantage__advantage-list-item-wrp wow first-circle wow animate__animated animate__bounceInUp">
                 <div class="main-advantage__advantage-list-item">
-                  <img src="icons/Cogwheel_icon.png" alt="Cogwheel" class="main-advantage__advantage-list-img" />
+                  <img src="svg/Cogwheel_icon.png" alt="Cogwheel" class="main-advantage__advantage-list-img" />
                   <p class="main-advantage__advantage-list-title">
                     {{ __('home.main-advantage_subtitle1') }}
                   </p>
@@ -197,7 +198,7 @@
               </div>
               <div data-wow-offset="200" class="main-advantage__advantage-list-item-wrp second-circle wow animate__animated animate__bounceInUp">
                 <div class="main-advantage__advantage-list-item">
-                  <img src="icons/Geometric_icon.png" alt="Geometric figures" class="main-advantage__advantage-list-img" />
+                  <img src="svg/Geometric_icon.png" alt="Geometric figures" class="main-advantage__advantage-list-img" />
                   <p class="main-advantage__advantage-list-title">
                     Комплексность работ
                   </p>
@@ -210,7 +211,7 @@
             <div class="main-advantage__advantage-list-right">
               <div data-wow-offset="200" class="main-advantage__advantage-list-item-wrp third-circle wow animate__animated animate__bounceInUp">
                 <div class="main-advantage__advantage-list-item">
-                  <img src="icons/Clock_icon.png" alt="Clock" class="main-advantage__advantage-list-img" />
+                  <img src="svg/Clock_icon.png" alt="Clock" class="main-advantage__advantage-list-img" />
                   <p class="main-advantage__advantage-list-title">
                     {{ __('home.main-advantage_subtitle2') }}
                   </p>
@@ -221,7 +222,7 @@
               </div>
               <div data-wow-offset="200" class="main-advantage__advantage-list-item-wrp second-circle-mob wow animate__animated animate__bounceInUp">
                 <div class="main-advantage__advantage-list-item">
-                  <img src="icons/Geometric_icon.png" alt="Geometric figures" class="main-advantage__advantage-list-img" />
+                  <img src="svg/Geometric_icon.png" alt="Geometric figures" class="main-advantage__advantage-list-img" />
                   <p class="main-advantage__advantage-list-title">
                     {{ __('home.main-advantage_subtitle3') }}
                   </p>
@@ -232,7 +233,7 @@
               </div>
               <div data-wow-offset="200" class="main-advantage__advantage-list-item-wrp fourth-circle wow animate__animated animate__bounceInUp">
                 <div class="main-advantage__advantage-list-item">
-                  <img src="icons/Dollar_icon.png" alt="Dollar" class="main-advantage__advantage-list-img" />
+                  <img src="svg/Dollar_icon.png" alt="Dollar" class="main-advantage__advantage-list-img" />
                   <p class="main-advantage__advantage-list-title">
                     {{ __('home.main-advantage_subtitle4') }}
                   </p>
@@ -268,21 +269,21 @@
       <div class="main-marketing__body-wrp">
         <div class="main-marketing__blocks-list">
           <div data-wow-offset="200" class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
-            <img src="icons/Radial_icon.svg" alt="Radial" class="main-marketing__blocks-img" />
+            <img src="svg/Radial_icon.svg" alt="Radial" class="main-marketing__blocks-img" />
             <p class="main-marketing__blocks-text">
               {{ __('home.main-marketing_upperblock1') }}
             </p>
           </div>
           <div data-wow-offset="200" data-wow-delay="0.2s" class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
-            <img src="icons/Trand_icon.svg" alt="Trand" class="main-marketing__blocks-img" />
+            <img src="svg/Trand_icon.svg" alt="Trand" class="main-marketing__blocks-img" />
             <p class="main-marketing__blocks-text">{{ __('home.main-marketing_upperblock2') }}</p>
           </div>
           <div data-wow-offset="200" data-wow-delay="0.4s" class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
-            <img src="icons/Architecture_icon.svg" alt="Architecture" class="main-marketing__blocks-img" />
+            <img src="svg/Architecture_icon.svg" alt="Architecture" class="main-marketing__blocks-img" />
             <p class="main-marketing__blocks-text">{{ __('home.main-marketing_upperblock3') }}</p>
           </div>
           <div data-wow-offset="200" data-wow-delay="0.6s" class="main-marketing__blocks-item wow animate__animated animate__fadeInUp">
-            <img src="icons/Strategy_icon.svg" alt="Strategy" class="main-marketing__blocks-img" />
+            <img src="svg/Strategy_icon.svg" alt="Strategy" class="main-marketing__blocks-img" />
             <p class="main-marketing__blocks-text">{{ __('home.main-marketing_upperblock4') }}</p>
           </div>
         </div>
@@ -292,21 +293,21 @@
         <div class="main-marketing__body-list">
           <div data-wow-offset="200" class="main-marketing__body-list-item  wow animate__animated animate__fadeInLeft">
             <h4 class="main-marketing__body-list-title">{{ __('home.main-marketing_subtitle1') }}</h4>
-            <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
+            <img src="svg/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
             <p class="main-marketing__body-list-text">
               {{ __('home.main-marketing_text1') }}
             </p>
           </div>
           <div data-wow-offset="200" data-wow-delay="0.4s" class="main-marketing__body-list-item wow animate__animated animate__fadeInLeft">
             <h4 class="main-marketing__body-list-title">{{ __('home.main-marketing_subtitle2') }}</h4>
-            <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
+            <img src="svg/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
             <p class="main-marketing__body-list-text">
               {{ __('home.main-marketing_text2') }}
             </p>
           </div>
           <div data-wow-offset="200" data-wow-delay="0.8s" class="main-marketing__body-list-item wow animate__animated animate__fadeInLeft">
             <h4 class="main-marketing__body-list-title">{{ __('home.main-marketing_subtitle3') }}</h4>
-            <img src="icons/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
+            <img src="svg/ArrowMarketing.svg" alt="Arrow" class="main-marketing__body-list-img" />
             <p class="main-marketing__body-list-text">
               {{ __('home.main-marketing_text3') }}
             </p>
@@ -346,7 +347,7 @@
               <input type="text" id="UserEmail" name="UserEmail" placeholder="E-mail" class="main-form__form-item js-input js-input-email" />
             </div>
             <div class="main-form__form-list-text-wrp">
-              <img src="icons/FormCheck_icon.svg" alt="Check" class="main-form__form-list-text-img" />
+              <img src="svg/FormCheck_icon.svg" alt="Check" class="main-form__form-list-text-img" />
               <p class="main-form__form-list-text">
                 {{ __('home.main-form_privacy') }}
               </p>
@@ -366,8 +367,7 @@
   <div class="popup-accept__wrp">
     <img class="popup-accept__img" src="img/check_desk_icon.svg" alt="checked" />
     <p class="popup-accept__text">
-      Наши специалисты проконсультируют вас и подберут оптимальное решение
-      под вашу бизнес-цель!
+    {{ __('home.popUpText') }}
     </p>
   </div>
 </div>

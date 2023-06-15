@@ -9,7 +9,9 @@
     <div class="out-team__wrp-cont">
         <div class="out-team__conteiner-wrp">
             <img class="out-team__img-emp" src="/img/SergeyBurtsev.jpg" alt="{{ __('names-employees.SergeyBurtsev') }}">
-            <p class="out-team__text-name">{{ __('names-employees.SergeyBurtsev') }}</p>
+            <a href="{{ LaravelLocalization::localizeUrl('out-team/burtsev-sergey') }}">
+                <p class="out-team__text-name">{{ __('names-employees.SergeyBurtsev') }}</p>
+            </a>
             <h3 class="out-team__text-speciality">{{ __('names-employees.SergeyBurtsev_specialist') }}</h3>
         </div>
         <div class="out-team__conteiner-wrp">

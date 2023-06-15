@@ -10,7 +10,7 @@
     </div>
     <div class="article__wrp">
         <div class="article__img-wrp">
-            <img class="article__img" src="/img/blog/chto-takoye-seo/main-banner-chto-takoye-seo-img.png" alt="{{ __('title-vazhen-ili-net.title') }}">
+            <img class="article__img" src="/img/blog/title-vazhen-ili-net/title-vazhen-ili-net.png" alt="{{ __('title-vazhen-ili-net.title') }}">
         </div>
         <div class="article-text">
             <ol>
@@ -34,6 +34,7 @@
             <p>
                 {{ __('title-vazhen-ili-net.whatIsTitle_2') }}
             </p>
+            <img src="/img/blog/title-vazhen-ili-net/title-vazhen-ili-net_3.jpg" alt="{{ __('title-vazhen-ili-net.whatIsTitle_4') }}">
             <p>
                 {{ __('title-vazhen-ili-net.whatIsTitle_3') }}
             </p>
@@ -46,6 +47,7 @@
             <h2 id="howToWriteCorrectTitle">
                 {{ __('title-vazhen-ili-net.howToWriteCorrectTitle') }}
             </h2>
+            <img src="/img/blog/title-vazhen-ili-net/title-vazhen-ili-net_2.png" alt="{{ __('title-vazhen-ili-net.howToWriteCorrectTitle') }}">
             <p>
                 {{ __('title-vazhen-ili-net.howToWriteCorrectTitle_1') }}
             </p>
@@ -55,7 +57,6 @@
             <p>
                 {{ __('title-vazhen-ili-net.titleExample_1') }}
             </p>
-            <img src="#" alt="{{ __('title-vazhen-ili-net.titleExample') }}">
             <p>
                 {{ __('title-vazhen-ili-net.titleExample_2') }}
             </p>

@@ -21,6 +21,7 @@ return [
     'whatIsTitle_1' => 'The term "title" implies that it is a heading, but a heading for what? It is not visible on the actual webpage. The title is the page title for search engine robots.',
     'whatIsTitle_2' => 'What does this mean? It means that when a robot visits a webpage, it pays attention to this meta tag first. But where can users see it? Is it only for the robot? The title is crucial for users primarily because it helps them decide whether to visit the site or not.',
     'whatIsTitle_3' => 'This is the field that users see in search engines, and it is called the title.',
+    'whatIsTitle_4' => 'title what it looks like in output',
 
     'whatShouldBeWrittenInTitle_1' => "Since the title is the first interaction with the content of the webpage and the user, it should accurately describe what is being presented on the page. It should strive to grab the user's attention among other search results.",
 
@@ -31,4 +32,6 @@ return [
     'titleExample_3' => 'In this case, when a customer searches for "electric car," they see our link, click on it, and find something completely different from what they were looking for. As a result, they leave the webpage. You might ask, "So what? They visited and left. What\'s the problem for us?".',
     'titleExample_4' => 'The problem is that if we have a high bounce rate, it means our search result is not relevant, and the search engine will lower our ranking, affecting our position in search results.',
     'titleExample_5' => 'Therefore, it is better to write a title like "Children\'s Electric Car - Mercedes-Benz, Code 12345 - Two-Seater." With such a title, we won\'t mislead users who are only interested in "electric cars."',
+
+    'popUpText' => 'Our experts will advise you and select the best solution for your business goal!'
 ];

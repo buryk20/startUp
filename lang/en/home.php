@@ -1,6 +1,8 @@
 <?
 
 return [
+	'metaDescription' => 'Turnkey website development. We create user-friendly websites with a unique design. Website promotion from layout to first sale star-up-group.com.ua',
+
 	'seo-title' => 'Star up group. Unique website - from you idea into turnkey development.',
 	'main-idea_title' => 'Unique website - from you idea into turnkey development.',
 	'main-idea_subtitle' => 'For unique conception to the finish results. We guarantee that we create a website of your dream.',

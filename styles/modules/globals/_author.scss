@@ -1,0 +1,21 @@
+.author {
+
+    @include text(
+        $fontSize: 16px
+    )
+
+    &__wrp-header {
+        background: linear-gradient(266.62deg, #E55DAD 0%, #745EE3 100%);
+    }
+
+    &__wrp-width {
+        @extend %marginCentre;
+        @include sizePage;
+    }
+
+    &__img {
+        max-width: 260px;
+
+        border-radius: 50%;
+    }
+}

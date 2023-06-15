@@ -55,7 +55,7 @@
       <div class="blog__article-cont-wrp">
         <div class="blog__article-img-wrp">
           <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/title-vazhen-ili-net') }}">
-            <img class="blog__article-img" src="/img/blog/chto-takoye-SEO-prodvizheniye-sayta/chto-takoye-SEO-prodvizheniye-sayta-main.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}">
+            <img class="blog__article-img" src="/img/blog/title-vazhen-ili-net/title-vazhen-ili-net.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}">
           </a>
         </div>
         <div class="blog__article-type-wrp">

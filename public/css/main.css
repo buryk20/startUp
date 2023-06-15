@@ -149,6 +149,11 @@ label {
           align-items: center;
 }
 
+.author__wrp-width {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .title-h1 {
   margin-bottom: 24px;
   font-size: 32px;
@@ -5636,6 +5641,10 @@ body {
   color: #5d5fef;
 }
 
+.blog__article-cont-wrp {
+  max-width: 620px;
+}
+
 .blog__article-wrp {
   width: 100%;
   gap: 16px;
@@ -5645,6 +5654,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border-radius: 8px;
 }
 
@@ -6056,6 +6067,29 @@ body {
 
 .privacy-policy li > ul {
   margin-top: 16px;
+}
+
+.author {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
+}
+
+.author__wrp-header {
+  background: linear-gradient(266.62deg, #E55DAD 0%, #745EE3 100%);
+}
+
+.author__wrp-width {
+  max-width: 1364px;
+  width: 100%;
+  position: relative;
+}
+
+.author__img {
+  max-width: 260px;
+  border-radius: 50%;
 }
 
 body.active {

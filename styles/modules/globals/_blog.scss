@@ -118,6 +118,6 @@
 
   &__article-type-specialist-text {
     white-space: nowrap;
-    @include text($fontSize: 14px, $fontWeight: 500, $color: $colorHoverButton);
+    @include text($fontSize: 16px, $fontWeight: 500, $color: $colorHoverButton);
   }
 }

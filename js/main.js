@@ -21,11 +21,13 @@ inputForm();
 
 import {headerBurger} from './headerBurger.js';
 headerBurger();
-    
+
+import {articleCount} from './articleCount.js';
+articleCount();
 
 
 // import {phoneValidCantry} from './phoneValidCantry.js';
 // phoneValidCantry();
 
-    
+
 

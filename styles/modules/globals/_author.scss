@@ -2,7 +2,7 @@
 
     @include text(
         $fontSize: 16px
-    )
+    );
 
     &__wrp-header {
         background: linear-gradient(266.62deg, #E55DAD 0%, #745EE3 100%);
@@ -17,5 +17,71 @@
         max-width: 260px;
 
         border-radius: 50%;
+    }
+
+    &__social-icon {
+        max-width: 24px;
+    }
+
+    &__name-wrp {
+        @extend %flexCentre;
+
+        gap: 16px;
+    }
+
+    &__wrp-cont {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        gap: 32px;
+
+        display: flex;
+
+        &.wrp-margin {
+            margin-top: 0;
+        }
+    }
+
+    &__article-icon {
+        max-width: 32px;
+    }
+
+    &__wrp-rigth-block {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 24px;
+    }
+
+    &__article-counter-wrp {
+        @extend %flexCentreStart;
+
+        gap: 8px;
+    }
+
+    &__article-counter {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__speciality-text {
+        max-width: 620px;
+    }
+
+    &__speciality-title {
+        font-size: 24px;
+        text-decoration: underline;
+        font-weight: 400;
+    }
+
+    &__name {
+        font-size: 28px;
+    }
+
+    &__article-list-wrp {
+        gap: 24px;
+
+        @extend %flexSpaceBetween;
     }
 }

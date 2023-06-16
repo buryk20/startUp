@@ -154,6 +154,39 @@ label {
   margin-right: auto;
 }
 
+.author__name-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.author__article-counter-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.author__article-list-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .title-h1 {
   margin-bottom: 24px;
   font-size: 32px;
@@ -5789,7 +5822,7 @@ body {
 
 .blog__article-type-specialist-text {
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: #4144f1;
   line-height: 140%;
@@ -6090,6 +6123,75 @@ body {
 .author__img {
   max-width: 260px;
   border-radius: 50%;
+}
+
+.author__social-icon {
+  max-width: 24px;
+}
+
+.author__name-wrp {
+  gap: 16px;
+}
+
+.author__wrp-cont {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  gap: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.author__wrp-cont.wrp-margin {
+  margin-top: 0;
+}
+
+.author__article-icon {
+  max-width: 32px;
+}
+
+.author__wrp-rigth-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+.author__article-counter-wrp {
+  gap: 8px;
+}
+
+.author__article-counter {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.author__speciality-text {
+  max-width: 620px;
+}
+
+.author__speciality-title {
+  font-size: 24px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.author__name {
+  font-size: 28px;
+}
+
+.author__article-list-wrp {
+  gap: 24px;
 }
 
 body.active {

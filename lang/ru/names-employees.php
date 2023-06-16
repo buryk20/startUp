@@ -6,7 +6,7 @@ return [
 
     'SergeyBurtsev' => 'Сергей Бурцев',
     'SergeyBurtsev_specialist' => 'Сооснователь StarUpGroup, SEO-специалист, front-end developer',
-    'SergeyBurtsev_specialist_author' => 'Я СЕО специалист, более трех лет занимаюсь продвижением сайтов, являюсь одним из основателей StarUp Group',
+    'SergeyBurtsev_specialist_author' => 'Я SEO специалист, более трех лет занимаюсь продвижением сайтов, являюсь одним из основателей StarUp Group',
 
     'PetrLadan' => 'Петр Ладан',
     'PetrLadan_specialist' => 'Сооснователь StarUpGroup, Project & PPC manager',

@@ -12,10 +12,24 @@ export let removeClassArr = function(elem) {
     });
 }
 
-export let stopPropagationFunction = function(elem) {
+export let stopPropagationFunctionArr = function(elem) {
     elem.forEach((el) => {
         el.addEventListener('click', (event) => {
             event.stopPropagation();
         })
     })
 }
+
+export let Add = class  {
+    removeActive (elemClick, elemRemove) {
+        elemClick.addEventListener('click', () => {
+            elemRemove.classList.remove('active');
+        });
+    }
+    stopPropagationFun (elem) {
+        elem.addEventListener('click', (event) => {
+            event.stopPropagation();
+        });
+    }
+}
+

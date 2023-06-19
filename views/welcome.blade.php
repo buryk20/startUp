@@ -327,7 +327,7 @@
   <section data-input-wrp class="main-form">
     <div class="main-form__wrp">
       <div data-input class="main-form__container">
-        <div class="main-form__form-wrp">
+        <div data-container class="main-form__form-wrp">
           <div data-btn-close class="contacts__btn-close">
             <span class="contacts__btn-close-line contacts__btn-close-line-r"></span>
             <span class="contacts__btn-close-line contacts__btn-close-line-l"></span>
@@ -367,7 +367,7 @@
   <div class="popup-accept__wrp">
     <img class="popup-accept__img" src="img/check_desk_icon.svg" alt="checked" />
     <p class="popup-accept__text">
-    {{ __('home.popUpText') }}
+      {{ __('home.popUpText') }}
     </p>
   </div>
 </div>

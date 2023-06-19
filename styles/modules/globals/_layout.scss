@@ -1404,15 +1404,13 @@ body {
   }
 }
 
+.main-form {
+  height: 100vh;
+}
+
 .main-form,
 .popup-form {
   &__wrp {
-    padding-top: 36px;
-    @include flexCenterColumn;
-    @include _680 {
-      padding-top: 0;
-    }
-
     & > .contacts__btn-close {
       position: absolute;
     }
@@ -1464,6 +1462,11 @@ body {
     visibility: hidden;
     opacity: 0;
 
+    transition: 0.3s ease-in;
+
+    backdrop-filter: blur(6px);
+    background-color: #4144f147;
+
     position: fixed;
     left: 0;
     right: 0;
@@ -1473,6 +1476,8 @@ body {
     &.active {
       opacity: 1;
       visibility: inherit;
+
+      transition: 0.3s ease-out;
     }
   }
 
@@ -1691,36 +1696,24 @@ body {
 .popup-form {
   &__container {
     @include flexCenter;
+    @extend %blurPositionModal;
+
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+
     visibility: hidden;
+    opacity: 0;
     transition: all 0.3s ease;
     z-index: 500;
-    opacity: 0;
     transition: opacity, 0.3s ease-in;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #0a0a1177;
-      z-index: -1;
-      backdrop-filter: blur(24px) opacity(1);
-    }
   }
   &__active {
     visibility: visible;
     opacity: 1;
     transition: opacity, 0.3s ease-out;
-
-    & > .main-form__form-wrp > .js-btn-close {
-      display: flex;
-    }
   }
 }
 
@@ -1839,6 +1832,7 @@ body {
     position: relative;
 
     @include _680 {
+      max-width: 100%;
       height: 100vh;
 
       border-radius: 0;
@@ -1891,14 +1885,14 @@ body {
 
     top: 16px;
     right: 16px;
-    position: fixed;
+    position: absolute;
     cursor: pointer;
     &:hover .contacts__btn-close-line {
       background-color: $colorHoverButton;
     }
 
     @include _680 {
-      // top: 10px;
+      position: fixed;
     }
   }
 

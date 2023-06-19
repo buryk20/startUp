@@ -6,7 +6,7 @@
       <div data-left class="chat-bot-banner__content wow animate__animated">
         <h1 class="chat-bot-banner__title">{{ __('chatbots.chat-bot-banner_title') }}</h1>
         <p class="chat-bot-banner__text">{{ __('chatbots.chat-bot-banner_descr') }}</p>
-        <button class="chat-bot__button btn-pop-up">{{ __('chatbots.chat-bot-banner_button') }}</button>
+        <button data-btn-open-modal class="chat-bot__button btn-pop-up">{{ __('chatbots.chat-bot-banner_button') }}</button>
       </div>
       <div class="chat-bot-banner__picture">
         <img data-right class="wow animate__animated" src="/img/chat_bot_banner.png" alt="banner" class="" />
@@ -157,31 +157,31 @@
           </h4>
           <div class="chat-bot-explanation__list">
             <div class="chat-bot-explanation__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item">
                 {{ __('chatbots.chat-bot-explanation_blockright_li1') }}
               </p>
             </div>
             <div class="chat-bot-explanation__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item">
                 {{ __('chatbots.chat-bot-explanation_blockright_li2') }}
               </p>
             </div>
             <div class="chat-bot-explanation__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item">
                 {{ __('chatbots.chat-bot-explanation_blockright_li3') }}
               </p>
             </div>
             <div class="chat-bot-explanation__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item">
                 {{ __('chatbots.chat-bot-explanation_blockright_li4') }}
               </p>
             </div>
             <div class="chat-bot-explanation__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item">
                 {{ __('chatbots.chat-bot-explanation_blockright_li5') }}
               </p>
@@ -193,7 +193,7 @@
         <p class="chat-bot-content__subtitle chat-bot-content__subtitle_explain">
           {{ __('chatbots.chat-bot-explanation_titlebottom') }}
         </p>
-        <button class="chat-bot__button btn-pop-up">{{ __('chatbots.chat-bot-explanation_button') }}</button>
+        <button data-btn-open-modal class="chat-bot__button btn-pop-up">{{ __('chatbots.chat-bot-explanation_button') }}</button>
       </div>
     </div>
   </section>
@@ -209,13 +209,13 @@
       <div class="chat-bot-create__container">
         <div class="chat-bot-create__item">
           <div class="chat-bot-create__item-box">
-            <img src="/icons/create_icon_left.png" alt="icon" class="chat-bot-create__content-icon" />
+            <img src="/svg/create_icon_left.png" alt="icon" class="chat-bot-create__content-icon" />
             <div class="chat-bot-create__content">
               <div class="chat-bot-create__content-box">
                 <h3 class="chat-bot-create__content-title">
                   {{ __('chatbots.chat-bot-create_left_title') }}
                 </h3>
-                <img src="/icons/arrow_bot_icon.png" alt="arrow" class="chat-bot-create__arrow" />
+                <img src="/svg/arrow_bot_icon.png" alt="arrow" class="chat-bot-create__arrow" />
               </div>
               <p class="chat-bot-content__text chat-bot-content__text_invisible">
                 {{ __('chatbots.chat-bot-create_left_descr') }}
@@ -230,19 +230,19 @@
               {{ __('chatbots.chat-bot-create_left_subtitle') }}
             </h4>
             <div class="chat-bot-create__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <div class="chat-bot-content__list-item chat-bot-content__list-item_dark">
                 {{ __('chatbots.chat-bot-create_left_li1') }}
               </div>
             </div>
             <div class="chat-bot-create__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_dark">
                 {{ __('chatbots.chat-bot-create_left_li2') }}
               </p>
             </div>
             <div class="chat-bot-create__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_dark">
                 {{ __('chatbots.chat-bot-create_left_li3') }}
               </p>
@@ -254,14 +254,14 @@
         </div>
         <div class="chat-bot-create__item">
           <div class="chat-bot-create__item-box">
-            <img src="/icons/create_icon_right.png" alt="icon" class="chat-bot-create__content-icon" />
+            <img src="/svg/create_icon_right.png" alt="icon" class="chat-bot-create__content-icon" />
 
             <div class="chat-bot-create__content">
               <div class="chat-bot-create__content-box">
                 <h3 class="chat-bot-create__content-title">
                   {{ __('chatbots.chat-bot-create_right_title') }}
                 </h3>
-                <img src="/icons/arrow_bot_icon.png" alt="arrow" class="chat-bot-create__arrow" />
+                <img src="/svg/arrow_bot_icon.png" alt="arrow" class="chat-bot-create__arrow" />
               </div>
               <p class="chat-bot-content__text chat-bot-content__text_center chat-bot-content__text_invisible">
                 {{ __('chatbots.chat-bot-create_right_descr') }}
@@ -276,19 +276,19 @@
               {{ __('chatbots.chat-bot-create_right_subtitle') }}
             </h4>
             <div class="chat-bot-create__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_dark">
                 {{ __('chatbots.chat-bot-create_right_li1') }}
               </p>
             </div>
             <div class="chat-bot-create__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_dark">
                 {{ __('chatbots.chat-bot-create_right_li2') }}
               </p>
             </div>
             <div class="chat-bot-create__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_dark">
                 {{ __('chatbots.chat-bot-create_right_li3') }}
               </p>
@@ -324,13 +324,13 @@
         <div class="chat-bot-types__item">
           <div data-wow-offset="200" class="chat-bot-types__item-content wow animate__animated animate__fadeInLeft">
             <div class="chat-bot-types__subtitle-box">
-              <img src="/icons/web_icon.png" alt="icon" class="chat-bot-types__icon" />
+              <img src="/svg/web_icon.png" alt="icon" class="chat-bot-types__icon" />
               <h4 class="chat-bot-types__subtitle">
                 {{ __('chatbots.chat-bot-types_tab1_block1_title') }}
               </h4>
             </div>
             <div class="chat-bot-types__line">
-              <img src="/icons/line_icon.svg" alt="arrow" />
+              <img src="/svg/line_icon.svg" alt="arrow" />
             </div>
             <ul class="chat-bot-types__list">
               <li class="chat-bot-content__text">{{ __('chatbots.chat-bot-types_tab1_block1_li1') }}</li>
@@ -343,13 +343,13 @@
           </div>
           <div data-wow-offset="200" data-wow-delay="0.4s" class="chat-bot-types__item-content wow animate__animated animate__fadeInLeft">
             <div class="chat-bot-types__subtitle-box">
-              <img src="/icons/customer_support_icon.png" alt="icon" class="chat-bot-types__icon" />
+              <img src="/svg/customer_support_icon.png" alt="icon" class="chat-bot-types__icon" />
               <h4 class="chat-bot-types__subtitle">
                 {{ __('chatbots.chat-bot-types_tab1_block2_title') }}
               </h4>
             </div>
             <div class="chat-bot-types__line">
-              <img src="/icons/line_icon.svg" alt="arrow" />
+              <img src="/svg/line_icon.svg" alt="arrow" />
             </div>
             <ul class="chat-bot-types__list">
               <li class="chat-bot-content__text">
@@ -371,13 +371,13 @@
           </div>
           <div data-wow-offset="200" data-wow-delay="0.8s" class="chat-bot-types__item-content wow animate__animated animate__fadeInLeft">
             <div class="chat-bot-types__subtitle-box">
-              <img src="/icons/work__staff_icon.png" alt="icon" class="chat-bot-types__icon" />
+              <img src="/svg/work__staff_icon.png" alt="icon" class="chat-bot-types__icon" />
               <h4 class="chat-bot-types__subtitle">
                 {{ __('chatbots.chat-bot-types_tab1_block3_title') }}
               </h4>
             </div>
             <div class="chat-bot-types__line">
-              <img src="/icons/line_icon.svg" alt="arrow" />
+              <img src="/svg/line_icon.svg" alt="arrow" />
             </div>
             <ul class="chat-bot-types__list">
               <li class="chat-bot-content__text">
@@ -401,7 +401,7 @@
           <div class="chat-bot-types__item-content">
             <div>
               <div class="chat-bot-types__subtitle-box chat-bot-types__subtitle-box-br">
-                <img src="/icons/video_call_icon.svg" alt="icon" class="chat-bot-types__icon" />
+                <img src="/svg/video_call_icon.svg" alt="icon" class="chat-bot-types__icon" />
                 <h4 class="chat-bot-types__subtitle chat-bot-types__subtitle_info">
                   {{ __('chatbots.chat-bot-types_tab2_block1_title') }}
                 </h4>
@@ -411,7 +411,7 @@
               </p>
             </div>
             <div class="chat-bot-types__line">
-              <img src="/icons/line_icon.svg" alt="arrow" />
+              <img src="/svg/line_icon.svg" alt="arrow" />
             </div>
             <ul class="chat-bot-types__list">
               <li class="chat-bot-content__text">
@@ -458,37 +458,37 @@
         <div class="chat-bot-types__item-container">
           <div class="chat-bot-types__item-colunm">
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li1') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li2') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li3') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li4') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li5') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li6') }}
               </p>
@@ -496,43 +496,43 @@
           </div>
           <div class="chat-bot-types__item-colunm">
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li7') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li8') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li9') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li10') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li11') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li12') }}
               </p>
             </div>
             <div class="chat-bot-types__list-box">
-              <img src="/icons/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
+              <img src="/svg/dot_icon.png" alt="dot" class="chat-bot-content__list-icon" />
               <p class="chat-bot-content__list-item chat-bot-content__list-item_black">
                 {{ __('chatbots.chat-bot-types_tab3_block_li13') }}
               </p>
@@ -556,11 +556,12 @@
       <h5 class="chat-bot-form__subtitle">
         {{ __('chatbots.chat-bot-form_subtitle') }}
       </h5>
+      <button data-btn-open-modal class="chat-bot__button btn-pop-up">{{ __('chatbots.chat-bot-explanation_button') }}</button>
     </div>
     <div class="chat-bot-form__box main-form__wrp">
-      <div class="main-form__container js-activ">
-        <div class="main-form__form-wrp">
-          <div class="contacts__btn-close js-btn-close">
+      <div data-input class="main-form__container js-activ">
+        <div data-container class="main-form__form-wrp">
+          <div data-btn-close class="contacts__btn-close js-btn-close">
             <span class="contacts__btn-close-line contacts__btn-close-line-r"></span>
             <span class="contacts__btn-close-line contacts__btn-close-line-l"></span>
           </div>
@@ -578,7 +579,7 @@
               <input type="text" id="UserEmail" name="UserEmail" placeholder="E-mail" class="main-form__form-item js-input js-input-email" />
             </div>
             <div class="main-form__form-list-text-wrp">
-              <img src="/icons/FormCheck_icon.svg" alt="Check" class="main-form__form-list-text-img" />
+              <img src="/svg/FormCheck_icon.svg" alt="Check" class="main-form__form-list-text-img" />
               <p class="main-form__form-list-text">
                 {{ __('chatbots.chat-bot-form_formprivacy') }}
               </p>
@@ -604,13 +605,13 @@
 
           <p class="contacts__linc-cont-wrp">
             <a class="contacts__link-wrp" href="tel:+380681804842">
-              <img class="contacts__phone-img" src="/icons/phone-icon.svg" alt="phone number" />
+              <img class="contacts__phone-img" src="/svg/phone-icon.svg" alt="phone number" />
               <span class="contacts__text">+38(068)180 48 42</span>
             </a>
           </p>
           <p>
             <a class="contacts__link-wrp" href="mailto:info@star-up-group.com.ua">
-              <img class="contacts__phone-img" src="/icons/email-icon.svg" alt="Emeil" />
+              <img class="contacts__phone-img" src="/svg/email-icon.svg" alt="Emeil" />
               <span class="contacts__text">info@star-up-group.com.ua</span>
             </a>
           </p>

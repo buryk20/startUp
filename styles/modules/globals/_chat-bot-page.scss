@@ -1130,11 +1130,13 @@
 .chat-bot-form {
   &__container {
     text-align: center;
-    padding: 57px 20px 166px 20px;
+    padding: 56px 20px 56px 20px;
     background: linear-gradient(266.62deg, #e55dad 0%, #745ee3 100%);
   }
 
   &__subtitle {
+    margin-bottom: 24px;
+
     font-weight: 400;
     font-size: 24px;
     line-height: 38.4px;
@@ -1142,11 +1144,6 @@
     color: $colorWhite;
     margin-top: 11px;
     padding: 0 26px;
-  }
-
-  &__box {
-    margin-top: -113px;
-    margin-bottom: 80px;
   }
 
   @media (max-width: 767px) {

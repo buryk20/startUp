@@ -318,7 +318,7 @@
         <p class="main-marketing__request-title">
           {{ __('home.main-marketing_downtitle') }}
         </p>
-        <button class="main-marketing__request-button btn-pop-up">
+        <button data-btn-open-modal class="main-marketing__request-button btn-pop-up">
           {{ __('home.main-marketing_button') }}
         </button>
       </div>

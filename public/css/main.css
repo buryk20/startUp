@@ -2325,10 +2325,6 @@ body {
   position: absolute;
 }
 
-.main-form {
-  height: 100vh;
-}
-
 .main-form__wrp > .contacts__btn-close,
 .popup-form__wrp > .contacts__btn-close {
   position: absolute;
@@ -3980,10 +3976,11 @@ body {
 
 .chat-bot-form__container {
   text-align: center;
-  padding: 57px 20px 166px 20px;
+  padding: 56px 20px 56px 20px;
   background: linear-gradient(266.62deg, #e55dad 0%, #745ee3 100%);
 }
 .chat-bot-form__subtitle {
+  margin-bottom: 24px;
   font-weight: 400;
   font-size: 24px;
   line-height: 38.4px;
@@ -3991,10 +3988,6 @@ body {
   color: #ffffff;
   margin-top: 11px;
   padding: 0 26px;
-}
-.chat-bot-form__box {
-  margin-top: -113px;
-  margin-bottom: 80px;
 }
 @media (max-width: 767px) {
   .chat-bot-form__subtitle {

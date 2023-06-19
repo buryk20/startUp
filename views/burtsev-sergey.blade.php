@@ -4,7 +4,7 @@
 @section('metaDiscription'){{ __('out-team.metaDescription') }}@endsection
 
 @section('main_content')
-<main class="author">
+<main data-author class="author">
     <div class="author__wrp-header">
         <div class="wrp-margin author__wrp-cont">
             <img class="author__img" src="/img/SergeyBurtsev.jpg" alt="">
@@ -18,14 +18,14 @@
                 <h1 class="author__speciality-title">SEO-specialist</h1>
                 <p class="author__speciality-text">{{ __('names-employees.SergeyBurtsev_specialist_author') }}</p>
                 <div class="author__article-counter-wrp">
-                    <img class="author__article-icon" src="/svg/article-icon-author.png" alt="">
-                    <p class="author__article-counter">2</p>
+                    <img class="author__article-icon" src="/svg/article-icon-author.png" alt="{{ __('names-employees.SergeyBurtsev_specialist_author') }}">
+                    <p class="author__article-counter"><span data-article-count>0</span></p>
                 </div>
             </div>
         </div>
     </div>
     <div class="wrp-margin author__article-list-wrp">
-        <div class="blog__article-cont-wrp">
+        <div data-article class="blog__article-cont-wrp">
             <div class="blog__article-img-wrp">
                 <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/chto-takoye-SEO-prodvizheniye-sayta') }}">
                 <img class="blog__article-img" src="/img/blog/chto-takoye-SEO-prodvizheniye-sayta/chto-takoye-SEO-prodvizheniye-sayta-main.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}">
@@ -46,8 +46,8 @@
                 <p class="blog__article-text">{{ __('chto-takoye-SEO-prodvizheniye-sayta.shortDescription') }}
                 </p>
             </div>
-            </div>
-            <div class="blog__article-cont-wrp">
+        </div>
+        <div data-article class="blog__article-cont-wrp">
             <div class="blog__article-img-wrp">
                 <a href="{{ LaravelLocalization::localizeUrl('/blog/SEO/title-vazhen-ili-net') }}">
                 <img class="blog__article-img" src="/img/blog/title-vazhen-ili-net/title-vazhen-ili-net.png" alt="{{ __('chto-takoye-SEO-prodvizheniye-sayta.title') }}">
@@ -68,7 +68,7 @@
                 <p class="blog__article-text">{{ __('title-vazhen-ili-net.shortDescription') }}
                 </p>
             </div>
-            </div>
+        </div>
     </div>
 </main>
 @endsection

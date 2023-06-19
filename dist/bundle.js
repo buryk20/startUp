@@ -1,1 +1,186 @@
-(()=>{"use strict";let e=function(e,t){e.forEach((e=>{e.addEventListener("click",(function(){t.classList.remove("active")}))}))};!function(){if(null!=document.querySelector("[data-chat-dot]")){const e=document.querySelectorAll(".chat-bot-create__arrow"),t=document.querySelectorAll(".chat-bot__js");e.forEach(((o,c)=>{o.addEventListener("click",(function(o){let a=0;a=c,e[c].classList.toggle("js-active"),t[a].classList.toggle("js-active")}))}));const o=document.querySelectorAll(".chat-bot-types__slider-item"),c=document.querySelectorAll(".chat-bot-types__js");function a(e){e.forEach((e=>{e.classList.remove("js-active")}))}o.forEach(((e,t)=>{e.addEventListener("click",(function(e){a(o),a(c);let n=0;n=t,o[t].classList.toggle("js-active"),c[n].classList.toggle("js-active"),e.stopPropagation()}))}))}}(),function(){if(null!=document.querySelector("[data-input-wrp]")){const e=document.getElementById("accept"),t=document.querySelector(".js-activ");let o=document.querySelector(".js-form"),c=o.querySelectorAll(".js-input"),a=o.querySelector(".js-input-email"),n=o.querySelector(".js-input-phone");o.onsubmit=function(){let o=a.value,r=n.value,s=Array.from(c).filter((e=>""===e.value));return c.forEach((function(e){""===e.value?e.classList.add("errorInput"):e.classList.remove("errorInput")})),0===s.length&&(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(o).toLowerCase())?(a.classList.remove("errorInput"),l=o,new RegExp(".ru$").test(String(l).toLowerCase())?(a.classList.add("errorInput"),alert("Русский военный корабль пошел нах*й"),!1):(a.classList.remove("errorInput"),/^[0-9]*$/.test(String(r))?(a.classList.remove("errorInput"),e.classList.add("popup-accept__container-active"),void setTimeout((()=>{e.classList.remove("popup-accept__container-active"),t.classList.remove("popup-form__container"),t.classList.remove("popup-form__active")}),3e3)):(a.classList.add("errorInput"),!1))):(console.log("email error"),a.classList.add("errorInput"),!1));var l}}}(),function(){if(null!=document.querySelector("[data-input-wrp]")){const e=document.getElementById("lock"),t=(document.getElementById("nav"),e.querySelectorAll(".main-form__container")),o=(e.querySelector(".btn-form"),e.querySelector(".js-activ")),c=e.querySelector(".main-form__form-wrp"),a=document.querySelector("main").querySelectorAll(".btn-pop-up");document.getElementById("accept"),e.querySelectorAll(".js-btn-close").forEach((e=>{e.addEventListener("click",(function(e){o.classList.remove("popup-form__active"),o.classList.remove("popup-form__container")}))})),a.forEach((e=>{e.addEventListener("click",(()=>{console.log("sdfc"),o.classList.add("popup-form__container"),o.classList.add("popup-form__active")}))})),t.forEach((e=>{e.addEventListener("click",(e=>{e.target.classList.remove("popup-form__active"),setTimeout((()=>{o.classList.remove("popup-form__container"),o.classList.add("main-form__container")}),3e3)}))})),c.addEventListener("click",(function(e){e.stopPropagation()}))}}(),function(){const t=document.querySelector("[data-contacts-wrp-pop-up]");if(null!=t){const o=document.querySelectorAll("[data-contact-btn]"),c=t.querySelector("[data-contact-modal]"),a=t.querySelectorAll("[data-contact-btn-close]"),n=document.querySelectorAll("body"),r=document.querySelectorAll("[data-contact-modal-container]");o.forEach((e=>{e.addEventListener("click",(e=>{e.stopPropagation(),c.classList.add("active"),n[0].classList.add("active")}))})),e(n,c),e(a,c),e(a,n[0]),r.forEach((e=>{e.addEventListener("click",(e=>{e.stopPropagation()}))}))}}(),function(){const e=document.querySelector("[data-animation-wrp]");if(null!=e){new WOW({boxClass:"wow",animateClass:"animated",offset:0,mobile:!0,live:!0}).init();const o=e.querySelectorAll("[data-left]"),c=e.querySelectorAll("[data-right]"),a=e.querySelectorAll("[data-wow-offset]");document.documentElement.clientWidth>680?(o.forEach((e=>{t(e,"animate__fadeInLeft")})),c.forEach((e=>{t(e,"animate__fadeInRight")}))):(c.forEach((e=>{t(e,"animate__fadeInUp")})),o.forEach((e=>{t(e,"animate__fadeInLeft")})),a.forEach((e=>{e.dataset.wowOffset=0})))}function t(e,t){e.classList.add(t)}}(),function(){const e=document.querySelector("#nav");if(null!=e){e.querySelectorAll("[data-link-nav]");const t=e.querySelectorAll("[data-lang]");let o=[];const c=e.querySelectorAll("[data-name]");function a(e,t){if("/"!=e&"/ru"!=e&"/en"!=e){e=e.replace(/\/ru/gi,"").replace(/\/en/gi,"");for(let o=1;o<t.length;o++)e.startsWith(t[o].getAttribute("data-name"))&&t[o].classList.add("active")}else t[0].classList.add("active")}a(document.location.pathname,c),t.forEach((e=>{o.push(window.location.pathname.includes("/"+e.innerHTML.toLowerCase()))})),o.forEach(((e,c)=>{!0===e?t[c].classList.add("active"):-1===o.indexOf(!0)&&t[0].classList.add("active")}))}}(),function(){new XMLHttpRequest;let e=document.URL;const t=document.querySelectorAll(".js-form"),o={text:`${e}`};t.forEach(((c,a)=>{c.querySelector("button").addEventListener("click",(async function(c){!function(c){let a;t[c].addEventListener("submit",(e=>{e.preventDefault()}));let n={};a=t[c].querySelectorAll("input"),a.forEach((e=>{let t=e.name;n[t]=e.value})),""!==n.name&&""!==n.company&&""!==n.phone&&""!==n.email&&(o.text=JSON.stringify(n).replace(/[{}"]/g,"").replace(/,/gi,",\n").replace(/:/gi,": ")+"\n"+`Страница: ${e}`,function(e){const t=e;fetch("https://api.telegram.org/bot1086684695:AAGUePIsqeOsnHABuEJ939JBv1hdjVZSYGQ/sendMessage",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:"-1001819362362",text:t})}).then((e=>{if(!e.ok)throw new Error(`Failed to send message: ${e.status} ${e.statusText}`);console.log("Message sent successfully!")})).catch((e=>{console.error(e)}))}(o.text))}(a)}))}))}(),function(){const e=document.querySelector("#nav");if(null!=e){const t=e.querySelector(".header__nav-wrp"),o=e.querySelector(".header__burger");o.addEventListener("click",(()=>{o.classList.toggle("header__burger-active"),t.classList.toggle("header__nav-wrp-active"),document.querySelector("body").classList.toggle("body-lock")}))}}()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./js/animation.js":
+/*!*************************!*\
+  !*** ./js/animation.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"animation\": () => (/* binding */ animation)\n/* harmony export */ });\nlet animation = function() {\r\n    \r\n    \r\n    const animationWrp = document.querySelector('[data-animation-wrp]');\r\n    if(animationWrp != null) {\r\n        new WOW(\r\n            {\r\n              boxClass: 'wow',      // default\r\n              animateClass: 'animated', // default\r\n              offset: 0,          // default\r\n              mobile: true,       // default\r\n              live: true        // default\r\n            }\r\n          ).init();\r\n        const animationLeft = animationWrp.querySelectorAll('[data-left]');\r\n        const animationRight = animationWrp.querySelectorAll('[data-right]');\r\n        const offSet = animationWrp.querySelectorAll('[data-wow-offset]');\r\n        if(document.documentElement.clientWidth > 680) {\r\n            animationLeft.forEach(el => {\r\n                addClass(el, \"animate__fadeInLeft\");\r\n            });\r\n            animationRight.forEach(el => {\r\n                addClass(el, \"animate__fadeInRight\");\r\n            })\r\n        } else {\r\n            animationRight.forEach(el => {\r\n                addClass(el, \"animate__fadeInUp\");\r\n            });\r\n            animationLeft.forEach(el => {\r\n                addClass(el, \"animate__fadeInLeft\");\r\n            });\r\n            offSet.forEach(el => {\r\n                el.dataset.wowOffset = 0;\r\n            })\r\n        }\r\n    }\r\n\r\n    function addClass(item, className) {\r\n        item.classList.add(className);\r\n    }\r\n}\n\n//# sourceURL=webpack://startup/./js/animation.js?");
+
+/***/ }),
+
+/***/ "./js/articleCount.js":
+/*!****************************!*\
+  !*** ./js/articleCount.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"articleCount\": () => (/* binding */ articleCount)\n/* harmony export */ });\n let articleCount = function() {\r\n    const author = document.querySelector('[data-author]');\r\n    console.log(author);\r\n    if(author != null) {\r\n        const articleArr  = author.querySelectorAll('[data-article]');\r\n        countArticle(articleArr);\r\n\r\n        function countArticle(arr) {\r\n            const valueOutput = author.querySelector('[data-article-count]');\r\n            valueOutput.innerHTML = arr.length;\r\n            console.log(arr.length);\r\n        }\r\n    }\r\n}\n\n//# sourceURL=webpack://startup/./js/articleCount.js?");
+
+/***/ }),
+
+/***/ "./js/chatBot.js":
+/*!***********************!*\
+  !*** ./js/chatBot.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"chatBot\": () => (/* binding */ chatBot)\n/* harmony export */ });\nlet chatBot = function() {\r\n    const chatBotWrp = document.querySelector('[data-chat-dot]');\r\n        if(chatBotWrp != null) {\r\n            const arrArrow = document.querySelectorAll(\".chat-bot-create__arrow\");\r\n            const arrVisible = document.querySelectorAll(\".chat-bot__js\");\r\n\r\n        arrArrow.forEach((el, index) => {\r\n            el.addEventListener(\"click\", function (e) {\r\n            let indexVisible = 0;\r\n\r\n            indexVisible = index;\r\n            arrArrow[index].classList.toggle(\"js-active\");\r\n            arrVisible[indexVisible].classList.toggle(\"js-active\");\r\n            });\r\n        });\r\n\r\n    //select type category\r\n        const arrButton = document.querySelectorAll(\".chat-bot-types__slider-item\");\r\n        const    arrType = document.querySelectorAll(\".chat-bot-types__js\");\r\n        arrButton.forEach((el, index) => {\r\n            el.addEventListener(\"click\", function (e) {\r\n            delClass(arrButton);\r\n            delClass(arrType);\r\n            let indexType = 0;\r\n\r\n            indexType = index;\r\n            arrButton[index].classList.toggle(\"js-active\");\r\n            arrType[indexType].classList.toggle(\"js-active\");\r\n            e.stopPropagation();\r\n            });\r\n        });\r\n\r\n        function delClass(item) {\r\n            item.forEach((el) => {\r\n            el.classList.remove(\"js-active\");\r\n            });\r\n        }\r\n\r\n    } \r\n}\n\n//# sourceURL=webpack://startup/./js/chatBot.js?");
+
+/***/ }),
+
+/***/ "./js/functionGlobal.js":
+/*!******************************!*\
+  !*** ./js/functionGlobal.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"removeClass\": () => (/* binding */ removeClass),\n/* harmony export */   \"removeClassArr\": () => (/* binding */ removeClassArr),\n/* harmony export */   \"stopPropagationFunction\": () => (/* binding */ stopPropagationFunction)\n/* harmony export */ });\nlet removeClass = function(elem, elemFromRemoveClass) {\r\n    elem.forEach((el) => {\r\n        el.addEventListener(\"click\", function () {\r\n            elemFromRemoveClass.classList.remove('active');\r\n        })\r\n    });\r\n}\r\n\r\nlet removeClassArr = function(elem) {\r\n    elem.forEach((el) => {\r\n        el.classList.remove('active');\r\n    });\r\n}\r\n\r\nlet stopPropagationFunction = function(elem) {\r\n    elem.forEach((el) => {\r\n        el.addEventListener('click', (event) => {\r\n            event.stopPropagation();\r\n        })\r\n    })\r\n}\n\n//# sourceURL=webpack://startup/./js/functionGlobal.js?");
+
+/***/ }),
+
+/***/ "./js/headerBurger.js":
+/*!****************************!*\
+  !*** ./js/headerBurger.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"headerBurger\": () => (/* binding */ headerBurger)\n/* harmony export */ });\nlet headerBurger = function() {\r\n    const nav = document.querySelector('#nav');\r\n    if(nav != null) {\r\n        const lock = nav.querySelector('.header__nav-wrp');\r\n        const burger = nav.querySelector('.header__burger');\r\n\r\n        burger.addEventListener(\"click\", () => {\r\n            burger.classList.toggle('header__burger-active');\r\n            lock.classList.toggle('header__nav-wrp-active');\r\n            document.querySelector('body').classList.toggle('body-lock');\r\n        });\r\n    }\r\n}\n\n//# sourceURL=webpack://startup/./js/headerBurger.js?");
+
+/***/ }),
+
+/***/ "./js/inputForm.js":
+/*!*************************!*\
+  !*** ./js/inputForm.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"inputForm\": () => (/* binding */ inputForm)\n/* harmony export */ });\nlet inputForm = function() {\r\n    var xhr = new XMLHttpRequest();\r\n    let namePage = document.URL;\r\n    const form = document.querySelectorAll('.js-form');\r\n    const message = {\r\n        text: `${namePage}`,\r\n    };\r\n    form.forEach((el, index) => {\r\n        el.querySelector('button').addEventListener('click', async function(event) {\r\n            inputValue(index);\r\n        });\r\n    });\r\n\r\n    function inputValue(index)  {\r\n        form[index].addEventListener('submit', event => {\r\n            event.preventDefault();\r\n        })\r\n        let arrIn;\r\n        let inputValue = {};\r\n        arrIn = form[index].querySelectorAll('input');\r\n        arrIn.forEach(el => {\r\n            let nameIn = el.name;\r\n            inputValue[nameIn] = el.value;\r\n        });\r\n        if(inputValue.name !== '' && inputValue.company !== '' && inputValue.phone !== '' && inputValue.email !== '') {\r\n            message.text = string(JSON.stringify(inputValue)) + '\\n' + `Страница: ${namePage}`;\r\n            // getFun(message.text);\r\n            postTel(message.text);\r\n        }\r\n\r\n    }\r\n    function string(srt) {\r\n        return ((srt.replace(/[{}\"]/g, '')).replace(/,/gi, ',\\n')).replace(/:/gi, ': ');\r\n    }\r\n\r\n\r\n    function postTel(messageText) {\r\n        const token = '1086684695:AAGUePIsqeOsnHABuEJ939JBv1hdjVZSYGQ'; // замените на свой токен\r\n        const chatId = '-1001819362362'; // замените на свой ID чата\r\n\r\n        const message = messageText; // сообщение, которое вы хотите отправить\r\n\r\n        fetch(`https://api.telegram.org/bot${token}/sendMessage`, {\r\n            method: 'POST',\r\n            headers: {\r\n                'Content-Type': 'application/json'\r\n            },\r\n            body: JSON.stringify({\r\n                chat_id: chatId,\r\n                text: message\r\n            })\r\n        })\r\n        .then(res => {\r\n            if (!res.ok) {\r\n                throw new Error(`Failed to send message: ${res.status} ${res.statusText}`);\r\n            }\r\n            console.log('Message sent successfully!');\r\n        })\r\n        .catch(err => {\r\n            console.error(err);\r\n        });\r\n      }\r\n}\r\n\n\n//# sourceURL=webpack://startup/./js/inputForm.js?");
+
+/***/ }),
+
+/***/ "./js/main.js":
+/*!********************!*\
+  !*** ./js/main.js ***!
+  \********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _chatBot_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./chatBot.js */ \"./js/chatBot.js\");\n/* harmony import */ var _validation_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./validation.js */ \"./js/validation.js\");\n/* harmony import */ var _modalAppplication_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modalAppplication.js */ \"./js/modalAppplication.js\");\n/* harmony import */ var _modalConntacts_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modalConntacts.js */ \"./js/modalConntacts.js\");\n/* harmony import */ var _animation_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./animation.js */ \"./js/animation.js\");\n/* harmony import */ var _navigationTitle_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./navigationTitle.js */ \"./js/navigationTitle.js\");\n/* harmony import */ var _inputForm_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./inputForm.js */ \"./js/inputForm.js\");\n/* harmony import */ var _headerBurger_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./headerBurger.js */ \"./js/headerBurger.js\");\n/* harmony import */ var _articleCount_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./articleCount.js */ \"./js/articleCount.js\");\n\r\n(0,_chatBot_js__WEBPACK_IMPORTED_MODULE_0__.chatBot)();\r\n\r\n\r\n(0,_validation_js__WEBPACK_IMPORTED_MODULE_1__.validation)();\r\n\r\n\r\n(0,_modalAppplication_js__WEBPACK_IMPORTED_MODULE_2__.modalApplication)();\r\n\r\n\r\n(0,_modalConntacts_js__WEBPACK_IMPORTED_MODULE_3__.modalContacts)();\r\n\r\n\r\n(0,_animation_js__WEBPACK_IMPORTED_MODULE_4__.animation)();\r\n\r\n\r\n(0,_navigationTitle_js__WEBPACK_IMPORTED_MODULE_5__.navigationTitle)();\r\n\r\n\r\n(0,_inputForm_js__WEBPACK_IMPORTED_MODULE_6__.inputForm)();\r\n\r\n\r\n(0,_headerBurger_js__WEBPACK_IMPORTED_MODULE_7__.headerBurger)();\r\n\r\n\r\n(0,_articleCount_js__WEBPACK_IMPORTED_MODULE_8__.articleCount)();\r\n\r\n\r\n// import {phoneValidCantry} from './phoneValidCantry.js';\r\n// phoneValidCantry();\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://startup/./js/main.js?");
+
+/***/ }),
+
+/***/ "./js/modalAppplication.js":
+/*!*********************************!*\
+  !*** ./js/modalAppplication.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"modalApplication\": () => (/* binding */ modalApplication)\n/* harmony export */ });\nlet modalApplication = function() {\r\n    const modalApplicationWrp = document.querySelector('[data-input-wrp]');\r\n    if(modalApplicationWrp != null) {\r\n        const form = modalApplicationWrp.querySelector('[data-input]');\r\n        const btnClose = modalApplicationWrp.querySelector('[data-btn-close]');\r\n        const brnArrOpen = document.querySelectorAll('[data-btn-open-modal]');\r\n\r\n        brnArrOpen.forEach(el => {\r\n            el.addEventListener('click', () => {\r\n                form.classList.add('active');\r\n            })\r\n        });\r\n        btnClose.addEventListener('click', () => {\r\n            form.classList.remove('active');\r\n        });\r\n    }\r\n}\n\n//# sourceURL=webpack://startup/./js/modalAppplication.js?");
+
+/***/ }),
+
+/***/ "./js/modalConntacts.js":
+/*!******************************!*\
+  !*** ./js/modalConntacts.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"modalContacts\": () => (/* binding */ modalContacts)\n/* harmony export */ });\n/* harmony import */ var _functionGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functionGlobal.js */ \"./js/functionGlobal.js\");\n\r\n\r\n\r\nlet modalContacts = function() {\r\n    const modalContactsWrp = document.querySelector('[data-contacts-wrp-pop-up]'); \r\n        if(modalContactsWrp != null) {\r\n            const btnContacts = document.querySelectorAll('[data-contact-btn]'),\r\n                contactMod = modalContactsWrp.querySelector('[data-contact-modal]'),\r\n                contactClose = modalContactsWrp.querySelectorAll('[data-contact-btn-close]');\r\n            const mainDocum = document.querySelectorAll('body');\r\n            const contactContainer = document.querySelectorAll('[data-contact-modal-container]')\r\n                \r\n            btnContacts.forEach((el) => {\r\n                el.addEventListener(\"click\", (event) => {\r\n                    event.stopPropagation();\r\n                    contactMod.classList.add('active');\r\n                    mainDocum[0].classList.add('active');\r\n                })\r\n            });\r\n            (0,_functionGlobal_js__WEBPACK_IMPORTED_MODULE_0__.removeClass)(mainDocum, contactMod);\r\n            (0,_functionGlobal_js__WEBPACK_IMPORTED_MODULE_0__.removeClass)(contactClose, contactMod);\r\n            (0,_functionGlobal_js__WEBPACK_IMPORTED_MODULE_0__.removeClass)(contactClose, mainDocum[0]);\r\n            (0,_functionGlobal_js__WEBPACK_IMPORTED_MODULE_0__.stopPropagationFunction)(contactContainer);\r\n    }\r\n}\n\n//# sourceURL=webpack://startup/./js/modalConntacts.js?");
+
+/***/ }),
+
+/***/ "./js/navigationTitle.js":
+/*!*******************************!*\
+  !*** ./js/navigationTitle.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"navigationTitle\": () => (/* binding */ navigationTitle)\n/* harmony export */ });\n/* harmony import */ var _functionGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functionGlobal.js */ \"./js/functionGlobal.js\");\n\r\n\r\nlet navigationTitle = function() {\r\n    const navMainWrp = document.querySelector('#nav');\r\n    if(navMainWrp != null) {\r\n        const arrNavItemNode = navMainWrp.querySelectorAll('[data-link-nav]');\r\n        const arrLeng = navMainWrp.querySelectorAll('[data-lang]');\r\n        let arrLengBolean = [];\r\n        const elemNav = navMainWrp.querySelectorAll('[data-name]');\r\n        let stringUrl = document.location.pathname;\r\n\r\n        urlDelLeng(stringUrl, elemNav);\r\n\r\n        function urlDelLeng(url, arr) {\r\n            if(url != \"/\" & url != \"/ru\" & url != \"/en\") {\r\n                url = (url.replace(/\\/ru/gi, '')).replace(/\\/en/gi, '');\r\n                for(let i = 1; i < arr.length; i++) {\r\n                    if(url.startsWith(arr[i].getAttribute('data-name'))) {\r\n                        arr[i].classList.add('active');\r\n                    }\r\n                }\r\n            } else {\r\n                arr[0].classList.add('active');\r\n            }\r\n        }\r\n\r\n        arrLeng.forEach((el) => {\r\n            arrLengBolean.push(window.location.pathname.includes('/' + (el.innerHTML).toLowerCase()));\r\n        })\r\n        arrLengBolean.forEach((el, index) => {\r\n            if(el === true) {\r\n                arrLeng[index].classList.add('active');\r\n            } else if (arrLengBolean.indexOf(true) === -1) {\r\n                arrLeng[0].classList.add('active');\r\n            }\r\n        });\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack://startup/./js/navigationTitle.js?");
+
+/***/ }),
+
+/***/ "./js/validation.js":
+/*!**************************!*\
+  !*** ./js/validation.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"validation\": () => (/* binding */ validation)\n/* harmony export */ });\nlet validation = function() {\r\n    const validationWrp = document.querySelector('[data-input-wrp]')\r\n    if(validationWrp != null) {\r\n        const confirmation = document.getElementById('accept');\r\n        const formWrp = document.querySelector('.js-activ');\r\n        let form = document.querySelector('.js-form'),\r\n        formInputs = form.querySelectorAll('.js-input'),\r\n        inputEmail = form.querySelector('.js-input-email'),\r\n        inputPhone = form.querySelector('.js-input-phone');\r\n\r\n        function validateEmail(email) {\r\n            let re = /^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/;\r\n\r\n            return re.test(String(email).toLowerCase());\r\n            }\r\n\r\n            function validateCountry(country) {\r\n                let reC = new RegExp('.ru$');\r\n                return reC.test(String(country).toLowerCase());\r\n            }\r\n\r\n            function validatePhone(phone) {\r\n                let rePh = /^[0-9]*$/;\r\n                return rePh.test(String(phone));\r\n            }\r\n\r\n\r\n        form.onsubmit = function () {\r\n            let emailVal = inputEmail.value,\r\n                phoneVal = inputPhone.value,\r\n                emptyInputs = Array.from(formInputs).filter(input => input.value === '');\r\n\r\n            formInputs.forEach(function (input) {\r\n                if (input.value === '') {\r\n                    input.classList.add('errorInput')\r\n                } else {\r\n                    input.classList.remove('errorInput')\r\n\r\n                }\r\n            });\r\n\r\n            if (emptyInputs.length !== 0) {\r\n                return false;\r\n            }\r\n\r\n            if (!validateEmail(emailVal)) {\r\n                console.log(\"email error\");\r\n                inputEmail.classList.add('errorInput')\r\n                return false;\r\n            } else {\r\n                inputEmail.classList.remove('errorInput')\r\n            }\r\n\r\n            if (validateCountry(emailVal)) {\r\n                inputEmail.classList.add('errorInput');\r\n                alert('Русский военный корабль пошел нах*й')\r\n                return false;\r\n            } else {\r\n                inputEmail.classList.remove('errorInput')\r\n            }\r\n\r\n            if (!validatePhone(phoneVal)) {\r\n                inputEmail.classList.add('errorInput');\r\n                return false;\r\n            } else {\r\n                inputEmail.classList.remove('errorInput')\r\n            }\r\n\r\n            confirmation.classList.add('popup-accept__container-active');\r\n            setTimeout(() => {\r\n                confirmation.classList.remove('popup-accept__container-active');\r\n                formWrp.classList.remove('popup-form__container');\r\n                formWrp.classList.remove('popup-form__active');\r\n            }, 3000);\r\n        }\r\n\r\n    }\r\n}\n\n//# sourceURL=webpack://startup/./js/validation.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./js/main.js");
+/******/ 	
+/******/ })()
+;

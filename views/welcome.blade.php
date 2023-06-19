@@ -27,7 +27,7 @@
           {{ __('home.tilda_text') }}
         </p>
         <div class="main-request__button-wrp">
-          <button class="main-request__button-request btn-pop-up">
+          <button data-btn-open-modal class="main-request__button-request btn-pop-up">
             {{ __('home.tilda_buttonform') }}
           </button>
           <button data-contact-btn class="main-request__button-contacts js-btn-contact-item">
@@ -54,7 +54,7 @@
           {{ __('home.main-request_text') }}
         </p>
         <div class="main-request__button-wrp">
-          <button class="main-request__button-request btn-pop-up">
+          <button data-btn-open-modal class="main-request__button-request btn-pop-up">
             {{ __('home.main-request_buttonform') }}
           </button>
           <button data-contact-btn class="main-request__button-contacts js-btn-contact-item">
@@ -105,7 +105,7 @@
           {{ __('home.main-purpose_title') }}
         </h3>
         <div class="main-purpose__button-wrp">
-          <button class="main-purpose__button-order btn-pop-up">
+          <button data-btn-open-modal class="main-purpose__button-order btn-pop-up">
             {{ __('home.main-purpose_buttonform') }}
           </button>
           <a class="main-purpose__button-about" href="{{ LaravelLocalization::localizeUrl('/out-team') }}">
@@ -326,9 +326,9 @@
   </section>
   <section data-input-wrp class="main-form">
     <div class="main-form__wrp">
-      <div class="main-form__container js-activ">
+      <div data-input class="main-form__container">
         <div class="main-form__form-wrp">
-          <div class="contacts__btn-close js-btn-close">
+          <div data-btn-close class="contacts__btn-close">
             <span class="contacts__btn-close-line contacts__btn-close-line-r"></span>
             <span class="contacts__btn-close-line contacts__btn-close-line-l"></span>
           </div>

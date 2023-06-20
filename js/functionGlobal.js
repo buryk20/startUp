@@ -21,24 +21,20 @@ export let stopPropagationFunctionArr = function(elem) {
 }
 
 export let Add = class  {
-    
 
-    constructor() {
-        $body = document.querySelector('body');
+    getBodyContent() {
+        const bodyElement = document.querySelector('body');
+        return bodyElement;
     }
 
-    bodyHtml() {
-        return $body;
-    }
-
-    body(elemBodyOver, elemBodyOverHidding) {
+    bodyAddRemoveActive(elemBodyOver, elemBodyOverHidding) {
         this.bodyOver(elemBodyOver);
         this.bodyOverHidding(elemBodyOverHidding);
     }
 
     bodyOverHidding(elem) {
         elem.addEventListener('click', () => {
-            $body.classList.remove('active');
+            this.getBodyContent().classList.remove('active');
             elem.classList.remove('active');
         });
     }
@@ -46,9 +42,7 @@ export let Add = class  {
     bodyOver(arr) {
         arr.forEach(elem => {
             elem.addEventListener('click', () => {
-                console.log($body);
-                console.log(this.bodyHtml());
-                // $body.classList.add('active');
+                this.getBodyContent().classList.add('active');
             });
         });
     }

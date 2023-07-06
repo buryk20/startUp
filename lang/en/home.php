@@ -2,11 +2,12 @@
 
 return [
 	'metaDescription' => 'Turnkey website development. We create user-friendly websites with a unique design. Website promotion from layout to first sale star-up-group.com.ua',
+	'metaKeywords' => 'website development, website development order, html and css website development and design, order website development, website development, business card website development, turnkey website development, website design development, online store website development, wordpress website development',
 
 	'seo-title' => 'Star up group. Unique website - from you idea into turnkey development.',
 	'main-idea_title' => 'Unique website - from you idea into turnkey development.',
-	'main-idea_subtitle' => 'For unique conception to the finish results. We guarantee that we create a website of your dream.',
-	'tilda_text' => 'We move websites, business cards, blogs, courses, landing pages, online stores from Tilda to the most popular CMS: WordPress, Yii2, Opencart.',
+	'main-idea_subtitle' => 'Development of sites of varying complexity, preparation of technical specifications, creation of web design, ready-made site on a turnkey basis. From a unique concept to the final result. We guarantee to create the website of your dreams.',
+	'tilda_text' => 'We move websites, business cards, blogs, courses, landing pages, online stores from Tilda to the most popular CMS: WordPress, Laravel, Opencart.',
 	'tilda_buttonform' => 'Submit application',
 	'tilda_buttoncontacts' => 'Contacts',
 	'main-request_title' => 'Are you still thinking that to create a website is difficult and very expensive ?',

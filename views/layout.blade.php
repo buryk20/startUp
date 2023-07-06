@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title')</title>
     <meta name="description" content="@yield('metaDiscription')">
+    <meta name="description" content="@yield('metaKeywords')">
     <link rel="icon" type="image/x-icon" href="/svg/Main_logo.svg" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/intlTelInput.css">

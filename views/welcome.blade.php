@@ -1,6 +1,7 @@
 ﻿@extends('layout')
 @section('title'){{ __('home.seo-title') }}@endsection
 @section('metaDiscription'){{ __('home.metaDescription') }}@endsection
+@section('metaKeywords'){{ __('home.metaKeywords') }}@endsection
 @section('main_content')
 <main id="lock" data-main-page data-animation-wrp class="main">
   <section class="main-idea">
@@ -10,9 +11,9 @@
           {{ __('home.main-idea_title') }}
         </h1>
         <img data-right src="/img/idea_photo.png" alt="idea" class="main-idea__img-mob wow animate__animated" />
-        <p class="main-idea__description">
+        <h2 class="main-idea__description">
           {{ __('home.main-idea_subtitle') }}
-        </p>
+        </h2>
       </div>
       <div class="main-idea__img-wrp">
         <img data-right class="wow animate__animated" src="img/idea_photo.png" alt="idea" class="main-idea__img" />
@@ -73,19 +74,19 @@
       <div class="main-offer__list">
         <div data-wow-offset="200" class="main-offer__item wow animate__animated animate__fadeInUp">
           <img src="svg/Key_icon.svg" alt="key" class="main-offer__item-img" />
-          <p class="main-offer__item-text">{{ __('home.main-offer_block1') }}</p>
+          <h2 class="main-offer__item-text">{{ __('home.main-offer_block1') }}</h2>
         </div>
         <div data-wow-offset="200" data-wow-delay="0.2s" class="main-offer__item wow animate__animated animate__fadeInUp">
           <img src="svg/Server_icon.svg" alt="server" class="main-offer__item-img" />
-          <p class="main-offer__item-text">{{ __('home.main-offer_block2') }}</p>
+          <h2 class="main-offer__item-text">{{ __('home.main-offer_block2') }}</h2>
         </div>
         <div data-wow-offset="200" data-wow-delay="0.4s" class="main-offer__item wow animate__animated animate__fadeInUp">
           <img src="svg/Trand_icon.svg" alt="trand" class="main-offer__item-img" />
-          <p class="main-offer__item-text">{{ __('home.main-offer_block3') }}</p>
+          <h2 class="main-offer__item-text">{{ __('home.main-offer_block3') }}</h2>
         </div>
         <div data-wow-offset="200" data-wow-delay="0.6s" class="main-offer__item wow animate__animated animate__fadeInUp">
           <img src="svg/Ads_icon.svg" alt="ads" class="main-offer__item-img" />
-          <p class="main-offer__item-text">{{ __('home.main-offer_block4') }}</p>
+          <h2 class="main-offer__item-text">{{ __('home.main-offer_block4') }}</h2>
         </div>
       </div>
       <div data-right data-wow-offset="200" class="main-offer__description wow animate__animated">

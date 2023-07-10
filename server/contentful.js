@@ -1,26 +1,35 @@
-export let content = function() {
-    console.log('dfcv');
-    const contentful = require('contentful');
+const fs = require('fs');
+const contentful = require('contentful');
+const cron = require('node-cron');
 
-    // Замените <CONTENTFUL_SPACE_ID> и <CONTENTFUL_ACCESS_TOKEN> соответствующими значениями
-    const SPACE_ID = '<5f0qcp0syfsf>';
-    const ACCESS_TOKEN = '<G4bxZvMZa5AB58gv1nSbUDbP_rdyT1TMAn57-uZSYoo>';
-    const ORGANIZATION_ID = '3Yx4Fi2moxq2zsWWZ00rG8';
+const SPACE_ID = '5f0qcp0syfsf';
+const ACCESS_TOKEN = 'G4bxZvMZa5AB58gv1nSbUDbP_rdyT1TMAn57-uZSYoo';
 
-    const client = contentful.createClient({
-    space: SPACE_ID,
-    accessToken: ACCESS_TOKEN
-    });
+const client = contentful.createClient({
+  space: SPACE_ID,
+  accessToken: ACCESS_TOKEN
+});
 
-    client.getOrganization(ORGANIZATION_ID)
-    .then(response => {
-        const organization = response.items[0];
-        console.log(organization);
-        // Обрабатывайте организацию по своему усмотрению
+const CONTENT_MODEL_ID = 'blog';
+
+// Расписание для выполнения скрипта ежедневно в 10:00 утра
+cron.schedule('0 00 * * *', () => {
+  client.getEntries({
+    content_type: CONTENT_MODEL_ID
+  })
+    .then(entries => {
+      const jsonData = entries.items.map(entry => entry.fields);
+      const jsonString = JSON.stringify(jsonData, null, 2);
+
+      fs.writeFile('output.json', jsonString, 'utf8', (err) => {
+        if (err) {
+          console.error('Ошибка при записи файла:', err);
+        } else {
+          console.log('JSON-файл успешно создан!');
+        }
+      });
     })
     .catch(error => {
-        console.log('Ошибка при получении данных:', error);
+      console.log('Ошибка при получении данных:', error);
     });
-
-}
-
+});

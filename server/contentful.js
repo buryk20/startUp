@@ -10,26 +10,26 @@ const client = contentful.createClient({
   accessToken: ACCESS_TOKEN
 });
 
-const CONTENT_MODEL_ID = 'blog';
+const CONTENT_MODEL_ID = 'blogProd';
 
 // Расписание для выполнения скрипта ежедневно в 10:00 утра
 cron.schedule('0 00 * * *', () => {
-  client.getEntries({
-    content_type: CONTENT_MODEL_ID
-  })
-    .then(entries => {
-      const jsonData = entries.items.map(entry => entry.fields);
-      const jsonString = JSON.stringify(jsonData, null, 2);
+client.getEntries({
+  content_type: CONTENT_MODEL_ID
+})
+  .then(entries => {
+    const jsonData = entries.items.map(entry => entry.fields);
+    const jsonString = JSON.stringify(jsonData, null, 2);
 
-      fs.writeFile('output.json', jsonString, 'utf8', (err) => {
-        if (err) {
-          console.error('Ошибка при записи файла:', err);
-        } else {
-          console.log('JSON-файл успешно создан!');
-        }
-      });
-    })
-    .catch(error => {
-      console.log('Ошибка при получении данных:', error);
+    fs.writeFile('output.json', jsonString, 'utf8', (err) => {
+      if (err) {
+        console.error('Ошибка при записи файла:', err);
+      } else {
+        console.log('JSON-файл успешно создан!');
+      }
     });
+  })
+  .catch(error => {
+    console.log('Ошибка при получении данных:', error);
+  });
 });

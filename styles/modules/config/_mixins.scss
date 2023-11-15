@@ -310,6 +310,14 @@
   }
 }
 
+
+@mixin _860 {
+  @media (max-width: 860px) {
+    @content;
+  }
+}
+
+
 @mixin _960 {
   @media (max-width: 960px) {
     @content;

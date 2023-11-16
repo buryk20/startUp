@@ -1,43 +1,59 @@
 .out-works {
-    &__cont-img-wrp {
-        width: 100%;
-        height: 240px;
-        margin-bottom: 16px;
-        padding: 8px;
+  &__cont-img-wrp {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 16px;
+    padding: 8px;
 
-        @extend %flexCentre;
+    @extend %flexCentre;
 
-        background-color: white;
-        border-radius: 8px;
+    background-color: white;
+    border-radius: 8px;
+  }
+
+  &__cont-title {
+    @include text($fontSize: 18px, $color: $colorHoverButton);
+  }
+
+  &__ul {
+    padding-left: 20px;
+    list-style: outside;
+  }
+
+  &__ul-item {
+    @include text($fontSize: 16px);
+  }
+
+  &__list-wrp {
+    gap: 16px;
+
+    @extend %flexSpaceBetween;
+    flex-wrap: wrap;
+    align-items: self-start;
+    justify-content: space-between;
+
+    @include _860 {
+      gap: 8px;
     }
 
-    &__cont-title {
-        @include text(
-            $fontSize: 16px,
-            $color: $colorHoverButton,
-        )
+    @include _680 {
+      gap: 24px;
+    }
+  }
+
+  &__cont-wrp {
+    width: 32%;
+
+    @include _860 {
+      width: 49%;
     }
 
-    &__ul {
-        padding-left: 20px;
-        list-style: outside;
+    @include _680 {
+      width: 100%;
     }
+  }
 
-    &__ul-item {
-        @include text(
-            $fontSize: 16px
-        )
-    }
-
-    &__list-wrp {
-        gap: 16px;
-
-        @extend %flexCentreStart;
-        flex-wrap: wrap;
-        align-items: self-start;
-    }
-
-    &__cont-wrp {
-        width: 32%;
-    }
+  &__description {
+    margin-bottom: 24px;
+  }
 }

@@ -6241,6 +6241,7 @@ body {
   width: 100%;
   height: 240px;
   margin-bottom: 16px;
+  padding: 8px;
   background-color: white;
   border-radius: 8px;
 }

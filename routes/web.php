@@ -56,4 +56,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 	Route::get('out-team/burtsev-sergey', function () {
 		return View::make('burtsev-sergey');
 	});
+	Route::get('out-works', function () {
+		return View::make('out-works');
+	});
 });

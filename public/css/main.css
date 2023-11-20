@@ -4303,7 +4303,7 @@ body {
   transition: all 0.3s ease-out;
 }
 .header__nav {
-  max-width: 600px;
+  max-width: 680px;
   width: 100%;
   gap: 24px;
   display: flex;
@@ -4874,8 +4874,27 @@ body {
     width: 100%;
   }
 }
-.out-works__description {
+.out-works__description-wrp {
   margin-bottom: 24px;
+  display: flex;
+}
+@media (max-width: 860px) {
+  .out-works__description-wrp {
+    flex-direction: column;
+  }
+}
+.out-works__btn {
+  max-width: 220px;
+  height: 40px;
+  font-size: 14px;
+}
+.out-works__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #3a3a3a;
+  line-height: 140%;
+  letter-spacing: 0.005em;
 }
 
 body.active {

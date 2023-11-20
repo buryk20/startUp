@@ -56,6 +56,7 @@
                     <div data-name="/chatbots" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/chatbots') }}">{{ __('header.Chatbots') }}</a></div>
                     <div data-name="/out-team" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/out-team') }}">{{ __('out-team.title') }}</a></div>
                     <div data-name="/blog" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/blog') }}">{{ __('blog.title') }}</a></div>
+                    <div data-name="/out-works" class="header__nav-item"><a data-link-nav href="{{ LaravelLocalization::localizeUrl('/out-works') }}">{{ __('out-works.title') }}</a></div>
                     <div data-name="/SEO" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.SEO') }}</a></div>
                     <div data-name="/content" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.Content') }}</a></div>
                     <div data-name="/about-us" style="display: none;" class="header__nav-item"><a data-link-nav href="#">{{ __('header.AboutUs') }}</a></div>
